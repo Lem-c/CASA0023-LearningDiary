@@ -1,6 +1,6 @@
-# The origin of all things
+# The origin of all things {#sec-week01}
 
-Week one is quite insteresting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.
+Week one is quite interesting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.
 
 When I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this @fig-snap1.
 

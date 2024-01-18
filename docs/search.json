@@ -4,7 +4,7 @@
     "href": "week_1.html",
     "title": "The origin of all things",
     "section": "",
-    "text": "The origin of all things\nWeek one is quite insteresting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.\nWhen I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this Figure 1.\n\n\n\nFigure 1: snap_rgb_loadded"
+    "text": "The origin of all things\nWeek one is quite interesting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.\nWhen I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this Figure 1.\n\n\n\nFigure 1: snap_rgb_loadded"
   },
   {
     "objectID": "references.html",
@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Preface",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\n\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+    "text": "Preface\nThis is a Quarto book.\nClick here to enter the book.\n\nTo learn more about Quarto books visit https://quarto.org/docs/books."
   },
   {
     "objectID": "intro.html",

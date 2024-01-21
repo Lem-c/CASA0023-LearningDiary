@@ -2,7 +2,7 @@
 
 This is a Quarto book.
 
-Click [here](@sec-week01) to enter the book.
+Click [here](@sec-week01) to enter 404 not found.
 
 ![](asset/image/cover.jpg)
 

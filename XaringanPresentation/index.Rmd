@@ -1,0 +1,86 @@
+---
+title: "Ninja Master SNAP in Remotely Sensing"
+author: "Yuhao Chen"
+institute: "UCL CASA"
+date: "21/01/2024 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+background-image: url(./assets/img/bg_01.png)
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+# Introduction to SNAP and Sensor Waves
+
+- Welcome to our presentation on SNAP and Sensor Waves.
+
+---
+
+# Light and Different Kinds of Waves
+
+- Let's start by understanding light and the various types of waves in the world.
+
+- Light is an electromagnetic wave and is just one type among many others.
+  
+### Types of Waves
+- Electromagnetic Waves:
+  - Visible light
+  - Infrared
+  - Ultraviolet
+  - Radio waves
+  - Microwaves
+  - X-rays
+- Mechanical Waves:
+  - Sound waves
+
+---
+
+# SNAP in Processing Sentinel Data
+
+- SNAP (Sentinel Application Platform) is a powerful tool for processing Sentinel satellite data.
+
+- It provides a range of functions for data pre-processing, analysis, and visualization.
+
+
+##  SNAP Features
+
+- SNAP Features:
+  - Data pre-processing
+  - Atmospheric correction
+  - Image filtering
+  - Image fusion
+  - Data visualization
+
+---
+
+# Benefits of SNAP
+
+- SNAP is an open-source platform.
+
+- It is user-friendly and provides a graphical interface.
+
+- Offers support for a variety of remote sensing data formats.
+
+---
+
+# Conclusion
+
+- In this presentation, we explored the world of sensor waves, including light and various wave types.
+- We also introduced SNAP and its significance in processing Sentinel data.
+
+---
+
+class: center, middle
+
+# Thanks!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).

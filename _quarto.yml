@@ -2,15 +2,15 @@ project:
   type: website
   output-dir: docs
 
-book:
-  title: "LearningBook"
-  author: "Yuhao CHEN"
-  date: "18/01/2024"
-  chapters:
-    - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+website:
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - intro.qmd
+      - week_1.qmd 
 
 bibliography: references.bib
 

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Yuhao Chen">
 
-<title>index</title>
+<title>Ninja Master SNAP in Remotely Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,99 +24,162 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./intro.html" rel="" target="">
- <span class="menu-text">Introduction</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./week_1.html" rel="" target="">
- <span class="menu-text">The origin of all things</span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools ms-auto">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-snap-and-sensor-waves" id="toc-introduction-to-snap-and-sensor-waves" class="nav-link active" data-scroll-target="#introduction-to-snap-and-sensor-waves"><span class="header-section-number">1</span> Introduction to SNAP and Sensor Waves</a></li>
+  <li><a href="#light-and-different-kinds-of-waves" id="toc-light-and-different-kinds-of-waves" class="nav-link" data-scroll-target="#light-and-different-kinds-of-waves"><span class="header-section-number">2</span> Light and Different Kinds of Waves</a>
+  <ul class="collapse">
+  <li><a href="#types-of-waves" id="toc-types-of-waves" class="nav-link" data-scroll-target="#types-of-waves"><span class="header-section-number">2.0.1</span> Types of Waves</a></li>
+  </ul></li>
+  <li><a href="#snap-in-processing-sentinel-data" id="toc-snap-in-processing-sentinel-data" class="nav-link" data-scroll-target="#snap-in-processing-sentinel-data"><span class="header-section-number">3</span> SNAP in Processing Sentinel Data</a>
+  <ul class="collapse">
+  <li><a href="#snap-features" id="toc-snap-features" class="nav-link" data-scroll-target="#snap-features"><span class="header-section-number">3.1</span> SNAP Features</a></li>
+  </ul></li>
+  <li><a href="#benefits-of-snap" id="toc-benefits-of-snap" class="nav-link" data-scroll-target="#benefits-of-snap"><span class="header-section-number">4</span> Benefits of SNAP</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
+  <li><a href="#thanks" id="toc-thanks" class="nav-link" data-scroll-target="#thanks"><span class="header-section-number">6</span> Thanks!</a></li>
+  </ul>
+</nav>
 </div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    
-<!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Ninja Master SNAP in Remotely Sensing</h1>
+</div>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>This is a Quarto book.</p>
-<p>Click <a href="@sec-week01">here</a> to enter the book.</p>
-<p><img src="asset/image/cover.jpg" class="img-fluid"></p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
-<pre><code></code></pre>
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Yuhao Chen </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            UCL CASA
+          </p>
+      </div>
+    </div>
 
+<div class="quarto-title-meta">
 
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>background-image: url(./assets/img/bg_01.png)</p>
+<section id="introduction-to-snap-and-sensor-waves" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction to SNAP and Sensor Waves</h1>
+<ul>
+<li>Welcome to our presentation on SNAP and Sensor Waves.</li>
+</ul>
+<hr>
+</section>
+<section id="light-and-different-kinds-of-waves" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Light and Different Kinds of Waves</h1>
+<ul>
+<li><p>Let’s start by understanding light and the various types of waves in the world.</p></li>
+<li><p>Light is an electromagnetic wave and is just one type among many others.</p></li>
+</ul>
+<section id="types-of-waves" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="types-of-waves"><span class="header-section-number">2.0.1</span> Types of Waves</h3>
+<ul>
+<li>Electromagnetic Waves:
+<ul>
+<li>Visible light</li>
+<li>Infrared</li>
+<li>Ultraviolet</li>
+<li>Radio waves</li>
+<li>Microwaves</li>
+<li>X-rays</li>
+</ul></li>
+<li>Mechanical Waves:
+<ul>
+<li>Sound waves</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="snap-in-processing-sentinel-data" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> SNAP in Processing Sentinel Data</h1>
+<ul>
+<li><p>SNAP (Sentinel Application Platform) is a powerful tool for processing Sentinel satellite data.</p></li>
+<li><p>It provides a range of functions for data pre-processing, analysis, and visualization.</p></li>
+</ul>
+<section id="snap-features" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="snap-features"><span class="header-section-number">3.1</span> SNAP Features</h2>
+<ul>
+<li>SNAP Features:
+<ul>
+<li>Data pre-processing</li>
+<li>Atmospheric correction</li>
+<li>Image filtering</li>
+<li>Image fusion</li>
+<li>Data visualization</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="benefits-of-snap" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Benefits of SNAP</h1>
+<ul>
+<li><p>SNAP is an open-source platform.</p></li>
+<li><p>It is user-friendly and provides a graphical interface.</p></li>
+<li><p>Offers support for a variety of remote sensing data formats.</p></li>
+</ul>
+<hr>
+</section>
+<section id="conclusion" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Conclusion</h1>
+<ul>
+<li>In this presentation, we explored the world of sensor waves, including light and various wave types.</li>
+<li>We also introduced SNAP and its significance in processing Sentinel data.</li>
+</ul>
+<hr>
+<p>class: center, middle</p>
+</section>
+<section id="thanks" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Thanks!</h1>
+<p>Slides created via the R package <a href="https://github.com/yihui/xaringan"><strong>xaringan</strong></a>.</p>
+<p>The chakra comes from <a href="https://remarkjs.com">remark.js</a>, <a href="https://yihui.org/knitr/"><strong>knitr</strong></a>, and <a href="https://rmarkdown.rstudio.com">R Markdown</a>.</p>
 </section>
 
-</main> <!-- /main -->
+</main>
+<!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

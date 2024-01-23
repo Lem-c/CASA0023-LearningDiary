@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Remotely sensing learning diary",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nClick here to enter 404 not found.\n\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "CASA0023 Remotely Sensing Learning Book"
+  },
+  {
+    "objectID": "week_1.html",
+    "href": "week_1.html",
+    "title": "2  The origin of all things",
+    "section": "",
+    "text": "Week one is quite interesting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.\nWhen I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this Figure 2.1.\n\n\n\nFigure 2.1: snap_rgb_loadded\n\n\nJust follow the work steps one by one, let’s do it.\nLoad the London ward shapefile for masking"
+  },
+  {
+    "objectID": "week_2.html",
+    "href": "week_2.html",
+    "title": "3  Try the presentation",
+    "section": "",
+    "text": "Xaringan Pre"
+  }
+]

@@ -6,3 +6,6 @@ When I first came to SNAP, it is totally a strange thing for me. After loading t
 
 ![snap_rgb_loadded](./asset/screenshot/week001/snap_1.png){#fig-snap1}
 
+Just follow the work steps one by one, let's do it.
+
+Load the London ward shapefile for masking

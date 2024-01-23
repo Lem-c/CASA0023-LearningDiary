@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Remotely sensing learning diary - 1&nbsp; Introduction</title>
+<title>Remotely sensing learning diary - 3&nbsp; Data Fusion: Principles and Methods</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week_1.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./week_2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -107,20 +107,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./week_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The origin of all things</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The origin of all things</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Try the presentation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Try the presentation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_3.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
@@ -129,14 +135,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">3.1</span> Introduction</a></li>
+  <li><a href="#basic-concept-of-data-fusion" id="toc-basic-concept-of-data-fusion" class="nav-link" data-scroll-target="#basic-concept-of-data-fusion"><span class="header-section-number">3.2</span> 1. Basic Concept of Data Fusion</a></li>
+  <li><a href="#principles-and-process-of-data-fusion" id="toc-principles-and-process-of-data-fusion" class="nav-link" data-scroll-target="#principles-and-process-of-data-fusion"><span class="header-section-number">3.3</span> 2. Principles and Process of Data Fusion</a>
+  <ul class="collapse">
+  <li><a href="#preprocessing" id="toc-preprocessing" class="nav-link" data-scroll-target="#preprocessing"><span class="header-section-number">3.3.1</span> Preprocessing</a></li>
+  <li><a href="#data-fusion" id="toc-data-fusion" class="nav-link" data-scroll-target="#data-fusion"><span class="header-section-number">3.3.2</span> Data Fusion</a></li>
+  </ul></li>
+  <li><a href="#classification-and-methods-of-data-fusion" id="toc-classification-and-methods-of-data-fusion" class="nav-link" data-scroll-target="#classification-and-methods-of-data-fusion"><span class="header-section-number">3.4</span> 3. Classification and Methods of Data Fusion</a></li>
+  <li><a href="#challenges-and-future-trends" id="toc-challenges-and-future-trends" class="nav-link" data-scroll-target="#challenges-and-future-trends"><span class="header-section-number">3.5</span> 4. Challenges and Future Trends</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></h1>
 </div>
 
 
@@ -151,9 +171,49 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>CASA0023 Remotely Sensing Learning Book</p>
+<section id="introduction" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">3.1</span> Introduction</h2>
+<p>Data Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation.</p>
+</section>
+<section id="basic-concept-of-data-fusion" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="basic-concept-of-data-fusion"><span class="header-section-number">3.2</span> 1. Basic Concept of Data Fusion</h2>
+<p>Data fusion integrates diverse and redundant information from multiple sources to provide a more accurate, complete, and reliable estimate or judgment than single-source data. Characteristics of multi-source remote sensing data include:</p>
+<ul>
+<li>Redundancy: Multiple sources providing similar information about the environment or targets.</li>
+<li>Complementarity: Information from different and independent sources.</li>
+<li>Cooperativeness: Dependence among different sensors in observation and processing.</li>
+<li>Hierarchical Structure: Data fusion handles information at various levels, such as pixel, feature, and decision levels, ensuring system real-time capabilities.</li>
+</ul>
+</section>
+<section id="principles-and-process-of-data-fusion" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="principles-and-process-of-data-fusion"><span class="header-section-number">3.3</span> 2. Principles and Process of Data Fusion</h2>
+<p>Data fusion in remote sensing images typically follows a two-step process:</p>
+<section id="preprocessing" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="preprocessing"><span class="header-section-number">3.3.1</span> Preprocessing</h3>
+<p>Involves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.</p>
+</section>
+<section id="data-fusion" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="data-fusion"><span class="header-section-number">3.3.2</span> Data Fusion</h3>
+<p>Selecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation.</p>
+</section>
+</section>
+<section id="classification-and-methods-of-data-fusion" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="classification-and-methods-of-data-fusion"><span class="header-section-number">3.4</span> 3. Classification and Methods of Data Fusion</h2>
+<p>Data fusion methods for remote sensing images are categorized into:</p>
+<ul>
+<li>Pixel-level Fusion: A low-level fusion maintaining high accuracy but with limitations in efficiency and analysis capability.</li>
+<li>Feature-level Fusion: A medium-level fusion focusing on extracting and integrating features from different sources.</li>
+<li>Decision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.</li>
+</ul>
+<p>Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.</p>
+</section>
+<section id="challenges-and-future-trends" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="challenges-and-future-trends"><span class="header-section-number">3.5</span> 4. Challenges and Future Trends</h2>
+<p>Key challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities.</p>
+<hr>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -391,13 +451,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./week_2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Try the presentation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week_1.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The origin of all things</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

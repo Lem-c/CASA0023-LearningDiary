@@ -4,55 +4,118 @@
     "href": "index.html",
     "title": "Remotely sensing learning diary",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nClick here to enter 404 not found.\n\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+    "text": "Preface\nThis is a Quarto book.\nClick here to enter 404 not found.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
   },
   {
-    "objectID": "week_1.html",
-    "href": "week_1.html",
-    "title": "1  The origin of all things",
-    "section": "",
-    "text": "Week one is quite interesting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.\nWhen I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this Figure 1.1.\n\n\n\nFigure 1.1: snap_rgb_loadded\n\n\nJust follow the work steps one by one, let’s do it.\nLoad the London ward shapefile for masking"
+    "objectID": "week_1.html#summary",
+    "href": "week_1.html#summary",
+    "title": "2  The origin of all things",
+    "section": "2.1 Summary",
+    "text": "2.1 Summary"
+  },
+  {
+    "objectID": "week_1.html#application",
+    "href": "week_1.html#application",
+    "title": "2  The origin of all things",
+    "section": "2.2 Application",
+    "text": "2.2 Application\n\nTwo paper comparison\nChallenges\n\nLoad the London ward shapefile for masking"
   },
   {
     "objectID": "week_2.html",
     "href": "week_2.html",
-    "title": "2  Try the presentation",
+    "title": "3  Try the presentation",
     "section": "",
-    "text": "Xaringan Pre"
+    "text": "Xaringan Pre\n\n\n\n\n\n\n\n\n\n\nSlides how it be used in study."
   },
   {
     "objectID": "week_3.html#introduction",
     "href": "week_3.html#introduction",
-    "title": "3  Data Fusion: Principles and Methods",
-    "section": "3.1 Introduction",
-    "text": "3.1 Introduction\nData Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation."
+    "title": "4  Data Fusion: Principles and Methods",
+    "section": "4.1 Introduction",
+    "text": "4.1 Introduction\nData Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation."
   },
   {
     "objectID": "week_3.html#basic-concept-of-data-fusion",
     "href": "week_3.html#basic-concept-of-data-fusion",
-    "title": "3  Data Fusion: Principles and Methods",
-    "section": "3.2 1. Basic Concept of Data Fusion",
-    "text": "3.2 1. Basic Concept of Data Fusion\nData fusion integrates diverse and redundant information from multiple sources to provide a more accurate, complete, and reliable estimate or judgment than single-source data. Characteristics of multi-source remote sensing data include:\n\nRedundancy: Multiple sources providing similar information about the environment or targets.\nComplementarity: Information from different and independent sources.\nCooperativeness: Dependence among different sensors in observation and processing.\nHierarchical Structure: Data fusion handles information at various levels, such as pixel, feature, and decision levels, ensuring system real-time capabilities."
+    "title": "4  Data Fusion: Principles and Methods",
+    "section": "4.2 Basic Concept of Data Fusion",
+    "text": "4.2 Basic Concept of Data Fusion\nData fusion integrates diverse and redundant information from multiple sources to provide a more accurate, complete, and reliable estimate or judgment than single-source data. Characteristics of multi-sources remote sensing data include:\n\nRedundancy: Multiple sources providing similar information about the environment or targets.\nComplementarity: Information from different and independent sources.\nCooperativeness: Dependence among different sensors in observation and processing.\nHierarchical Structure: Data fusion handles information at various levels, such as pixel, feature, and decision levels, ensuring system real-time capabilities."
   },
   {
     "objectID": "week_3.html#principles-and-process-of-data-fusion",
     "href": "week_3.html#principles-and-process-of-data-fusion",
-    "title": "3  Data Fusion: Principles and Methods",
-    "section": "3.3 2. Principles and Process of Data Fusion",
-    "text": "3.3 2. Principles and Process of Data Fusion\nData fusion in remote sensing images typically follows a two-step process:\n\n3.3.1 Preprocessing\nInvolves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.\n\n\n3.3.2 Data Fusion\nSelecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation."
+    "title": "4  Data Fusion: Principles and Methods",
+    "section": "4.3 Principles and Process of Data Fusion",
+    "text": "4.3 Principles and Process of Data Fusion\nData fusion in remote sensing images typically follows a two-step process:\n\n4.3.1 Preprocessing\nInvolves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.\n\n\n4.3.2 Data Fusion\nSelecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation."
   },
   {
     "objectID": "week_3.html#classification-and-methods-of-data-fusion",
     "href": "week_3.html#classification-and-methods-of-data-fusion",
-    "title": "3  Data Fusion: Principles and Methods",
-    "section": "3.4 3. Classification and Methods of Data Fusion",
-    "text": "3.4 3. Classification and Methods of Data Fusion\nData fusion methods for remote sensing images are categorized into:\n\nPixel-level Fusion: A low-level fusion maintaining high accuracy but with limitations in efficiency and analysis capability.\nFeature-level Fusion: A medium-level fusion focusing on extracting and integrating features from different sources.\nDecision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.\n\nVarious data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation."
+    "title": "4  Data Fusion: Principles and Methods",
+    "section": "4.4 Classification and Methods of Data Fusion",
+    "text": "4.4 Classification and Methods of Data Fusion\nData fusion methods for remote sensing images are categorized into:\n\nPixel-level Fusion: A low-level fusion maintaining high accuracy but with limitations in efficiency and analysis capability.\nFeature-level Fusion: A medium-level fusion focusing on extracting and integrating features from different sources.\nDecision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.\n\nVarious data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.\n\n4.4.1 OSM"
+  },
+  {
+    "objectID": "week_3.html#application",
+    "href": "week_3.html#application",
+    "title": "4  Data Fusion: Principles and Methods",
+    "section": "4.5 Application",
+    "text": "4.5 Application"
   },
   {
     "objectID": "week_3.html#challenges-and-future-trends",
     "href": "week_3.html#challenges-and-future-trends",
-    "title": "3  Data Fusion: Principles and Methods",
-    "section": "3.5 4. Challenges and Future Trends",
-    "text": "3.5 4. Challenges and Future Trends\nKey challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities."
+    "title": "4  Data Fusion: Principles and Methods",
+    "section": "4.6 Challenges and Future Trends",
+    "text": "4.6 Challenges and Future Trends\nKey challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities."
+  },
+  {
+    "objectID": "week_4.html#data-from-sensors",
+    "href": "week_4.html#data-from-sensors",
+    "title": "5  Policy Applications",
+    "section": "5.1 Data from sensors",
+    "text": "5.1 Data from sensors\n\nIdentify what kind of data to get full use of it"
+  },
+  {
+    "objectID": "week_4.html#land-use-and-land-cover-lulc",
+    "href": "week_4.html#land-use-and-land-cover-lulc",
+    "title": "5  Policy Applications",
+    "section": "5.2 Land use and Land cover (LULC)",
+    "text": "5.2 Land use and Land cover (LULC)\n\nAccess to green space\n\nshortest distance/…"
+  },
+  {
+    "objectID": "week_4.html#synthetic-aperture-radar-sar",
+    "href": "week_4.html#synthetic-aperture-radar-sar",
+    "title": "5  Policy Applications",
+    "section": "5.3 Synthetic Aperture Radar (SAR)",
+    "text": "5.3 Synthetic Aperture Radar (SAR)\n\nActive sensors\nReflection with surface texture data\nSee through weather and clouds\n\n\n5.3.0.1 SAR polarization and background\nElectromagnetic spectrum (EMR)\nA SAR signal has both amplitude (backscatter) and phase data.\n\nWindy and CALM: water move\n\n\n\n5.3.0.2 More SAR\n\nSAR Floods\nDrawback? (Me on SAR)\nInterferometry Synthetic Aperture Radar (InSAR)"
+  },
+  {
+    "objectID": "week_4.html#application",
+    "href": "week_4.html#application",
+    "title": "5  Policy Applications",
+    "section": "5.4 Application",
+    "text": "5.4 Application\n\n5.4.1 London Plan\n\nPolicy SI 4 Managing heat risk (Abercrombie 1944)\n\n\n5.4.1.1 Landsat pre-processing steps\nIncluded: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization”\n\n\n5.4.1.2 Decision trees\n\n\n\n5.4.2 Case study\n\nForest fires\n\n\n\n\n\nAbercrombie, Patrick. 1944. Greater London Plan. HM Stationery Office."
+  },
+  {
+    "objectID": "week_5.html#urban-heat-island",
+    "href": "week_5.html#urban-heat-island",
+    "title": "6  Temperature",
+    "section": "6.1 Urban heat island",
+    "text": "6.1 Urban heat island\n\nsocial and environmental cost\nGDP lost\n\nWhy"
+  },
+  {
+    "objectID": "week_5.html#application",
+    "href": "week_5.html#application",
+    "title": "6  Temperature",
+    "section": "6.2 Application",
+    "text": "6.2 Application\n\nLow Traffic Neighbourhoods: what, why and where?\nUHI in phoenix (Chow, Brennan, and Brazel 2012)\n\n\n\n\n\nChow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. “Urban Heat Island Research in Phoenix, Arizona: Theoretical Contributions and Policy Applications.” Bulletin of the American Meteorological Society 93 (4): 517–30."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Abercrombie, Patrick. 1944. Greater London Plan. HM Stationery\nOffice.\n\n\nChow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. “Urban\nHeat Island Research in Phoenix, Arizona: Theoretical Contributions and\nPolicy Applications.” Bulletin of the American Meteorological\nSociety 93 (4): 517–30."
   }
 ]

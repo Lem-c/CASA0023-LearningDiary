@@ -8,3 +8,4 @@ xaringanExtra::embed_xaringan(
   ratio = "16:9")
 ```
 
+- Slides how it be used in study.

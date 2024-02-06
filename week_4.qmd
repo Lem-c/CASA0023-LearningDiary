@@ -1,0 +1,51 @@
+# Policy Applications
+
+## Data from sensors
+
+-   Identify what kind of data to get full use of it
+
+## Land use and Land cover (LULC)
+
+-   Access to green space
+
+    -   shortest distance/...
+
+## Synthetic Aperture Radar (SAR)
+
+-   Active sensors
+
+-   Reflection with surface texture data
+
+-   See through weather and clouds
+
+#### SAR polarization and background
+
+Electromagnetic spectrum (EMR)
+
+A SAR signal has both amplitude (backscatter) and phase data.
+
+-   Windy and CALM: water move
+
+#### More SAR
+
+-   SAR Floods
+
+-   Drawback? (Me on SAR)
+
+-   Interferometry Synthetic Aperture Radar (InSAR)
+
+## Application
+
+### London Plan
+
+-   Policy SI 4 Managing heat risk [@abercrombie1944greater]
+
+#### Landsat pre-processing steps
+
+Included: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization"
+
+#### Decision trees
+
+### Case study
+
+-   Forest fires

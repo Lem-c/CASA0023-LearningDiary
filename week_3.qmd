@@ -3,33 +3,43 @@
 ## Introduction
 Data Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation.
 
-## 1. Basic Concept of Data Fusion
-Data fusion integrates diverse and redundant information from multiple sources to provide a more accurate, complete, and reliable estimate or judgment than single-source data. Characteristics of multi-source remote sensing data include:
+## Basic Concept of Data Fusion
+Data fusion integrates diverse and redundant information from multiple sources to provide a more accurate, complete, and reliable estimate or judgment than single-source data. Characteristics of multi-sources remote sensing data include:
 
 - Redundancy: Multiple sources providing similar information about the environment or targets.
+
 - Complementarity: Information from different and independent sources.
+
 - Cooperativeness: Dependence among different sensors in observation and processing.
+
 - Hierarchical Structure: Data fusion handles information at various levels, such as pixel, feature, and decision levels, ensuring system real-time capabilities.
 
-## 2. Principles and Process of Data Fusion
+## Principles and Process of Data Fusion
 Data fusion in remote sensing images typically follows a two-step process:
 
 ### Preprocessing
 Involves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.
 
+
 ### Data Fusion
 Selecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation.
 
-## 3. Classification and Methods of Data Fusion
+## Classification and Methods of Data Fusion
 Data fusion methods for remote sensing images are categorized into:
 
 - Pixel-level Fusion: A low-level fusion maintaining high accuracy but with limitations in efficiency and analysis capability.
+
 - Feature-level Fusion: A medium-level fusion focusing on extracting and integrating features from different sources.
+
 - Decision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.
 
 Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.
 
-## 4. Challenges and Future Trends
+### OSM
+
+## Application
+
+## Challenges and Future Trends
 Key challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities.
 
 ---

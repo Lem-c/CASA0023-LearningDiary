@@ -8,4 +8,14 @@ When I first came to SNAP, it is totally a strange thing for me. After loading t
 
 Just follow the work steps one by one, let's do it.
 
+
+## Summary
+
+## Application
+
+- Two paper comparison
+
+- Challenges
+
+
 Load the London ward shapefile for masking

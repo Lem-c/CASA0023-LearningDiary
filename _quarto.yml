@@ -10,6 +10,8 @@ book:
   - week_1.qmd 
   - week_2.qmd
   - week_3.qmd
+  - week_4.qmd
+  - week_5.qmd
   - references.qmd
 
 bibliography: references.bib
@@ -19,6 +21,7 @@ format:
     toc: true
     number-sections: true
     theme: cosmo
+    css: index.css 
 
 editor: visual
 

@@ -1,12 +1,16 @@
+---
+title: "Preface"
+
+format:
+  html:
+    include-before-body: './asset/tags/index_div.txt'
+    include-after-body: './asset/tags/index_div2.txt'
+---
+
 # Preface {.unnumbered}
 
 This is a Quarto book.
 
 Click [here](@sec-week01) to enter 404 not found.
 
-![](asset/image/cover.jpg)
-
 To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```         
-```

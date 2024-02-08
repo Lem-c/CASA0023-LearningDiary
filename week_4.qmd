@@ -38,7 +38,17 @@ A SAR signal has both amplitude (backscatter) and phase data.
 
 ### London Plan
 
--   Policy SI 4 Managing heat risk [@abercrombie1944greater]
+-   Policy SI 4 Managing heat risk [@abercrombie1944greater] p354
+
+-   Urban development proposals must mitigate the urban heat island effect through thoughtful **design, materials, and green infrastructure**. Major developments need an **energy strategy** to reduce internal overheating and air conditioning reliance, following a cooling hierarchy that prioritizes:
+
+1.  **Reducing heat entry** via orientation, shading, and insulation.
+2.  **Minimizing internal heat** through efficient design.
+3.  **Managing internal heat** with thermal mass and high ceilings.
+4.  **Enabling passive ventilation**, followed by mechanical ventilation.
+5.  **Considering active cooling systems** only as a last resort.
+
+Climate change has heightened London's temperature, exacerbating the urban heat island effect and health risks during extreme heat. New developments must address citywide and building-specific overheating. Strategies include avoiding excessive glazing and promoting passive ventilation. Air conditioning, which contributes to urban heat, should be minimized. The **Chartered Institution of Building Services Engineers (CIBSE)** provides guidelines for addressing overheating in new and refurbished buildings, ensuring designs are future-proof against climate change.
 
 #### Landsat pre-processing steps
 

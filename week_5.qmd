@@ -8,8 +8,12 @@
   
   - Why
   
+“satellite-derived surface temperature shows very weak relationships with air temperature" [Chakraborty et al., 2022]
+  
 ## Application
 
 - Low Traffic Neighbourhoods: what, why and where?
 
 - UHI in phoenix [@chow2012urban]
+
+- https://zhuanlan.zhihu.com/p/419122903

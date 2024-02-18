@@ -153,18 +153,17 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">4.1</span> Introduction</a></li>
-  <li><a href="#basic-concept-of-data-fusion" id="toc-basic-concept-of-data-fusion" class="nav-link" data-scroll-target="#basic-concept-of-data-fusion"><span class="header-section-number">4.2</span> Basic Concept of Data Fusion</a></li>
-  <li><a href="#principles-and-process-of-data-fusion" id="toc-principles-and-process-of-data-fusion" class="nav-link" data-scroll-target="#principles-and-process-of-data-fusion"><span class="header-section-number">4.3</span> Principles and Process of Data Fusion</a>
+  <li><a href="#principles-and-process-of-data-fusion" id="toc-principles-and-process-of-data-fusion" class="nav-link" data-scroll-target="#principles-and-process-of-data-fusion"><span class="header-section-number">4.2</span> Principles and Process of Data Fusion</a>
   <ul class="collapse">
-  <li><a href="#preprocessing" id="toc-preprocessing" class="nav-link" data-scroll-target="#preprocessing"><span class="header-section-number">4.3.1</span> Preprocessing</a></li>
-  <li><a href="#data-fusion" id="toc-data-fusion" class="nav-link" data-scroll-target="#data-fusion"><span class="header-section-number">4.3.2</span> Data Fusion</a></li>
+  <li><a href="#preprocessing" id="toc-preprocessing" class="nav-link" data-scroll-target="#preprocessing"><span class="header-section-number">4.2.1</span> Preprocessing</a></li>
+  <li><a href="#data-fusion" id="toc-data-fusion" class="nav-link" data-scroll-target="#data-fusion"><span class="header-section-number">4.2.2</span> Data Fusion</a></li>
   </ul></li>
-  <li><a href="#classification-and-methods-of-data-fusion" id="toc-classification-and-methods-of-data-fusion" class="nav-link" data-scroll-target="#classification-and-methods-of-data-fusion"><span class="header-section-number">4.4</span> Classification and Methods of Data Fusion</a>
+  <li><a href="#classification-and-methods-of-data-fusion" id="toc-classification-and-methods-of-data-fusion" class="nav-link" data-scroll-target="#classification-and-methods-of-data-fusion"><span class="header-section-number">4.3</span> Classification and Methods of Data Fusion</a>
   <ul class="collapse">
-  <li><a href="#osm" id="toc-osm" class="nav-link" data-scroll-target="#osm"><span class="header-section-number">4.4.1</span> OSM</a></li>
+  <li><a href="#osm" id="toc-osm" class="nav-link" data-scroll-target="#osm"><span class="header-section-number">4.3.1</span> OSM</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4.5</span> Application</a></li>
-  <li><a href="#challenges-and-future-trends" id="toc-challenges-and-future-trends" class="nav-link" data-scroll-target="#challenges-and-future-trends"><span class="header-section-number">4.6</span> Challenges and Future Trends</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4.4</span> Application</a></li>
+  <li><a href="#challenges-and-future-trends" id="toc-challenges-and-future-trends" class="nav-link" data-scroll-target="#challenges-and-future-trends"><span class="header-section-number">4.5</span> Challenges and Future Trends</a></li>
   </ul>
 </nav>
     </div>
@@ -192,30 +191,20 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="4.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.1</span> Introduction</h2>
 <p>Data Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation.</p>
 </section>
-<section id="basic-concept-of-data-fusion" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="basic-concept-of-data-fusion"><span class="header-section-number">4.2</span> Basic Concept of Data Fusion</h2>
-<p>Data fusion integrates diverse and redundant information from multiple sources to provide a more accurate, complete, and reliable estimate or judgment than single-source data. Characteristics of multi-sources remote sensing data include:</p>
-<ul>
-<li><p>Redundancy: Multiple sources providing similar information about the environment or targets.</p></li>
-<li><p>Complementarity: Information from different and independent sources.</p></li>
-<li><p>Cooperativeness: Dependence among different sensors in observation and processing.</p></li>
-<li><p>Hierarchical Structure: Data fusion handles information at various levels, such as pixel, feature, and decision levels, ensuring system real-time capabilities.</p></li>
-</ul>
-</section>
-<section id="principles-and-process-of-data-fusion" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="principles-and-process-of-data-fusion"><span class="header-section-number">4.3</span> Principles and Process of Data Fusion</h2>
+<section id="principles-and-process-of-data-fusion" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="principles-and-process-of-data-fusion"><span class="header-section-number">4.2</span> Principles and Process of Data Fusion</h2>
 <p>Data fusion in remote sensing images typically follows a two-step process:</p>
-<section id="preprocessing" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="preprocessing"><span class="header-section-number">4.3.1</span> Preprocessing</h3>
+<section id="preprocessing" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="preprocessing"><span class="header-section-number">4.2.1</span> Preprocessing</h3>
 <p>Involves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.</p>
 </section>
-<section id="data-fusion" class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="data-fusion"><span class="header-section-number">4.3.2</span> Data Fusion</h3>
+<section id="data-fusion" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="data-fusion"><span class="header-section-number">4.2.2</span> Data Fusion</h3>
 <p>Selecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation.</p>
 </section>
 </section>
-<section id="classification-and-methods-of-data-fusion" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="classification-and-methods-of-data-fusion"><span class="header-section-number">4.4</span> Classification and Methods of Data Fusion</h2>
+<section id="classification-and-methods-of-data-fusion" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="classification-and-methods-of-data-fusion"><span class="header-section-number">4.3</span> Classification and Methods of Data Fusion</h2>
 <p>Data fusion methods for remote sensing images are categorized into:</p>
 <ul>
 <li><p>Pixel-level Fusion: A low-level fusion maintaining high accuracy but with limitations in efficiency and analysis capability.</p></li>
@@ -223,15 +212,25 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Decision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.</p></li>
 </ul>
 <p>Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.</p>
-<section id="osm" class="level3" data-number="4.4.1">
-<h3 data-number="4.4.1" class="anchored" data-anchor-id="osm"><span class="header-section-number">4.4.1</span> OSM</h3>
+<section id="osm" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="osm"><span class="header-section-number">4.3.1</span> OSM</h3>
 </section>
 </section>
-<section id="application" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="application"><span class="header-section-number">4.5</span> Application</h2>
+<section id="application" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="application"><span class="header-section-number">4.4</span> Application</h2>
+<p>Firstly, the two areas chose as follow:</p>
+<p><img src="asset/screenshot/week003/selected_texture_org.png" width="500" height="400"></p>
+<p>After merge</p>
+<p><img src="asset/image/week03/merged_plot.png" class="img-fluid"></p>
+<p>Get NDVI</p>
+<p><img src="asset/image/week03/merged_NDVI.png" class="img-fluid"></p>
+<p>Texture</p>
+<p><img src="asset/image/week03/clip_texture.png" class="img-fluid"></p>
+<p>PCA analysis</p>
+<p><img src="asset/image/week03/clip_PCA.png" class="img-fluid"></p>
 </section>
-<section id="challenges-and-future-trends" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="challenges-and-future-trends"><span class="header-section-number">4.6</span> Challenges and Future Trends</h2>
+<section id="challenges-and-future-trends" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="challenges-and-future-trends"><span class="header-section-number">4.5</span> Challenges and Future Trends</h2>
 <p>Key challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities.</p>
 <hr>
 

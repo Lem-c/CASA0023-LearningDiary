@@ -93,22 +93,36 @@
   {
     "objectID": "week_5.html#urban-heat-island",
     "href": "week_5.html#urban-heat-island",
-    "title": "6  Temperature",
+    "title": "6  Reading Week: Temperature",
     "section": "6.1 Urban heat island",
     "text": "6.1 Urban heat island\n\nsocial and environmental cost\nGDP lost\n\nWhy\n\n\n“satellite-derived surface temperature shows very weak relationships with air temperature” [Chakraborty et al., 2022]"
   },
   {
-    "objectID": "week_5.html#application",
-    "href": "week_5.html#application",
-    "title": "6  Temperature",
-    "section": "6.2 Application",
-    "text": "6.2 Application\n\nLow Traffic Neighbourhoods: what, why and where?\nUHI in phoenix (Chow, Brennan, and Brazel 2012)\nhttps://zhuanlan.zhihu.com/p/419122903\n\n\n\n\n\nChow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. “Urban Heat Island Research in Phoenix, Arizona: Theoretical Contributions and Policy Applications.” Bulletin of the American Meteorological Society 93 (4): 517–30."
+    "objectID": "week_5.html#presentation-paths",
+    "href": "week_5.html#presentation-paths",
+    "title": "6  Reading Week: Temperature",
+    "section": "6.2 Presentation paths",
+    "text": "6.2 Presentation paths\n\nLow Traffic Neighbourhoods: what, why and where?\nUHI in phoenix (Chow, Brennan, and Brazel 2012)\nhttps://zhuanlan.zhihu.com/p/419122903\n\n\n\n\n\nChow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. “Urban Heat Island Research in Phoenix, Arizona: Theoretical Contributions and Policy Applications.” Bulletin of the American Meteorological Society 93 (4): 517–30."
+  },
+  {
+    "objectID": "week_6.html#application",
+    "href": "week_6.html#application",
+    "title": "7  Google Earht Engine",
+    "section": "7.1 Application",
+    "text": "7.1 Application\n\n7.1.1 Google Earth Engine for geo-big data applications and ethics concern\nThe study of Haifa et. al (Tamiminia et al. 2020) uses Google Earth Engine to track and study changes in land use within the Brazilian Amazon rainforest. This project relies on satellite images from Landsat and Sentinel-2 to observe deforestation and the deterioration of the forest. To categorize different types of land and notice changes over periods, advanced machine learning techniques, including Random Forest and Support Vector Machines can be used. The goal is to provide precise, current data on how the land is beingndefined used, which is crucial for keeping an eye on the environment and helping conservation efforts.\nStephen R.J. Sheppard* and Petr Cizek (Sheppard and Cizek 2009) explores the ethical implications of using Google Earth’s visualization capabilities. It delves into the risks and benefits associated with the participatory use of virtual globes by experts and laypeople. This paper (Sheppard and Cizek 2009) emphasizes the need for ethical frameworks and principles to guide the use of environmental visualisation techniques in the context of public policy and decision-making.\nThis contrast (Tamiminia et al. 2020; Sheppard and Cizek 2009)suggests a complementary relationship where ethical guidelines could enhance the responsible use of technologies like GEE in scientific and policy-making contexts.\n\n\n7.1.2 Coding with GEE\n\nUsing GEE to see the NDVI performance in London Camden Town.\n\nUpload and filter the target area (Camden Town with Primrose Hill) by ‘GSS_CODE’\nvar London = ee.FeatureCollection(\"projects/rs-prj-2309/assets/London_Ward\")\n  .filter('GSS_CODE == \"E05000130\"');\nThen load image collection and apply simple image processing\n\n... = ee.ImageCollection(*)\n  .filterDate('2023-04-03', '2023-10-03')\n  .filterBounds(London); \n...\n*.reduce(ee.Reducer.median());\nFinally calculate the value and add the layer to the map\n\n\n\nNDVI view in camden"
+  },
+  {
+    "objectID": "week_6.html#refelction",
+    "href": "week_6.html#refelction",
+    "title": "7  Google Earht Engine",
+    "section": "7.2 Refelction",
+    "text": "7.2 Refelction\nAfter working through the given exercises, it is easily understood that, yep, Google Earth Engine (GEE) is indeed powerful for exploring spatial patterns and really great for going deeper into your datasets. The entire process ranged from file uploads of the shapefiles for Delhi and London to the filtering of data inside these shapefiles. This was represented graphically in a map through every step that was clear in its display, both editable and showed the differences in their layers. This feature shows the ability of GEE in the handling of complicated spatial data in an interactive and easy manner.\nHowever, it is worth noting that there are downsides to the platform, especially on stability issues. Sometimes the service can be termed as unreliable, especially when uploading the shapefiles, which can prove quite frustrating. Except for this sometimes observed drawback, the utility and power of GEE for facilitation in studies concerning spatial analysis are enormous. It is a very rich set of tools that Google Earth Engine presents to every person who wants to make his first forays into spatial data analysis, with just a few issues about server stability.\n\n\n\n\nSheppard, Stephen RJ, and Petr Cizek. 2009. “The Ethics of Google Earth: Crossing Thresholds from Spatial Data to Landscape Visualisation.” Journal of Environmental Management 90 (6): 2102–17.\n\n\nTamiminia, Haifa, Bahram Salehi, Masoud Mahdianpari, Lindi Quackenbush, Sarina Adeli, and Brian Brisco. 2020. “Google Earth Engine for Geo-Big Data Applications: A Meta-Analysis and Systematic Review.” ISPRS Journal of Photogrammetry and Remote Sensing 164: 152–70."
   },
   {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Abercrombie, Patrick. 1944. Greater London Plan. HM Stationery\nOffice.\n\n\nChow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. “Urban\nHeat Island Research in Phoenix, Arizona: Theoretical Contributions and\nPolicy Applications.” Bulletin of the American Meteorological\nSociety 93 (4): 517–30."
+    "text": "Abercrombie, Patrick. 1944. Greater London Plan. HM Stationery\nOffice.\n\n\nChow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. “Urban\nHeat Island Research in Phoenix, Arizona: Theoretical Contributions and\nPolicy Applications.” Bulletin of the American Meteorological\nSociety 93 (4): 517–30.\n\n\nSheppard, Stephen RJ, and Petr Cizek. 2009. “The Ethics of Google\nEarth: Crossing Thresholds from Spatial Data to Landscape\nVisualisation.” Journal of Environmental Management 90\n(6): 2102–17.\n\n\nTamiminia, Haifa, Bahram Salehi, Masoud Mahdianpari, Lindi Quackenbush,\nSarina Adeli, and Brian Brisco. 2020. “Google Earth Engine for\nGeo-Big Data Applications: A Meta-Analysis and Systematic\nReview.” ISPRS Journal of Photogrammetry and Remote\nSensing 164: 152–70."
   }
 ]

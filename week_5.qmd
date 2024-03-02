@@ -1,19 +1,21 @@
-# Temperature 
+# Reading Week: Temperature
+
+[History temperature in UK](https://lem-c.github.io/temp_map/)
 
 ## Urban heat island
 
-- social and environmental cost
+-   social and environmental cost
 
-- GDP lost
-  
-  - Why
-  
-“satellite-derived surface temperature shows very weak relationships with air temperature" [Chakraborty et al., 2022]
-  
-## Application
+-   GDP lost
 
-- Low Traffic Neighbourhoods: what, why and where?
+    -   Why
 
-- UHI in phoenix [@chow2012urban]
+“satellite-derived surface temperature shows very weak relationships with air temperature" \[Chakraborty et al., 2022\]
 
-- https://zhuanlan.zhihu.com/p/419122903
+## Presentation paths
+
+-   Low Traffic Neighbourhoods: what, why and where?
+
+-   UHI in phoenix [@chow2012urban]
+
+-   https://zhuanlan.zhihu.com/p/419122903

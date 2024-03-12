@@ -1,0 +1,31 @@
+# 08 Classification The Big Questions (Lecture 6 continued) and Accuracy
+
+## Summary
+
+-   Object-Based Image Analysis (OBIA) simplifies imagery into significant objects by merging adjacent pixels with similar texture and color, focusing on object shapes to form "superpixels" through either similarity or difference.
+
+-   Simple Linear Iterative Clustering (SLIC) Algorithm: This widely-used technique creates superpixels via Simple Linear Iterative Clustering. It initializes by distributing points across an image, then refines their placement through several iterations based on spatial distance and color difference.
+
+-   Compactness and Transformation: In SLIC, compactness determines superpixel shape—high values produce squarer shapes by prioritizing space, whereas low values favor color similarity, resulting in irregular shapes. It employs the LAB color space for processing, enhancing color perception accuracy by distinguishing luminance from color channels.
+
+### Sub pixel analysis
+
+-   End Members: These are pure spectral signatures in remote sensing that represent specific ground materials or objects, like water, vegetation, and soil.
+
+-   Pixel Modeling: This aims to ascertain the composition of these end members within a single pixel's image.
+
+-   Calculation Method: The equation's left side depicts the pixel's spectral signature across bands 3 and 4, under the constraint that end member fractions sum to one. The matrix in the center contains the end members' spectral signatures for bands 3 and 4, plus a row of ones for the sum-to-one rule. The right side aims to determine each end member's fraction within the pixel. Fractions are computed by creating a new matrix where the left side is the fraction matrix, revealing the proportions of various end members.
+
+### Assess accuracy
+
+In machine learning, accuracy assessment measures the congruence between a model's predictions and actual outcomes, encompassing True Positive (TP) where the model accurately predicts the positive class, False Positive (FP) where it mistakenly predicts the positive class, True Negative (TN) where it accurately predicts the negative class, and False Negative (FN) where it incorrectly predicts the negative class.
+
+The assessment includes producer's accuracy $$\frac{TP}{TP+FN}$$ user's accuracy $$\frac{TP}{TP+FP}$$ overall accuracy $$\frac{TP+TN}{TP+TN+FP+FN}$$ to gauge model performance comprehensively.
+
+### Cross validation.
+
+In geographic data analysis, data is typically divided into training and testing segments to evaluate model performance. Waldo Tobler's [@tobler_first_law] "First Law of Geography" posits that closer objects are more similar than distant ones, suggesting a potential overlap issue where training data too close to the test data might inadvertently 'leak' information. To mitigate this, cross-validation, which partitions data into several "folds," employs k-means clustering. This method clusters data points based on their proximity, ensuring that the training and testing sets are sufficiently separated to prevent overlap and maintain the integrity of the evaluation process.
+
+## Application
+
+Following is the steps to classify the possible un-used land in London using Google earth engine.

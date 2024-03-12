@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Remotely sensing learning diary - 6&nbsp; Reading Week: Temperature</title>
+<title>Remotely sensing learning diary - 7&nbsp; 07 Classification I</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -49,8 +49,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week_6.html" rel="next">
-<link href="./week_4.html" rel="prev">
+<link href="./week_8.html" rel="next">
+<link href="./week_6.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -94,7 +94,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_5.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reading Week: Temperature</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">07 Classification I</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -128,37 +128,43 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The origin of all things</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 The origin of all things</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Try the presentation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 Try the presentation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 Data Fusion: Principles and Methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Policy Applications</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./week_5.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reading Week: Temperature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">04 Policy Applications</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Google Earht Engine</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">06 Google Earth Engine</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_7.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">07 Classification I</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08 Classification The Big Questions (Lecture 6 continued) and Accuracy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -177,8 +183,9 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#urban-heat-island" id="toc-urban-heat-island" class="nav-link active" data-scroll-target="#urban-heat-island"><span class="header-section-number">6.1</span> Urban heat island</a></li>
-  <li><a href="#presentation-paths" id="toc-presentation-paths" class="nav-link" data-scroll-target="#presentation-paths"><span class="header-section-number">6.2</span> Presentation paths</a></li>
+  <li><a href="#algorithms" id="toc-algorithms" class="nav-link active" data-scroll-target="#algorithms"><span class="header-section-number">7.1</span> Algorithms</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -187,7 +194,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reading Week: Temperature</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">07 Classification I</span></h1>
 </div>
 
 
@@ -202,30 +209,65 @@ div.csl-indent {
 
 </header>
 
-<p><a href="https://lem-c.github.io/temp_map/">History temperature in UK</a></p>
-<section id="urban-heat-island" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="urban-heat-island"><span class="header-section-number">6.1</span> Urban heat island</h2>
-<ul>
-<li><p>social and environmental cost</p></li>
-<li><p>GDP lost</p>
-<ul>
-<li>Why</li>
-</ul></li>
-</ul>
-<p>“satellite-derived surface temperature shows very weak relationships with air temperature” [Chakraborty et al., 2022]</p>
+<p>Machine learning, a subset of computer science, involves creating algorithms that allow computers to learn and make decisions or predictions autonomously, related to human learning and generalization through experience, embodying inductive learning principles <span class="citation" data-cites="jordan2015machine">(<a href="references.html#ref-jordan2015machine" role="doc-biblioref">Jordan and Mitchell 2015</a>)</span>. When the topic comes the spatial analysis, good attempts like Support Vector Machine and random forest has been applied in this filed.</p>
+<section id="algorithms" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="algorithms"><span class="header-section-number">7.1</span> Algorithms</h2>
+<p>Amongst many classification algorithms, decision trees have proven to be efficient algorithms for classification of large datasets. A <strong>d</strong>ecision tree is a classification algorithm that automatically derives a hierarchy of partition rules with respect to a target attribute of a large dataset <span class="citation" data-cites="li2006spatial">(<a href="references.html#ref-li2006spatial" role="doc-biblioref">Li and Claramunt 2006</a>)</span>. Forest is build from single tree. Classification aims to Classify data into discrete categories based on certain features.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="asset/image/week07/tree.jpg" class="img-fluid figure-img" width="339"></p>
+<figcaption class="figure-caption">A basic decision tree model with a binary target variable Y (0 or 1) and two continuous variables, x1 and x2 (0 to 1) <span class="citation" data-cites="song2015decision">(<a href="references.html#ref-song2015decision" role="doc-biblioref">Song and Ying 2015</a>)</span>.</figcaption>
+</figure>
+</div>
+<p>Three types of nodes exist: The root node, or decision node, which divides records into exclusive subsets, another internal nodes, or chance nodes, indicating available choices and linking parent and child nodes, and the leaf nodes, or end nodes, signifying the outcome of decisions. To avoid overfit, decision trees require stopping rules <span class="citation" data-cites="song2015decision">Li and Claramunt (<a href="references.html#ref-li2006spatial" role="doc-biblioref">2006</a>)</span>, such as minimum records in a leaf or node before splitting, and maximum leaf depth from the root.</p>
+<p><strong>R</strong>andom Forests improve decision tree accuracy by generating multiple trees through random samples and feature subsets, thus enhancing diversity and reducing overfitting. This method involves creating a forest where each tree contributes to the final prediction through majority voting, while unselected data offers an unbiased error estimate. The ensemble approach allows trees to fully grow without pruning, and the number of features evaluated at each split is often the square root of the total features, further ensuring robust predictions.</p>
+<p><strong>S</strong>upport Vector Machine (SVM) is a machine learning tool for categorizing data by drawing an optimal separating line (or higher-dimensional plane) to distinguish different data points. It aims for the widest margin between the nearest points of any category, known as support vectors. SVM’s effectiveness is fine-tuned using two parameters: C, which controls the margin’s strictness and focus on difficult points, and Gamma, which dictates the influence of each data point, with higher values emphasizing closer points. For data not linearly separable, SVM employs the kernel trick to manipulate the data into a separable form.</p>
 </section>
-<section id="presentation-paths" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="presentation-paths"><span class="header-section-number">6.2</span> Presentation paths</h2>
-<ul>
-<li><p>Low Traffic Neighbourhoods: what, why and where?</p></li>
-<li><p>UHI in phoenix <span class="citation" data-cites="chow2012urban">(<a href="references.html#ref-chow2012urban" role="doc-biblioref">Chow, Brennan, and Brazel 2012</a>)</span></p></li>
-<li><p>https://zhuanlan.zhihu.com/p/419122903</p></li>
-</ul>
+<section id="application" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
+<p>The method provided by Yan-yan SONG and Ying LU<span class="citation" data-cites="song2015decision">(<a href="references.html#ref-song2015decision" role="doc-biblioref">Song and Ying 2015</a>)</span> segments a population into branches forming an inverted tree, comprising a root, internal, and leaf nodes. It’s a non-parametric algorithm, effectively handling large, complex datasets without requiring a complex parametric framework. When combine the population into the spatial analysis, here is an example. LandScan USA<span class="citation" data-cites="bhaduri2007landscan">(<a href="references.html#ref-bhaduri2007landscan" role="doc-biblioref">Bhaduri et al. 2007</a>)</span> offers high-resolution population distribution data essential for socio-environmental research, public health, homeland security, and policy-making. This data supports operational activities, scientific analyses, and studies on population dynamics over time and space. It’s data is pivotal for identifying vulnerable groups like the elderly or low-income communities, guiding targeted policy development. Additionally, it serves emergency management and homeland security by offering detailed population distribution insights, enhancing disaster response and resource planning. Applying classification in these areas accelerates target group identification and reduces budget requirements.</p>
+<p>This practice employs GEE for land classification by first filtering, clipping, and reducing the image, then adding point-based feature collections representing different land types to the satellite map.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="asset/screenshot/week07/points.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Points represent: River (blue), Park (green), Soil (brown), Buildings (grey).</figcaption>
+</figure>
+</div>
+<p>The second step involves using CART for training and classification. After separately classifying soil and buildings, subtract the two images to identify potential unused land areas.</p>
+<pre><code>var classifier_soil = ee.Classifier.smileCart().train(...)
+var classifier_buildings  = ...
+
+var result = classifier_soil.subtract(classifier_buildings)</code></pre>
+<p><img src="asset/screenshot/week07/much_better.png" width="300" height="150" alt="Greenery classification"> <img src="asset/screenshot/week07/Builds_Parks.png" data-fig-align="right" width="300" height="150" alt="Buildings classification"></p>
+<p>The unused land in London appears minimal, indicating a well-developed area.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="asset/screenshot/week07/result.png" class="img-fluid figure-img" width="561"></p>
+<figcaption class="figure-caption">Brown indicates the possible un-used land</figcaption>
+</figure>
+</div>
+</section>
+<section id="reflection" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<p>It is evident that Google Earth Engine (GEE) offers a robust platform for geographical data analysis and land classification. The integration of GEE for categorizing land into specific features such as rivers, parks, soil, and buildings, and its subsequent application for identifying potential unused land in urban areas, as demonstrated in London, showcases the dynamic capabilities of GEE.</p>
+<p>The methodology employed leverages the Classification and Regression Trees (CART) for training and classification purposes, ensuring a detailed, systematic approach to land assessment. The practice of subtracting the classified images of soil and buildings to extract information about unused land areas reflects an innovative approach to urban planning and land management.</p>
+<p>However, the analysis reveals that unused land in London is scarce, underscoring the city’s extensive development. This observation could have significant implications for urban policy and development strategies, as it highlights the limited scope for expansion and the potential need for creative land use planning. It suggests that future urban development may need to focus on vertical expansion or redevelopment of existing areas rather than horizontal sprawl, which is often less sustainable.</p>
+<p>Moreover, the use of GEE for such analyses provides an educational insight into the potential of machine learning and big data in enhancing my understanding of urban landscapes. By using zonal statistics, regional and neighborhood reduction techniques, and regression models, GEE allows for a comprehensive evaluation of land utilization, which is critical for sustainable urban planning.</p>
+<p>The practical provides a learning opportunity to delve deeper into the spatial and spectral intricacies of our world, enabling the development of more informed, data-driven decisions in urban and environmental planning.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-chow2012urban" class="csl-entry" role="listitem">
-Chow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. <span>“Urban Heat Island Research in Phoenix, Arizona: Theoretical Contributions and Policy Applications.”</span> <em>Bulletin of the American Meteorological Society</em> 93 (4): 517–30.
+<div id="ref-bhaduri2007landscan" class="csl-entry" role="listitem">
+Bhaduri, Budhendra, Edward Bright, Phillip Coleman, and Marie L Urban. 2007. <span>“LandScan USA: A High-Resolution Geospatial and Temporal Modeling Approach for Population Distribution and Dynamics.”</span> <em>GeoJournal</em> 69: 103–17.
+</div>
+<div id="ref-jordan2015machine" class="csl-entry" role="listitem">
+Jordan, Michael I, and Tom M Mitchell. 2015. <span>“Machine Learning: Trends, Perspectives, and Prospects.”</span> <em>Science</em> 349 (6245): 255–60.
+</div>
+<div id="ref-li2006spatial" class="csl-entry" role="listitem">
+Li, Xiang, and Christophe Claramunt. 2006. <span>“A Spatial Entropy-Based Decision Tree for Classification of Geographical Information.”</span> <em>Transactions in GIS</em> 10 (3): 451–67.
+</div>
+<div id="ref-song2015decision" class="csl-entry" role="listitem">
+Song, Yan-Yan, and LU Ying. 2015. <span>“Decision Tree Methods: Applications for Classification and Prediction.”</span> <em>Shanghai Archives of Psychiatry</em> 27 (2): 130.
 </div>
 </div>
 </section>
@@ -466,13 +508,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week_4.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Policy Applications</span></span>
+      <a href="./week_6.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">06 Google Earth Engine</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week_6.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Google Earht Engine</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week_8.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08 Classification The Big Questions (Lecture 6 continued) and Accuracy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

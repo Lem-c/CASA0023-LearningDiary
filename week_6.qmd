@@ -1,6 +1,28 @@
-# Google Earht Engine
+# 06 Google Earth Engine
 
 Google Earth is a software that shows a 3D model of the Earth by using pictures from satellites, planes, and GIS (Geographic Information Systems) data on a 3D globe [@tamiminia2020google]. We can use devices to look around this digital world, including cities and landscapes, and they can even add their own information to it. It has images covering many areas of the Earth's surface, including Street View pictures.
+
+### Contents in Google Earth Engine
+
+In Google Earth Engine (GEE), raster data is presented as images with multiple bands, each detailing a specific attribute like reflectance for a given wavelength. Vector data, on the other hand, comprises Features or FeatureCollections, capturing discrete entities such as rivers, roads, or points of interest.
+
+The JavaScript API, via the Code Editor, facilitates interactive data exploration and analysis. Instead of traditional loops, GEE uses mapping functions for iterating over collections like ImageCollection, performing operations on each element.
+
+For another, GEE scales data to a 256x256 pixel grid, selecting the nearest pyramid layer for analysis and employing nearest neighbor for resampling by default.
+
+### Landset image processing
+
+Zonal Statistics involves summarizing image data within specific zones or regions, with users applying
+
+``` javascript
+  .reduceRegion() 
+  // or apply median mosaic
+  .reduce(ee.Reducer.median())
+```
+
+for statistical analysis (mean, median) within areas defined by geometries like polygons, aiding in fields such as agriculture or urban planning. Neighborhood reduction uses .reduceNeighborhood() to aggregate data around each pixel within a designated kernel, enhancing image smoothing and local analysis.
+
+In regression analysis using Google Earth Engine (GEE), the linearFit() function facilitates linear regression on a per-pixel basis across images from multiple sensors, analyzing temporal changes. This least squares method requires a dependent and an independent variable band, typically time, allowing for temporal studies over years or spatial analysis within a specific polygon on a given date.
 
 ## Application
 

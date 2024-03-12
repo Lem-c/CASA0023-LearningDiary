@@ -7,122 +7,150 @@
     "text": "Preface\nThis is a Quarto book.\nClick here to enter 404 not found.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
   },
   {
-    "objectID": "week_1.html#summary",
-    "href": "week_1.html#summary",
-    "title": "2  The origin of all things",
-    "section": "2.1 Summary",
-    "text": "2.1 Summary"
-  },
-  {
-    "objectID": "week_1.html#application",
-    "href": "week_1.html#application",
-    "title": "2  The origin of all things",
-    "section": "2.2 Application",
-    "text": "2.2 Application\n\nTwo paper comparison\nChallenges\n\nLoad the London ward shapefile for masking"
+    "objectID": "week_1.html",
+    "href": "week_1.html",
+    "title": "2  01 The origin of all things",
+    "section": "",
+    "text": "3 Summary:\n\n3.0.1 Remote Sensing\nHigh-resolution remote sensing images, paired with advanced analysis techniques, enable precise and timely monitoring of urban environments.\nPassive sensors detect natural energy, typically sunlight, while active sensors emit their own signals, such as electromagnetic waves, and measure their return. Examples include photographic and infrared sensors as passive; radar and sonar as active.\nThe nature wavelegth can be calculated through:\n\\[\n\\Lambda(\\text{wavelength}) = \\frac{c (\\text{velocity of light})}{v (\\text{frequency})}\n\\]\n\n\n3.0.2 Scatter\nBefore reaching the sensor, energy can be absorbed by surfaces or scattered by atmospheric particles. The sky’s blue color results from blue light’s shorter wavelengths scattering more easily. As the sun’s angle changes, increased distance reduces blue light scattering to our eyes, allowing longer wavelengths like reds and oranges to dominate. This visibility is due to atmospheric molecules scattering light, with other colors being scattered away, leaving primarily orange or red hues visible.\nEnergy on the way to the sensor may be absorbed or scattered by atmospheric particles, explaining the sky’s blueness due to the easier scattering of blue light’s shorter wavelengths. With the sun’s angle shift, the greater distance prevents blue light scattering, making red and orange hues, which have the longest wavelengths, more visible. This phenomenon occurs as the atmosphere scatters light, allowing only orange or red to reach our eyes.\nEnergy heading towards the sensor is either absorbed or atmospherically scattered. The sky appears blue because blue light’s short wavelengths scatter more efficiently. However, as the sun shifts, the increased scattering distance reduces blue visibility, making longer wavelengths like red and orange more apparent. This effect is facilitated by atmospheric scattering, leaving predominantly orange or red light visible.\n\n\n3.0.3 Resolutions\n\nSpatial: Raster cell size ranges from 10cm to several kilometers.\nSpectral: This aspect involves detecting various wavelengths across the electromagnetic spectrum, extending beyond visible light. The color of objects is determined by the wavelengths they reflect, with the rest being absorbed or scattered. Observation limitations arise from wavelengths absorbed by water vapor, ozone, and other gases. Spectral resolution is categorized by the number of detectable bands. Spectral reflectance measurement is not exclusive to remote sensing but can also be performed with spectroradiometers in laboratories or on the field, necessitating calibration against a pure white reference panel.\nRadiometric: Revisit times of sensors vary, with lower resolutions indicating larger pixel sizes. Remote sensing utilizes fluorescence to identify materials and evaluate conditions by analyzing wavelength emissions after radiation exposure.\nTemporal: Different sensors vary in energy sensitivity, with higher resolutions providing greater detail (e.g., 8 bit = 256 values, 4 bit = 16 values).\n\n\n\n\n4 Application\n\nTwo paper comparison\nChallenges\n\nJust follow the steps in practical one by one, let’s do it.\nLoad the London ward shapefile for masking\n\n\n5 Reflection\nWeek one is quite interesting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.\nWhen I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this Figure 5.1.\n\n\n\nFigure 5.1: snap_rgb_loadded"
   },
   {
     "objectID": "week_2.html",
     "href": "week_2.html",
-    "title": "3  Try the presentation",
+    "title": "3  02 Try the presentation",
     "section": "",
-    "text": "Xaringan Pre\n\n\n\n\n\n\n\n\n\n\nSlides how it be used in study."
+    "text": "Xaringan Pre"
   },
   {
-    "objectID": "week_3.html#introduction",
-    "href": "week_3.html#introduction",
-    "title": "4  Data Fusion: Principles and Methods",
-    "section": "4.1 Introduction",
-    "text": "4.1 Introduction\nData Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation."
+    "objectID": "week_3.html",
+    "href": "week_3.html",
+    "title": "4  03 Data Fusion: Principles and Methods",
+    "section": "",
+    "text": "5 Summary\nData Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation.\nFirstly, the two areas chose as follow:\nAfter merge\nGet NDVI\nTexture\nPCA analysis"
   },
   {
     "objectID": "week_3.html#principles-and-process-of-data-fusion",
     "href": "week_3.html#principles-and-process-of-data-fusion",
-    "title": "4  Data Fusion: Principles and Methods",
-    "section": "4.2 Principles and Process of Data Fusion",
-    "text": "4.2 Principles and Process of Data Fusion\nData fusion in remote sensing images typically follows a two-step process:\n\n4.2.1 Preprocessing\nInvolves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.\n\n\n4.2.2 Data Fusion\nSelecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation."
+    "title": "4  03 Data Fusion: Principles and Methods",
+    "section": "5.1 Principles and Process of Data Fusion",
+    "text": "5.1 Principles and Process of Data Fusion\nData fusion in remote sensing images typically follows a two-step process:\n\n5.1.1 1. Preprocessing\nInvolves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.\n\n\n5.1.2 2. Data Fusion\nSelecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation."
   },
   {
     "objectID": "week_3.html#classification-and-methods-of-data-fusion",
     "href": "week_3.html#classification-and-methods-of-data-fusion",
-    "title": "4  Data Fusion: Principles and Methods",
-    "section": "4.3 Classification and Methods of Data Fusion",
-    "text": "4.3 Classification and Methods of Data Fusion\nData fusion methods for remote sensing images are categorized into:\n\nPixel-level Fusion: A low-level fusion maintaining high accuracy but with limitations in efficiency and analysis capability.\nFeature-level Fusion: A medium-level fusion focusing on extracting and integrating features from different sources.\nDecision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.\n\nVarious data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.\n\n4.3.1 OSM"
-  },
-  {
-    "objectID": "week_3.html#application",
-    "href": "week_3.html#application",
-    "title": "4  Data Fusion: Principles and Methods",
-    "section": "4.4 Application",
-    "text": "4.4 Application\nFirstly, the two areas chose as follow:\n\nAfter merge\n\nGet NDVI\n\nTexture\n\nPCA analysis"
+    "title": "4  03 Data Fusion: Principles and Methods",
+    "section": "5.2 Classification and Methods of Data Fusion",
+    "text": "5.2 Classification and Methods of Data Fusion\nData fusion methods for remote sensing images are categorized into:\n\nPixel-level Fusion: A low-level fusion maintaining high accuracy but with limitations in efficiency and analysis capability.\nFeature-level Fusion: A medium-level fusion focusing on extracting and integrating features from different sources.\nDecision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.\n\nVarious data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.\n\n5.2.1 OSM"
   },
   {
     "objectID": "week_3.html#challenges-and-future-trends",
     "href": "week_3.html#challenges-and-future-trends",
-    "title": "4  Data Fusion: Principles and Methods",
-    "section": "4.5 Challenges and Future Trends",
-    "text": "4.5 Challenges and Future Trends\nKey challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities."
+    "title": "4  03 Data Fusion: Principles and Methods",
+    "section": "6.1 Challenges and Future Trends",
+    "text": "6.1 Challenges and Future Trends\nKey challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities."
+  },
+  {
+    "objectID": "week_4.html",
+    "href": "week_4.html",
+    "title": "5  04 Policy Applications",
+    "section": "",
+    "text": "6 Reading Week: Temperature\nHistory temperature in UK"
   },
   {
     "objectID": "week_4.html#data-from-sensors",
     "href": "week_4.html#data-from-sensors",
-    "title": "5  Policy Applications",
+    "title": "5  04 Policy Applications",
     "section": "5.1 Data from sensors",
     "text": "5.1 Data from sensors\n\nIdentify what kind of data to get full use of it"
   },
   {
     "objectID": "week_4.html#land-use-and-land-cover-lulc",
     "href": "week_4.html#land-use-and-land-cover-lulc",
-    "title": "5  Policy Applications",
+    "title": "5  04 Policy Applications",
     "section": "5.2 Land use and Land cover (LULC)",
     "text": "5.2 Land use and Land cover (LULC)\n\nAccess to green space\n\nshortest distance/…"
   },
   {
     "objectID": "week_4.html#synthetic-aperture-radar-sar",
     "href": "week_4.html#synthetic-aperture-radar-sar",
-    "title": "5  Policy Applications",
+    "title": "5  04 Policy Applications",
     "section": "5.3 Synthetic Aperture Radar (SAR)",
     "text": "5.3 Synthetic Aperture Radar (SAR)\n\nActive sensors\nReflection with surface texture data\nSee through weather and clouds\n\n\n5.3.0.1 SAR polarization and background\nElectromagnetic spectrum (EMR)\nA SAR signal has both amplitude (backscatter) and phase data.\n\nWindy and CALM: water move\n\n\n\n5.3.0.2 More SAR\n\nSAR Floods\nDrawback? (Me on SAR)\nInterferometry Synthetic Aperture Radar (InSAR)"
   },
   {
     "objectID": "week_4.html#application",
     "href": "week_4.html#application",
-    "title": "5  Policy Applications",
+    "title": "5  04 Policy Applications",
     "section": "5.4 Application",
-    "text": "5.4 Application\n\n5.4.1 London Plan\n\nPolicy SI 4 Managing heat risk (Abercrombie 1944) p354\nUrban development proposals must mitigate the urban heat island effect through thoughtful design, materials, and green infrastructure. Major developments need an energy strategy to reduce internal overheating and air conditioning reliance, following a cooling hierarchy that prioritizes:\n\n\nReducing heat entry via orientation, shading, and insulation.\nMinimizing internal heat through efficient design.\nManaging internal heat with thermal mass and high ceilings.\nEnabling passive ventilation, followed by mechanical ventilation.\nConsidering active cooling systems only as a last resort.\n\nClimate change has heightened London’s temperature, exacerbating the urban heat island effect and health risks during extreme heat. New developments must address citywide and building-specific overheating. Strategies include avoiding excessive glazing and promoting passive ventilation. Air conditioning, which contributes to urban heat, should be minimized. The Chartered Institution of Building Services Engineers (CIBSE) provides guidelines for addressing overheating in new and refurbished buildings, ensuring designs are future-proof against climate change.\n\n5.4.1.1 Landsat pre-processing steps\nIncluded: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization”\n\n\n5.4.1.2 Decision trees\n\n\n\n5.4.2 Case study\n\nForest fires\n\n\n\n\n\nAbercrombie, Patrick. 1944. Greater London Plan. HM Stationery Office."
+    "text": "5.4 Application\n\n5.4.1 London Plan\n\nPolicy SI 4 Managing heat risk (Abercrombie 1944) p354\nUrban development proposals must mitigate the urban heat island effect through thoughtful design, materials, and green infrastructure. Major developments need an energy strategy to reduce internal overheating and air conditioning reliance, following a cooling hierarchy that prioritizes:\n\n\nReducing heat entry via orientation, shading, and insulation.\nMinimizing internal heat through efficient design.\nManaging internal heat with thermal mass and high ceilings.\nEnabling passive ventilation, followed by mechanical ventilation.\nConsidering active cooling systems only as a last resort.\n\nClimate change has heightened London’s temperature, exacerbating the urban heat island effect and health risks during extreme heat. New developments must address citywide and building-specific overheating. Strategies include avoiding excessive glazing and promoting passive ventilation. Air conditioning, which contributes to urban heat, should be minimized. The Chartered Institution of Building Services Engineers (CIBSE) provides guidelines for addressing overheating in new and refurbished buildings, ensuring designs are future-proof against climate change.\n\n5.4.1.1 Landsat pre-processing steps\nIncluded: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization”\n\n\n5.4.1.2 Decision trees\n\n\n\n5.4.2 Case study\n\nForest fires"
   },
   {
-    "objectID": "week_5.html#urban-heat-island",
-    "href": "week_5.html#urban-heat-island",
-    "title": "6  Reading Week: Temperature",
+    "objectID": "week_4.html#urban-heat-island",
+    "href": "week_4.html#urban-heat-island",
+    "title": "5  04 Policy Applications",
     "section": "6.1 Urban heat island",
     "text": "6.1 Urban heat island\n\nsocial and environmental cost\nGDP lost\n\nWhy\n\n\n“satellite-derived surface temperature shows very weak relationships with air temperature” [Chakraborty et al., 2022]"
   },
   {
-    "objectID": "week_5.html#presentation-paths",
-    "href": "week_5.html#presentation-paths",
-    "title": "6  Reading Week: Temperature",
+    "objectID": "week_4.html#presentation-paths",
+    "href": "week_4.html#presentation-paths",
+    "title": "5  04 Policy Applications",
     "section": "6.2 Presentation paths",
-    "text": "6.2 Presentation paths\n\nLow Traffic Neighbourhoods: what, why and where?\nUHI in phoenix (Chow, Brennan, and Brazel 2012)\nhttps://zhuanlan.zhihu.com/p/419122903\n\n\n\n\n\nChow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. “Urban Heat Island Research in Phoenix, Arizona: Theoretical Contributions and Policy Applications.” Bulletin of the American Meteorological Society 93 (4): 517–30."
+    "text": "6.2 Presentation paths\n\nLow Traffic Neighbourhoods: what, why and where?\nUHI in phoenix (Chow, Brennan, and Brazel 2012)\nhttps://zhuanlan.zhihu.com/p/419122903\n\n\n\n\n\nAbercrombie, Patrick. 1944. Greater London Plan. HM Stationery Office.\n\n\nChow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. “Urban Heat Island Research in Phoenix, Arizona: Theoretical Contributions and Policy Applications.” Bulletin of the American Meteorological Society 93 (4): 517–30."
   },
   {
     "objectID": "week_6.html#application",
     "href": "week_6.html#application",
-    "title": "7  Google Earht Engine",
-    "section": "7.1 Application",
-    "text": "7.1 Application\n\n7.1.1 Google Earth Engine for geo-big data applications and ethics concern\nThe study of Haifa et. al (Tamiminia et al. 2020) uses Google Earth Engine to track and study changes in land use within the Brazilian Amazon rainforest. This project relies on satellite images from Landsat and Sentinel-2 to observe deforestation and the deterioration of the forest. To categorize different types of land and notice changes over periods, advanced machine learning techniques, including Random Forest and Support Vector Machines can be used. The goal is to provide precise, current data on how the land is beingndefined used, which is crucial for keeping an eye on the environment and helping conservation efforts.\nStephen R.J. Sheppard* and Petr Cizek (Sheppard and Cizek 2009) explores the ethical implications of using Google Earth’s visualization capabilities. It delves into the risks and benefits associated with the participatory use of virtual globes by experts and laypeople. This paper (Sheppard and Cizek 2009) emphasizes the need for ethical frameworks and principles to guide the use of environmental visualisation techniques in the context of public policy and decision-making.\nThis contrast (Tamiminia et al. 2020; Sheppard and Cizek 2009)suggests a complementary relationship where ethical guidelines could enhance the responsible use of technologies like GEE in scientific and policy-making contexts.\n\n\n7.1.2 Coding with GEE\n\nUsing GEE to see the NDVI performance in London Camden Town.\n\nUpload and filter the target area (Camden Town with Primrose Hill) by ‘GSS_CODE’\nvar London = ee.FeatureCollection(\"projects/rs-prj-2309/assets/London_Ward\")\n  .filter('GSS_CODE == \"E05000130\"');\nThen load image collection and apply simple image processing\n\n... = ee.ImageCollection(*)\n  .filterDate('2023-04-03', '2023-10-03')\n  .filterBounds(London); \n...\n*.reduce(ee.Reducer.median());\nFinally calculate the value and add the layer to the map\n\n\n\nNDVI view in camden"
+    "title": "6  06 Google Earth Engine",
+    "section": "6.1 Application",
+    "text": "6.1 Application\n\n6.1.1 Google Earth Engine for geo-big data applications and ethics concern\nThe study of Haifa et. al (Tamiminia et al. 2020) uses Google Earth Engine to track and study changes in land use within the Brazilian Amazon rainforest. This project relies on satellite images from Landsat and Sentinel-2 to observe deforestation and the deterioration of the forest. To categorize different types of land and notice changes over periods, advanced machine learning techniques, including Random Forest and Support Vector Machines can be used. The goal is to provide precise, current data on how the land is beingndefined used, which is crucial for keeping an eye on the environment and helping conservation efforts.\nStephen R.J. Sheppard* and Petr Cizek (Sheppard and Cizek 2009) explores the ethical implications of using Google Earth’s visualization capabilities. It delves into the risks and benefits associated with the participatory use of virtual globes by experts and laypeople. This paper (Sheppard and Cizek 2009) emphasizes the need for ethical frameworks and principles to guide the use of environmental visualisation techniques in the context of public policy and decision-making.\nThis contrast (Tamiminia et al. 2020; Sheppard and Cizek 2009)suggests a complementary relationship where ethical guidelines could enhance the responsible use of technologies like GEE in scientific and policy-making contexts.\n\n\n6.1.2 Coding with GEE\n\nUsing GEE to see the NDVI performance in London Camden Town.\n\nUpload and filter the target area (Camden Town with Primrose Hill) by ‘GSS_CODE’\nvar London = ee.FeatureCollection(\"projects/rs-prj-2309/assets/London_Ward\")\n  .filter('GSS_CODE == \"E05000130\"');\nThen load image collection and apply simple image processing\n\n... = ee.ImageCollection(*)\n  .filterDate('2023-04-03', '2023-10-03')\n  .filterBounds(London); \n...\n*.reduce(ee.Reducer.median());\nFinally calculate the value and add the layer to the map\n\n\n\nNDVI view in camden"
   },
   {
     "objectID": "week_6.html#refelction",
     "href": "week_6.html#refelction",
-    "title": "7  Google Earht Engine",
-    "section": "7.2 Refelction",
-    "text": "7.2 Refelction\nAfter working through the given exercises, it is easily understood that, yep, Google Earth Engine (GEE) is indeed powerful for exploring spatial patterns and really great for going deeper into your datasets. The entire process ranged from file uploads of the shapefiles for Delhi and London to the filtering of data inside these shapefiles. This was represented graphically in a map through every step that was clear in its display, both editable and showed the differences in their layers. This feature shows the ability of GEE in the handling of complicated spatial data in an interactive and easy manner.\nHowever, it is worth noting that there are downsides to the platform, especially on stability issues. Sometimes the service can be termed as unreliable, especially when uploading the shapefiles, which can prove quite frustrating. Except for this sometimes observed drawback, the utility and power of GEE for facilitation in studies concerning spatial analysis are enormous. It is a very rich set of tools that Google Earth Engine presents to every person who wants to make his first forays into spatial data analysis, with just a few issues about server stability.\n\n\n\n\nSheppard, Stephen RJ, and Petr Cizek. 2009. “The Ethics of Google Earth: Crossing Thresholds from Spatial Data to Landscape Visualisation.” Journal of Environmental Management 90 (6): 2102–17.\n\n\nTamiminia, Haifa, Bahram Salehi, Masoud Mahdianpari, Lindi Quackenbush, Sarina Adeli, and Brian Brisco. 2020. “Google Earth Engine for Geo-Big Data Applications: A Meta-Analysis and Systematic Review.” ISPRS Journal of Photogrammetry and Remote Sensing 164: 152–70."
+    "title": "6  06 Google Earth Engine",
+    "section": "6.2 Refelction",
+    "text": "6.2 Refelction\nAfter working through the given exercises, it is easily understood that, yep, Google Earth Engine (GEE) is indeed powerful for exploring spatial patterns and really great for going deeper into your datasets. The entire process ranged from file uploads of the shapefiles for Delhi and London to the filtering of data inside these shapefiles. This was represented graphically in a map through every step that was clear in its display, both editable and showed the differences in their layers. This feature shows the ability of GEE in the handling of complicated spatial data in an interactive and easy manner.\nHowever, it is worth noting that there are downsides to the platform, especially on stability issues. Sometimes the service can be termed as unreliable, especially when uploading the shapefiles, which can prove quite frustrating. Except for this sometimes observed drawback, the utility and power of GEE for facilitation in studies concerning spatial analysis are enormous. It is a very rich set of tools that Google Earth Engine presents to every person who wants to make his first forays into spatial data analysis, with just a few issues about server stability.\n\n\n\n\nSheppard, Stephen RJ, and Petr Cizek. 2009. “The Ethics of Google Earth: Crossing Thresholds from Spatial Data to Landscape Visualisation.” Journal of Environmental Management 90 (6): 2102–17.\n\n\nTamiminia, Haifa, Bahram Salehi, Masoud Mahdianpari, Lindi Quackenbush, Sarina Adeli, and Brian Brisco. 2020. “Google Earth Engine for Geo-Big Data Applications: A Meta-Analysis and Systematic Review.” ISPRS Journal of Photogrammetry and Remote Sensing 164: 152–70."
+  },
+  {
+    "objectID": "week_7.html#algorithms",
+    "href": "week_7.html#algorithms",
+    "title": "7  07 Classification I",
+    "section": "7.1 Algorithms",
+    "text": "7.1 Algorithms\nAmongst many classification algorithms, decision trees have proven to be efficient algorithms for classification of large datasets. A decision tree is a classification algorithm that automatically derives a hierarchy of partition rules with respect to a target attribute of a large dataset (Li and Claramunt 2006). Forest is build from single tree. Classification aims to Classify data into discrete categories based on certain features.\n\n\n\nA basic decision tree model with a binary target variable Y (0 or 1) and two continuous variables, x1 and x2 (0 to 1) (Song and Ying 2015).\n\n\nThree types of nodes exist: The root node, or decision node, which divides records into exclusive subsets, another internal nodes, or chance nodes, indicating available choices and linking parent and child nodes, and the leaf nodes, or end nodes, signifying the outcome of decisions. To avoid overfit, decision trees require stopping rules Li and Claramunt (2006), such as minimum records in a leaf or node before splitting, and maximum leaf depth from the root.\nRandom Forests improve decision tree accuracy by generating multiple trees through random samples and feature subsets, thus enhancing diversity and reducing overfitting. This method involves creating a forest where each tree contributes to the final prediction through majority voting, while unselected data offers an unbiased error estimate. The ensemble approach allows trees to fully grow without pruning, and the number of features evaluated at each split is often the square root of the total features, further ensuring robust predictions.\nSupport Vector Machine (SVM) is a machine learning tool for categorizing data by drawing an optimal separating line (or higher-dimensional plane) to distinguish different data points. It aims for the widest margin between the nearest points of any category, known as support vectors. SVM’s effectiveness is fine-tuned using two parameters: C, which controls the margin’s strictness and focus on difficult points, and Gamma, which dictates the influence of each data point, with higher values emphasizing closer points. For data not linearly separable, SVM employs the kernel trick to manipulate the data into a separable form."
+  },
+  {
+    "objectID": "week_7.html#application",
+    "href": "week_7.html#application",
+    "title": "7  07 Classification I",
+    "section": "7.2 Application",
+    "text": "7.2 Application\nThe method provided by Yan-yan SONG and Ying LU(Song and Ying 2015) segments a population into branches forming an inverted tree, comprising a root, internal, and leaf nodes. It’s a non-parametric algorithm, effectively handling large, complex datasets without requiring a complex parametric framework. When combine the population into the spatial analysis, here is an example. LandScan USA(Bhaduri et al. 2007) offers high-resolution population distribution data essential for socio-environmental research, public health, homeland security, and policy-making. This data supports operational activities, scientific analyses, and studies on population dynamics over time and space. It’s data is pivotal for identifying vulnerable groups like the elderly or low-income communities, guiding targeted policy development. Additionally, it serves emergency management and homeland security by offering detailed population distribution insights, enhancing disaster response and resource planning. Applying classification in these areas accelerates target group identification and reduces budget requirements.\nThis practice employs GEE for land classification by first filtering, clipping, and reducing the image, then adding point-based feature collections representing different land types to the satellite map.\n\n\n\nPoints represent: River (blue), Park (green), Soil (brown), Buildings (grey).\n\n\nThe second step involves using CART for training and classification. After separately classifying soil and buildings, subtract the two images to identify potential unused land areas.\nvar classifier_soil = ee.Classifier.smileCart().train(...)\nvar classifier_buildings  = ...\n\nvar result = classifier_soil.subtract(classifier_buildings)\n \nThe unused land in London appears minimal, indicating a well-developed area.\n\n\n\nBrown indicates the possible un-used land"
+  },
+  {
+    "objectID": "week_7.html#reflection",
+    "href": "week_7.html#reflection",
+    "title": "7  07 Classification I",
+    "section": "7.3 Reflection",
+    "text": "7.3 Reflection\nIt is evident that Google Earth Engine (GEE) offers a robust platform for geographical data analysis and land classification. The integration of GEE for categorizing land into specific features such as rivers, parks, soil, and buildings, and its subsequent application for identifying potential unused land in urban areas, as demonstrated in London, showcases the dynamic capabilities of GEE.\nThe methodology employed leverages the Classification and Regression Trees (CART) for training and classification purposes, ensuring a detailed, systematic approach to land assessment. The practice of subtracting the classified images of soil and buildings to extract information about unused land areas reflects an innovative approach to urban planning and land management.\nHowever, the analysis reveals that unused land in London is scarce, underscoring the city’s extensive development. This observation could have significant implications for urban policy and development strategies, as it highlights the limited scope for expansion and the potential need for creative land use planning. It suggests that future urban development may need to focus on vertical expansion or redevelopment of existing areas rather than horizontal sprawl, which is often less sustainable.\nMoreover, the use of GEE for such analyses provides an educational insight into the potential of machine learning and big data in enhancing my understanding of urban landscapes. By using zonal statistics, regional and neighborhood reduction techniques, and regression models, GEE allows for a comprehensive evaluation of land utilization, which is critical for sustainable urban planning.\nThe practical provides a learning opportunity to delve deeper into the spatial and spectral intricacies of our world, enabling the development of more informed, data-driven decisions in urban and environmental planning.\n\n\n\n\nBhaduri, Budhendra, Edward Bright, Phillip Coleman, and Marie L Urban. 2007. “LandScan USA: A High-Resolution Geospatial and Temporal Modeling Approach for Population Distribution and Dynamics.” GeoJournal 69: 103–17.\n\n\nJordan, Michael I, and Tom M Mitchell. 2015. “Machine Learning: Trends, Perspectives, and Prospects.” Science 349 (6245): 255–60.\n\n\nLi, Xiang, and Christophe Claramunt. 2006. “A Spatial Entropy-Based Decision Tree for Classification of Geographical Information.” Transactions in GIS 10 (3): 451–67.\n\n\nSong, Yan-Yan, and LU Ying. 2015. “Decision Tree Methods: Applications for Classification and Prediction.” Shanghai Archives of Psychiatry 27 (2): 130."
+  },
+  {
+    "objectID": "week_8.html#summary",
+    "href": "week_8.html#summary",
+    "title": "8  08 Classification The Big Questions (Lecture 6 continued) and Accuracy",
+    "section": "8.1 Summary",
+    "text": "8.1 Summary\n\nObject-Based Image Analysis (OBIA) simplifies imagery into significant objects by merging adjacent pixels with similar texture and color, focusing on object shapes to form “superpixels” through either similarity or difference.\nSimple Linear Iterative Clustering (SLIC) Algorithm: This widely-used technique creates superpixels via Simple Linear Iterative Clustering. It initializes by distributing points across an image, then refines their placement through several iterations based on spatial distance and color difference.\nCompactness and Transformation: In SLIC, compactness determines superpixel shape—high values produce squarer shapes by prioritizing space, whereas low values favor color similarity, resulting in irregular shapes. It employs the LAB color space for processing, enhancing color perception accuracy by distinguishing luminance from color channels.\n\n\n8.1.1 Sub pixel analysis\n\nEnd Members: These are pure spectral signatures in remote sensing that represent specific ground materials or objects, like water, vegetation, and soil.\nPixel Modeling: This aims to ascertain the composition of these end members within a single pixel’s image.\nCalculation Method: The equation’s left side depicts the pixel’s spectral signature across bands 3 and 4, under the constraint that end member fractions sum to one. The matrix in the center contains the end members’ spectral signatures for bands 3 and 4, plus a row of ones for the sum-to-one rule. The right side aims to determine each end member’s fraction within the pixel. Fractions are computed by creating a new matrix where the left side is the fraction matrix, revealing the proportions of various end members.\n\n\n\n8.1.2 Assess accuracy\nIn machine learning, accuracy assessment measures the congruence between a model’s predictions and actual outcomes, encompassing True Positive (TP) where the model accurately predicts the positive class, False Positive (FP) where it mistakenly predicts the positive class, True Negative (TN) where it accurately predicts the negative class, and False Negative (FN) where it incorrectly predicts the negative class.\nThe assessment includes producer’s accuracy \\[\\frac{TP}{TP+FN}\\] user’s accuracy \\[\\frac{TP}{TP+FP}\\] overall accuracy \\[\\frac{TP+TN}{TP+TN+FP+FN}\\] to gauge model performance comprehensively.\n\n\n8.1.3 Cross validation.\nIn geographic data analysis, data is typically divided into training and testing segments to evaluate model performance. Waldo Tobler’s (Geography 2024) “First Law of Geography” posits that closer objects are more similar than distant ones, suggesting a potential overlap issue where training data too close to the test data might inadvertently ‘leak’ information. To mitigate this, cross-validation, which partitions data into several “folds,” employs k-means clustering. This method clusters data points based on their proximity, ensuring that the training and testing sets are sufficiently separated to prevent overlap and maintain the integrity of the evaluation process."
+  },
+  {
+    "objectID": "week_8.html#application",
+    "href": "week_8.html#application",
+    "title": "8  08 Classification The Big Questions (Lecture 6 continued) and Accuracy",
+    "section": "8.2 Application",
+    "text": "8.2 Application\nFollowing is the steps to classify the possible un-used land in London using Google earth engine.\n\n\n\n\nGeography, GIS. 2024. “Tobler’s First Law of Geography.” 2024. https://gisgeography.com/tobler-first-law-of-geography/."
   },
   {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Abercrombie, Patrick. 1944. Greater London Plan. HM Stationery\nOffice.\n\n\nChow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. “Urban\nHeat Island Research in Phoenix, Arizona: Theoretical Contributions and\nPolicy Applications.” Bulletin of the American Meteorological\nSociety 93 (4): 517–30.\n\n\nSheppard, Stephen RJ, and Petr Cizek. 2009. “The Ethics of Google\nEarth: Crossing Thresholds from Spatial Data to Landscape\nVisualisation.” Journal of Environmental Management 90\n(6): 2102–17.\n\n\nTamiminia, Haifa, Bahram Salehi, Masoud Mahdianpari, Lindi Quackenbush,\nSarina Adeli, and Brian Brisco. 2020. “Google Earth Engine for\nGeo-Big Data Applications: A Meta-Analysis and Systematic\nReview.” ISPRS Journal of Photogrammetry and Remote\nSensing 164: 152–70."
+    "text": "Abercrombie, Patrick. 1944. Greater London Plan. HM Stationery\nOffice.\n\n\nBhaduri, Budhendra, Edward Bright, Phillip Coleman, and Marie L Urban.\n2007. “LandScan USA: A High-Resolution Geospatial and Temporal\nModeling Approach for Population Distribution and Dynamics.”\nGeoJournal 69: 103–17.\n\n\nChow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. “Urban\nHeat Island Research in Phoenix, Arizona: Theoretical Contributions and\nPolicy Applications.” Bulletin of the American Meteorological\nSociety 93 (4): 517–30.\n\n\nGeography, GIS. 2024. “Tobler’s First Law of Geography.”\n2024. https://gisgeography.com/tobler-first-law-of-geography/.\n\n\nJordan, Michael I, and Tom M Mitchell. 2015. “Machine Learning:\nTrends, Perspectives, and Prospects.” Science 349\n(6245): 255–60.\n\n\nLi, Xiang, and Christophe Claramunt. 2006. “A Spatial\nEntropy-Based Decision Tree for Classification of Geographical\nInformation.” Transactions in GIS 10 (3): 451–67.\n\n\nSheppard, Stephen RJ, and Petr Cizek. 2009. “The Ethics of Google\nEarth: Crossing Thresholds from Spatial Data to Landscape\nVisualisation.” Journal of Environmental Management 90\n(6): 2102–17.\n\n\nSong, Yan-Yan, and LU Ying. 2015. “Decision Tree Methods:\nApplications for Classification and Prediction.” Shanghai\nArchives of Psychiatry 27 (2): 130.\n\n\nTamiminia, Haifa, Bahram Salehi, Masoud Mahdianpari, Lindi Quackenbush,\nSarina Adeli, and Brian Brisco. 2020. “Google Earth Engine for\nGeo-Big Data Applications: A Meta-Analysis and Systematic\nReview.” ISPRS Journal of Photogrammetry and Remote\nSensing 164: 152–70."
   }
 ]

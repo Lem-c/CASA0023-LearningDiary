@@ -1,11 +1,9 @@
-# Try the presentation {#sec-week02}
+# 02 Try the presentation {#sec-week02}
 
-- Xaringan Pre
+-   Xaringan Pre
 
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
   url = "XaringanPresentation/index.html",
   ratio = "16:9")
 ```
-
-- Slides how it be used in study.

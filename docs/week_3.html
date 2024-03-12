@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Remotely sensing learning diary - 4&nbsp; Data Fusion: Principles and Methods</title>
+<title>Remotely sensing learning diary - 4&nbsp; 03 Data Fusion: Principles and Methods</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_3.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_3.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 Data Fusion: Principles and Methods</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -109,37 +109,43 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The origin of all things</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 The origin of all things</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Try the presentation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 Try the presentation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 Data Fusion: Principles and Methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Policy Applications</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./week_5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reading Week: Temperature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">04 Policy Applications</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Google Earht Engine</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">06 Google Earth Engine</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">07 Classification I</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08 Classification The Big Questions (Lecture 6 continued) and Accuracy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -158,18 +164,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">4.1</span> Introduction</a></li>
-  <li><a href="#principles-and-process-of-data-fusion" id="toc-principles-and-process-of-data-fusion" class="nav-link" data-scroll-target="#principles-and-process-of-data-fusion"><span class="header-section-number">4.2</span> Principles and Process of Data Fusion</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#preprocessing" id="toc-preprocessing" class="nav-link" data-scroll-target="#preprocessing"><span class="header-section-number">4.2.1</span> Preprocessing</a></li>
-  <li><a href="#data-fusion" id="toc-data-fusion" class="nav-link" data-scroll-target="#data-fusion"><span class="header-section-number">4.2.2</span> Data Fusion</a></li>
-  </ul></li>
-  <li><a href="#classification-and-methods-of-data-fusion" id="toc-classification-and-methods-of-data-fusion" class="nav-link" data-scroll-target="#classification-and-methods-of-data-fusion"><span class="header-section-number">4.3</span> Classification and Methods of Data Fusion</a>
+  <li><a href="#principles-and-process-of-data-fusion" id="toc-principles-and-process-of-data-fusion" class="nav-link" data-scroll-target="#principles-and-process-of-data-fusion"><span class="header-section-number">5.1</span> Principles and Process of Data Fusion</a>
   <ul class="collapse">
-  <li><a href="#osm" id="toc-osm" class="nav-link" data-scroll-target="#osm"><span class="header-section-number">4.3.1</span> OSM</a></li>
+  <li><a href="#preprocessing" id="toc-preprocessing" class="nav-link" data-scroll-target="#preprocessing"><span class="header-section-number">5.1.1</span> 1. Preprocessing</a></li>
+  <li><a href="#data-fusion" id="toc-data-fusion" class="nav-link" data-scroll-target="#data-fusion"><span class="header-section-number">5.1.2</span> 2. Data Fusion</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4.4</span> Application</a></li>
-  <li><a href="#challenges-and-future-trends" id="toc-challenges-and-future-trends" class="nav-link" data-scroll-target="#challenges-and-future-trends"><span class="header-section-number">4.5</span> Challenges and Future Trends</a></li>
+  <li><a href="#classification-and-methods-of-data-fusion" id="toc-classification-and-methods-of-data-fusion" class="nav-link" data-scroll-target="#classification-and-methods-of-data-fusion"><span class="header-section-number">5.2</span> Classification and Methods of Data Fusion</a>
+  <ul class="collapse">
+  <li><a href="#osm" id="toc-osm" class="nav-link" data-scroll-target="#osm"><span class="header-section-number">5.2.1</span> OSM</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6</span> Application</a>
+  <ul class="collapse">
+  <li><a href="#challenges-and-future-trends" id="toc-challenges-and-future-trends" class="nav-link" data-scroll-target="#challenges-and-future-trends"><span class="header-section-number">6.1</span> Challenges and Future Trends</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -178,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 Data Fusion: Principles and Methods</span></h1>
 </div>
 
 
@@ -193,24 +204,23 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="introduction" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.1</span> Introduction</h2>
+<section id="summary" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Summary</h1>
 <p>Data Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation.</p>
-</section>
-<section id="principles-and-process-of-data-fusion" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="principles-and-process-of-data-fusion"><span class="header-section-number">4.2</span> Principles and Process of Data Fusion</h2>
+<section id="principles-and-process-of-data-fusion" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="principles-and-process-of-data-fusion"><span class="header-section-number">5.1</span> Principles and Process of Data Fusion</h2>
 <p>Data fusion in remote sensing images typically follows a two-step process:</p>
-<section id="preprocessing" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="preprocessing"><span class="header-section-number">4.2.1</span> Preprocessing</h3>
+<section id="preprocessing" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="preprocessing"><span class="header-section-number">5.1.1</span> 1. Preprocessing</h3>
 <p>Involves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.</p>
 </section>
-<section id="data-fusion" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="data-fusion"><span class="header-section-number">4.2.2</span> Data Fusion</h3>
+<section id="data-fusion" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="data-fusion"><span class="header-section-number">5.1.2</span> 2. Data Fusion</h3>
 <p>Selecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation.</p>
 </section>
 </section>
-<section id="classification-and-methods-of-data-fusion" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="classification-and-methods-of-data-fusion"><span class="header-section-number">4.3</span> Classification and Methods of Data Fusion</h2>
+<section id="classification-and-methods-of-data-fusion" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="classification-and-methods-of-data-fusion"><span class="header-section-number">5.2</span> Classification and Methods of Data Fusion</h2>
 <p>Data fusion methods for remote sensing images are categorized into:</p>
 <ul>
 <li><p>Pixel-level Fusion: A low-level fusion maintaining high accuracy but with limitations in efficiency and analysis capability.</p></li>
@@ -218,12 +228,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Decision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.</p></li>
 </ul>
 <p>Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.</p>
-<section id="osm" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="osm"><span class="header-section-number">4.3.1</span> OSM</h3>
+<section id="osm" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="osm"><span class="header-section-number">5.2.1</span> OSM</h3>
 </section>
 </section>
-<section id="application" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="application"><span class="header-section-number">4.4</span> Application</h2>
+</section>
+<section id="application" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Application</h1>
 <p>Firstly, the two areas chose as follow:</p>
 <p><img src="asset/screenshot/week003/selected_texture_org.png" width="500" height="400"></p>
 <p>After merge</p>
@@ -234,11 +245,14 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="asset/image/week03/clip_texture.png" class="img-fluid"></p>
 <p>PCA analysis</p>
 <p><img src="asset/image/week03/clip_PCA.png" class="img-fluid"></p>
-</section>
-<section id="challenges-and-future-trends" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="challenges-and-future-trends"><span class="header-section-number">4.5</span> Challenges and Future Trends</h2>
+<section id="challenges-and-future-trends" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="challenges-and-future-trends"><span class="header-section-number">6.1</span> Challenges and Future Trends</h2>
 <p>Key challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities.</p>
 <hr>
+</section>
+</section>
+<section id="reflection" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Reflection</h1>
 
 
 </section>
@@ -480,12 +494,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week_2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Try the presentation</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 Try the presentation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week_4.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Policy Applications</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">04 Policy Applications</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

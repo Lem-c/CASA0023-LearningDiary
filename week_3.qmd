@@ -1,6 +1,6 @@
-# Data Fusion: Principles and Methods
+# 03 Data Fusion: Principles and Methods
 
-## Introduction
+# Summary
 
 Data Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation.
 
@@ -8,11 +8,11 @@ Data Fusion, originally used in military domains, is now a critical part of vari
 
 Data fusion in remote sensing images typically follows a two-step process:
 
-### Preprocessing
+### 1. Preprocessing
 
 Involves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.
 
-### Data Fusion
+### 2. Data Fusion
 
 Selecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation.
 
@@ -30,7 +30,7 @@ Various data fusion methods include algebraic methods, image regression, princip
 
 ### OSM
 
-## Application
+# Application
 
 Firstly, the two areas chose as follow:
 
@@ -57,3 +57,5 @@ PCA analysis
 Key challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities.
 
 ------------------------------------------------------------------------
+
+# Reflection

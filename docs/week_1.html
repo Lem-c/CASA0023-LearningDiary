@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Remotely sensing learning diary - 2&nbsp; The origin of all things</title>
+<title>Remotely sensing learning diary - 2&nbsp; 01 The origin of all things</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,6 +62,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="index.css">
 </head>
@@ -75,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_1.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The origin of all things</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_1.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 The origin of all things</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -109,37 +111,43 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The origin of all things</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 The origin of all things</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Try the presentation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 Try the presentation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Fusion: Principles and Methods</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 Data Fusion: Principles and Methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Policy Applications</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./week_5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Reading Week: Temperature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">04 Policy Applications</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Google Earht Engine</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">06 Google Earth Engine</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">07 Classification I</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08 Classification The Big Questions (Lecture 6 continued) and Accuracy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -158,8 +166,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">2.1</span> Summary</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">2.2</span> Application</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3</span> Summary:</a>
+  <ul class="collapse">
+  <li><a href="#remote-sensing" id="toc-remote-sensing" class="nav-link" data-scroll-target="#remote-sensing"><span class="header-section-number">3.0.1</span> Remote Sensing</a></li>
+  <li><a href="#scatter" id="toc-scatter" class="nav-link" data-scroll-target="#scatter"><span class="header-section-number">3.0.2</span> Scatter</a></li>
+  <li><a href="#resolutions" id="toc-resolutions" class="nav-link" data-scroll-target="#resolutions"><span class="header-section-number">3.0.3</span> Resolutions</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -168,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-week01" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The origin of all things</span></span></h1>
+<h1 class="title"><span id="sec-week01" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 The origin of all things</span></span></h1>
 </div>
 
 
@@ -183,25 +197,52 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Week one is quite interesting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.</p>
-<p>When I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this <a href="#fig-snap1">Figure&nbsp;<span>2.1</span></a>.</p>
-<div id="fig-snap1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="./asset/screenshot/week001/snap_1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;2.1: snap_rgb_loadded</figcaption>
-</figure>
-</div>
-<p>Just follow the work steps one by one, let’s do it.</p>
-<section id="summary" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.1</span> Summary</h2>
+<section id="summary" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Summary:</h1>
+<section id="remote-sensing" class="level3" data-number="3.0.1">
+<h3 data-number="3.0.1" class="anchored" data-anchor-id="remote-sensing"><span class="header-section-number">3.0.1</span> Remote Sensing</h3>
+<p>High-resolution remote sensing images, paired with advanced analysis techniques, enable precise and timely monitoring of urban environments.</p>
+<p>Passive sensors detect natural energy, typically sunlight, while active sensors emit their own signals, such as electromagnetic waves, and measure their return. Examples include photographic and infrared sensors as passive; radar and sonar as active.</p>
+<p>The nature wavelegth can be calculated through:</p>
+<p><span class="math display">\[
+\Lambda(\text{wavelength}) = \frac{c (\text{velocity of light})}{v (\text{frequency})}
+\]</span></p>
 </section>
-<section id="application" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="application"><span class="header-section-number">2.2</span> Application</h2>
+<section id="scatter" class="level3" data-number="3.0.2">
+<h3 data-number="3.0.2" class="anchored" data-anchor-id="scatter"><span class="header-section-number">3.0.2</span> Scatter</h3>
+<p>Before reaching the sensor, energy can be absorbed by surfaces or scattered by atmospheric particles. The sky’s blue color results from blue light’s shorter wavelengths scattering more easily. As the sun’s angle changes, increased distance reduces blue light scattering to our eyes, allowing longer wavelengths like reds and oranges to dominate. This visibility is due to atmospheric molecules scattering light, with other colors being scattered away, leaving primarily orange or red hues visible.</p>
+<p>Energy on the way to the sensor may be absorbed or scattered by atmospheric particles, explaining the sky’s blueness due to the easier scattering of blue light’s shorter wavelengths. With the sun’s angle shift, the greater distance prevents blue light scattering, making red and orange hues, which have the longest wavelengths, more visible. This phenomenon occurs as the atmosphere scatters light, allowing only orange or red to reach our eyes.</p>
+<p>Energy heading towards the sensor is either absorbed or atmospherically scattered. The sky appears blue because blue light’s short wavelengths scatter more efficiently. However, as the sun shifts, the increased scattering distance reduces blue visibility, making longer wavelengths like red and orange more apparent. This effect is facilitated by atmospheric scattering, leaving predominantly orange or red light visible.</p>
+</section>
+<section id="resolutions" class="level3" data-number="3.0.3">
+<h3 data-number="3.0.3" class="anchored" data-anchor-id="resolutions"><span class="header-section-number">3.0.3</span> Resolutions</h3>
+<ol type="1">
+<li><p>Spatial: Raster cell size ranges from 10cm to several kilometers.</p></li>
+<li><p>Spectral: This aspect involves detecting various wavelengths across the electromagnetic spectrum, extending beyond visible light. The color of objects is determined by the wavelengths they reflect, with the rest being absorbed or scattered. Observation limitations arise from wavelengths absorbed by water vapor, ozone, and other gases. Spectral resolution is categorized by the number of detectable bands. Spectral reflectance measurement is not exclusive to remote sensing but can also be performed with spectroradiometers in laboratories or on the field, necessitating calibration against a pure white reference panel.</p></li>
+<li><p>Radiometric: Revisit times of sensors vary, with lower resolutions indicating larger pixel sizes. Remote sensing utilizes fluorescence to identify materials and evaluate conditions by analyzing wavelength emissions after radiation exposure.</p></li>
+<li><p>Temporal: Different sensors vary in energy sensitivity, with higher resolutions providing greater detail (e.g., 8 bit = 256 values, 4 bit = 16 values).</p></li>
+</ol>
+</section>
+</section>
+<section id="application" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Application</h1>
 <ul>
 <li><p>Two paper comparison</p></li>
 <li><p>Challenges</p></li>
 </ul>
+<p>Just follow the steps in practical one by one, let’s do it.</p>
 <p>Load the London ward shapefile for masking</p>
+</section>
+<section id="reflection" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Reflection</h1>
+<p>Week one is quite interesting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.</p>
+<p>When I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this <a href="#fig-snap1">Figure&nbsp;<span>5.1</span></a>.</p>
+<div id="fig-snap1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./asset/screenshot/week001/snap_1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;5.1: snap_rgb_loadded</figcaption>
+</figure>
+</div>
 
 
 </section>
@@ -448,7 +489,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week_2.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Try the presentation</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 Try the presentation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

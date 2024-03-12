@@ -1,21 +1,51 @@
-# The origin of all things {#sec-week01}
+# 01 The origin of all things {#sec-week01}
+
+# Summary:
+
+### Remote Sensing
+
+High-resolution remote sensing images, paired with advanced analysis techniques, enable precise and timely monitoring of urban environments.
+
+Passive sensors detect natural energy, typically sunlight, while active sensors emit their own signals, such as electromagnetic waves, and measure their return. Examples include photographic and infrared sensors as passive; radar and sonar as active.
+
+The nature wavelegth can be calculated through:
+
+$$
+\Lambda(\text{wavelength}) = \frac{c (\text{velocity of light})}{v (\text{frequency})}
+$$
+
+### Scatter
+
+Before reaching the sensor, energy can be absorbed by surfaces or scattered by atmospheric particles. The sky's blue color results from blue light's shorter wavelengths scattering more easily. As the sun's angle changes, increased distance reduces blue light scattering to our eyes, allowing longer wavelengths like reds and oranges to dominate. This visibility is due to atmospheric molecules scattering light, with other colors being scattered away, leaving primarily orange or red hues visible.
+
+Energy on the way to the sensor may be absorbed or scattered by atmospheric particles, explaining the sky's blueness due to the easier scattering of blue light's shorter wavelengths. With the sun's angle shift, the greater distance prevents blue light scattering, making red and orange hues, which have the longest wavelengths, more visible. This phenomenon occurs as the atmosphere scatters light, allowing only orange or red to reach our eyes.
+
+Energy heading towards the sensor is either absorbed or atmospherically scattered. The sky appears blue because blue light's short wavelengths scatter more efficiently. However, as the sun shifts, the increased scattering distance reduces blue visibility, making longer wavelengths like red and orange more apparent. This effect is facilitated by atmospheric scattering, leaving predominantly orange or red light visible.
+
+### Resolutions
+
+1)  Spatial: Raster cell size ranges from 10cm to several kilometers.
+
+2)  Spectral: This aspect involves detecting various wavelengths across the electromagnetic spectrum, extending beyond visible light. The color of objects is determined by the wavelengths they reflect, with the rest being absorbed or scattered. Observation limitations arise from wavelengths absorbed by water vapor, ozone, and other gases. Spectral resolution is categorized by the number of detectable bands. Spectral reflectance measurement is not exclusive to remote sensing but can also be performed with spectroradiometers in laboratories or on the field, necessitating calibration against a pure white reference panel.
+
+3)  Radiometric: Revisit times of sensors vary, with lower resolutions indicating larger pixel sizes. Remote sensing utilizes fluorescence to identify materials and evaluate conditions by analyzing wavelength emissions after radiation exposure.
+
+4)  Temporal: Different sensors vary in energy sensitivity, with higher resolutions providing greater detail (e.g., 8 bit = 256 values, 4 bit = 16 values).
+
+# Application
+
+-   Two paper comparison
+
+-   Challenges
+
+Just follow the steps in practical one by one, let's do it.
+
+Load the London ward shapefile for masking
+
+# Reflection
 
 Week one is quite interesting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.
 
 When I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this [@fig-snap1].
 
 ![snap_rgb_loadded](./asset/screenshot/week001/snap_1.png){#fig-snap1}
-
-Just follow the work steps one by one, let's do it.
-
-
-## Summary
-
-## Application
-
-- Two paper comparison
-
-- Challenges
-
-
-Load the London ward shapefile for masking

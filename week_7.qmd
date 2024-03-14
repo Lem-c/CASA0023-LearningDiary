@@ -48,3 +48,5 @@ However, the analysis reveals that unused land in London is scarce, underscoring
 Moreover, the use of GEE for such analyses provides an educational insight into the potential of machine learning and big data in enhancing my understanding of urban landscapes. By using zonal statistics, regional and neighborhood reduction techniques, and regression models, GEE allows for a comprehensive evaluation of land utilization, which is critical for sustainable urban planning.
 
 The practical provides a learning opportunity to delve deeper into the spatial and spectral intricacies of our world, enabling the development of more informed, data-driven decisions in urban and environmental planning.
+
+## **References**

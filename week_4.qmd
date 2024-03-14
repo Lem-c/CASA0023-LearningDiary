@@ -1,40 +1,28 @@
 # 04 Policy Applications
 
-## Data from sensors
+## Summary
 
--   Identify what kind of data to get full use of it
+### Data from sensors
 
-## Land use and Land cover (LULC)
+Satellites collect a wide array of data using different parts of the electromagnetic spectrum, each revealing unique details about the Earth's surface and atmosphere. They capture everything from visible light and near-infrared, which show us images like what our eyes see and help monitor vegetation health and urban growth, to thermal infrared that detects the Earth's heat emission for studying temperature changes and identifying wildfires. Microwave sensors, divided into several bands including C, X and L bands [@ICEYE_web], cut through clouds and vegetation to gather data in any weather, useful for tracking soil moisture and sea temperatures. Radar and Lidar technologies provide detailed images and 3D maps for studying terrain, forest structures, and urban development. There's even data from ultraviolet to X-ray bands, though less used for Earth observation, they're crucial for studying atmospheric conditions and cosmic phenomena. Together, these diverse data streams allow scientists to explore everything from climate patterns to natural disasters, offering insights essential for understanding and protecting our planet.
 
--   Access to green space
+### Land use and Land cover (LULC)
 
-    -   shortest distance/...
+Urban green spaces [@shahtahmassebi2021remote] are analyzed using data from Landsat and Sentinel satellites, alongside LiDAR with high spatial resolution, to study vegetation health and accessibility to green areas, as well as to evaluate urban planning efforts through tools like Google Street View and Google Earth Engine. For disaster response and preparedness, Sentinel-2 spectral imagery is used to compare pre-event and post-event conditions, conduct view-shed analysis, and utilize clustering techniques to assist in building 3D models for events like the Beirut explosion, aiding in efficient and informed disaster management strategies.
 
-## Synthetic Aperture Radar (SAR)
+### Synthetic Aperture Radar (SAR)
 
--   Active sensors
+Its capabilities as an active sensing system that captures surface texture data and can see through weather and clouds due to different wavelengths and polarizations. SAR operates in multiple bands like X, C, S, L, and P [@nasa_sar], each with varying applications from high-resolution urban monitoring to biomass and vegetation mapping. The polarization of SAR, whether horizontal, vertical, or dual, affects how it interacts with materials and can aid in differentiating features such as rough surfaces and double-bounce reflections in urban areas. SAR imagery can also undergo various corrections for improved clarity and accuracy. With different wavelengths, SAR can penetrate surfaces to varying degrees, affecting volume scattering and thus enabling diverse applications like terrain mapping and change detection. The slides touch on the use of SAR in urban monitoring, explaining how the unique properties of SAR, such as backscatter and polarization, can be utilized to analyze and understand urban structures and natural environments.
 
--   Reflection with surface texture data
+## Application
 
--   See through weather and clouds
-
-#### SAR polarization and background
-
-Electromagnetic spectrum (EMR)
-
-A SAR signal has both amplitude (backscatter) and phase data.
-
--   Windy and CALM: water move
-
-#### More SAR
+### More SAR
 
 -   SAR Floods
 
 -   Drawback? (Me on SAR)
 
 -   Interferometry Synthetic Aperture Radar (InSAR)
-
-## Application
 
 ### London Plan
 
@@ -50,29 +38,17 @@ A SAR signal has both amplitude (backscatter) and phase data.
 
 Climate change has heightened London's temperature, exacerbating the urban heat island effect and health risks during extreme heat. New developments must address citywide and building-specific overheating. Strategies include avoiding excessive glazing and promoting passive ventilation. Air conditioning, which contributes to urban heat, should be minimized. The **Chartered Institution of Building Services Engineers (CIBSE)** provides guidelines for addressing overheating in new and refurbished buildings, ensuring designs are future-proof against climate change.
 
-#### Landsat pre-processing steps
+### Landsat pre-processing steps
 
 Included: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization"
-
-#### Decision trees
 
 ### Case study
 
 -   Forest fires
 
-# Reading Week: Temperature
+# 05 Reading Week: Temperature
 
-[History temperature in UK](https://lem-c.github.io/temp_map/)
-
-## Urban heat island
-
--   social and environmental cost
-
--   GDP lost
-
-    -   Why
-
-“satellite-derived surface temperature shows very weak relationships with air temperature" \[Chakraborty et al., 2022\]
+[History temperature and CO2 emissions in UK](https://lem-c.github.io/temp_map/)
 
 ## Presentation paths
 
@@ -81,3 +57,13 @@ Included: (i) image resampling, (ii) conversion of raw digital values (DN) to to
 -   UHI in phoenix [@chow2012urban]
 
 -   https://zhuanlan.zhihu.com/p/419122903
+
+## Reflection
+
+Reflecting on my journey to understand the hot spots in cities has been like unfolding a map that leads from a single point of curiosity to a vast landscape of global environmental challenges. It all started with noticing how some parts of the city felt warmer, which sparked a deep dive into learning from various fields. By combining insights from satellite images, exploring city planning policies, and diving into environmental science, I've pieced together a clearer picture of why cities get so warm and what it means for us.
+
+This adventure has taught me the value of looking at problems from different angles. It's not just about the heat; it's about how we design our cities, the rules that guide our urban development, and the new technologies that let us see our environment in different ways. This mix of personal experience, academic study, and the latest tech has shown me that tackling big challenges requires a mix of knowledge, curiosity, and a willingness to explore.
+
+In short, this journey has opened my eyes. It's shown me that getting to grips with the issue of cities heating up is crucial for building sustainable places for us to live. And through this process, I've learned that when we combine our personal observations with approach to learning and technology can make a real impact.
+
+## **References**

@@ -1,22 +1,22 @@
 # 03 Data Fusion: Principles and Methods
 
-# Summary
+## Summary
 
 Data Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation.
 
-## Principles and Process of Data Fusion
+### Principles and Process of Data Fusion
 
 Data fusion in remote sensing images typically follows a two-step process:
 
-### 1. Preprocessing
+#### 1. Preprocessing
 
 Involves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.
 
-### 2. Data Fusion
+#### 2. Data Fusion
 
 Selecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation.
 
-## Classification and Methods of Data Fusion
+### Classification and Methods of Data Fusion
 
 Data fusion methods for remote sensing images are categorized into:
 
@@ -30,32 +30,46 @@ Various data fusion methods include algebraic methods, image regression, princip
 
 ### OSM
 
-# Application
+## Application
 
-Firstly, the two areas chose as follow:
+Firstly, the two areas chose as follow (It's just two randomly areas chose around South Asia, looks like most of area are yellow sand):
+
+The process begins with choosing specific areas for analysis, which shows contrasts in the landscape, such as water bodies.
 
 ![](asset/screenshot/week003/selected_texture_org.png){width="500" height="400"}
 
-After merge
+Then merge the Satellite data to combine different spectral bands or time points to create a comprehensive view of the chosen areas. They are quilt confusing, and I'll figure all bands out in later chapters.
 
 ![](asset/image/week03/merged_plot.png)
 
-Get NDVI
+Calculation Normalized Difference Vegetation Index (NDVI). The NDVI values range from -0.40 to 0.40, with green areas indicating healthier vegetation and brown areas indicating less healthy or sparse vegetation. This image suggests that there are a lot of area might be indicative of barren land, rock, or bare soil with little to no vegetation present.
 
-![](asset/image/week03/merged_NDVI.png)
+![NDVI [@ndvi_wiki] is a computed index that indicates vegetation health. It uses the visible and near-infrared bands of the electromagnetic spectrum to identify live green vegetation.](asset/image/week03/merged_NDVI.png)
 
-Texture
+Texture Analysis: This step examines the surface roughness or textural patterns of the landscape, which can be critical for classifying different land cover types like soil and water.
 
 ![](asset/image/week03/clip_texture.png)
 
-PCA analysis
+Principal Component Analysis (PCA): PCA is a statistical technique used to emphasize variation and bring out strong patterns in a dataset. It transforms the original data into a set of linearly uncorrelated variables known as principal components, with the first principal components accounting for as much of the variability in the data as possible.
 
 ![](asset/image/week03/clip_PCA.png)
 
-## Challenges and Future Trends
+### Challenges and Future Trends
 
-Key challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities.
+In the context of data fusion technology, key challenges such as developing unified mathematical models and enhancing preprocessing accuracy are identified. The future trends may involve integrating Geographic Information System (GIS) for real-time monitoring and applying intelligent processing capabilities to better understand and utilize the data.
 
 ------------------------------------------------------------------------
 
-# Reflection
+## Reflection
+
+First off, it's incredible how we can take images from satellites, correct them for distortions caused by the camera's angle and the atmosphere, and then turn them into precise maps of the Earth's surface.
+
+I delved into data fusion, where the goal is to mix data from different sources to create a clearer, more detailed picture. There are different ways to do this, from mixing pixel by pixel, to looking at features like edges and textures, to making big-picture decisions. It's like putting together a complex puzzle, with each piece providing more insights into the larger image.
+
+One practical application was analyzing parts of South Asia (India). It's fascinating to see how areas that mostly looked like yellow sand from afar actually held a lot of details when you zoomed in. Using the Normalized Difference Vegetation Index, or NDVI for short, I could tell where the healthy greenery was and where it wasn't, which is super useful for understanding the landscape.
+
+Texture analysis not just about colors but also how rough or smooth areas are, which can tell you a lot about the terrain. And when I ran a Principal Component Analysis, it was like finding the hidden patterns in the data. It's a powerful way to reduce complexity and highlight what's really important.
+
+Looking forward, though, it's clear there are challenges ahead. The math behind fusing data from different sources can get tricky and complex. But it's also an exciting time, with Geographic Information Systems and smarter processing tools making it possible to monitor our planet in real-time.
+
+## **References**

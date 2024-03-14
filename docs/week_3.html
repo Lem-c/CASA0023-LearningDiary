@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -148,12 +167,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08 Classification The Big Questions (Lecture 6 continued) and Accuracy</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -164,23 +177,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">4.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#principles-and-process-of-data-fusion" id="toc-principles-and-process-of-data-fusion" class="nav-link" data-scroll-target="#principles-and-process-of-data-fusion"><span class="header-section-number">5.1</span> Principles and Process of Data Fusion</a>
+  <li><a href="#principles-and-process-of-data-fusion" id="toc-principles-and-process-of-data-fusion" class="nav-link" data-scroll-target="#principles-and-process-of-data-fusion"><span class="header-section-number">4.1.1</span> Principles and Process of Data Fusion</a></li>
+  <li><a href="#classification-and-methods-of-data-fusion" id="toc-classification-and-methods-of-data-fusion" class="nav-link" data-scroll-target="#classification-and-methods-of-data-fusion"><span class="header-section-number">4.1.2</span> Classification and Methods of Data Fusion</a></li>
+  <li><a href="#osm" id="toc-osm" class="nav-link" data-scroll-target="#osm"><span class="header-section-number">4.1.3</span> OSM</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4.2</span> Application</a>
   <ul class="collapse">
-  <li><a href="#preprocessing" id="toc-preprocessing" class="nav-link" data-scroll-target="#preprocessing"><span class="header-section-number">5.1.1</span> 1. Preprocessing</a></li>
-  <li><a href="#data-fusion" id="toc-data-fusion" class="nav-link" data-scroll-target="#data-fusion"><span class="header-section-number">5.1.2</span> 2. Data Fusion</a></li>
+  <li><a href="#challenges-and-future-trends" id="toc-challenges-and-future-trends" class="nav-link" data-scroll-target="#challenges-and-future-trends"><span class="header-section-number">4.2.1</span> Challenges and Future Trends</a></li>
   </ul></li>
-  <li><a href="#classification-and-methods-of-data-fusion" id="toc-classification-and-methods-of-data-fusion" class="nav-link" data-scroll-target="#classification-and-methods-of-data-fusion"><span class="header-section-number">5.2</span> Classification and Methods of Data Fusion</a>
-  <ul class="collapse">
-  <li><a href="#osm" id="toc-osm" class="nav-link" data-scroll-target="#osm"><span class="header-section-number">5.2.1</span> OSM</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6</span> Application</a>
-  <ul class="collapse">
-  <li><a href="#challenges-and-future-trends" id="toc-challenges-and-future-trends" class="nav-link" data-scroll-target="#challenges-and-future-trends"><span class="header-section-number">6.1</span> Challenges and Future Trends</a></li>
-  </ul></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7</span> Reflection</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.4</span> <strong>References</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -204,23 +212,23 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="summary" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Summary</h1>
+<section id="summary" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> Summary</h2>
 <p>Data Fusion, originally used in military domains, is now a critical part of various fields including multi-source image composition, robotics, unmanned aerial vehicles, image analysis, and more. It involves the integration of multi-source remote sensing image data, enhancing the accuracy, completeness, and reliability of data interpretation.</p>
-<section id="principles-and-process-of-data-fusion" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="principles-and-process-of-data-fusion"><span class="header-section-number">5.1</span> Principles and Process of Data Fusion</h2>
+<section id="principles-and-process-of-data-fusion" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="principles-and-process-of-data-fusion"><span class="header-section-number">4.1.1</span> Principles and Process of Data Fusion</h3>
 <p>Data fusion in remote sensing images typically follows a two-step process:</p>
-<section id="preprocessing" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="preprocessing"><span class="header-section-number">5.1.1</span> 1. Preprocessing</h3>
+<section id="preprocessing" class="level4" data-number="4.1.1.1">
+<h4 data-number="4.1.1.1" class="anchored" data-anchor-id="preprocessing"><span class="header-section-number">4.1.1.1</span> 1. Preprocessing</h4>
 <p>Involves geometric correction, atmospheric correction, radiometric correction, and spatial registration of remote sensing images.</p>
 </section>
-<section id="data-fusion" class="level3" data-number="5.1.2">
-<h3 data-number="5.1.2" class="anchored" data-anchor-id="data-fusion"><span class="header-section-number">5.1.2</span> 2. Data Fusion</h3>
+<section id="data-fusion" class="level4" data-number="4.1.1.2">
+<h4 data-number="4.1.1.2" class="anchored" data-anchor-id="data-fusion"><span class="header-section-number">4.1.1.2</span> 2. Data Fusion</h4>
 <p>Selecting suitable fusion algorithms based on the purpose and level of fusion to synthesize spatially registered data or extracted features, leading to more accurate target representation or estimation.</p>
 </section>
 </section>
-<section id="classification-and-methods-of-data-fusion" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="classification-and-methods-of-data-fusion"><span class="header-section-number">5.2</span> Classification and Methods of Data Fusion</h2>
+<section id="classification-and-methods-of-data-fusion" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="classification-and-methods-of-data-fusion"><span class="header-section-number">4.1.2</span> Classification and Methods of Data Fusion</h3>
 <p>Data fusion methods for remote sensing images are categorized into:</p>
 <ul>
 <li><p>Pixel-level Fusion: A low-level fusion maintaining high accuracy but with limitations in efficiency and analysis capability.</p></li>
@@ -228,33 +236,52 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Decision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.</p></li>
 </ul>
 <p>Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.</p>
-<section id="osm" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="osm"><span class="header-section-number">5.2.1</span> OSM</h3>
+</section>
+<section id="osm" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="osm"><span class="header-section-number">4.1.3</span> OSM</h3>
 </section>
 </section>
-</section>
-<section id="application" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Application</h1>
-<p>Firstly, the two areas chose as follow:</p>
+<section id="application" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="application"><span class="header-section-number">4.2</span> Application</h2>
+<p>Firstly, the two areas chose as follow (It’s just two randomly areas chose around South Asia, looks like most of area are yellow sand):</p>
+<p>The process begins with choosing specific areas for analysis, which shows contrasts in the landscape, such as water bodies.</p>
 <p><img src="asset/screenshot/week003/selected_texture_org.png" width="500" height="400"></p>
-<p>After merge</p>
+<p>Then merge the Satellite data to combine different spectral bands or time points to create a comprehensive view of the chosen areas. They are quilt confusing, and I’ll figure all bands out in later chapters.</p>
 <p><img src="asset/image/week03/merged_plot.png" class="img-fluid"></p>
-<p>Get NDVI</p>
-<p><img src="asset/image/week03/merged_NDVI.png" class="img-fluid"></p>
-<p>Texture</p>
+<p>Calculation Normalized Difference Vegetation Index (NDVI). The NDVI values range from -0.40 to 0.40, with green areas indicating healthier vegetation and brown areas indicating less healthy or sparse vegetation. This image suggests that there are a lot of area might be indicative of barren land, rock, or bare soil with little to no vegetation present.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="asset/image/week03/merged_NDVI.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">NDVI <span class="citation" data-cites="ndvi_wiki">(<a href="#ref-ndvi_wiki" role="doc-biblioref">Wikipedia contributors Year</a>)</span> is a computed index that indicates vegetation health. It uses the visible and near-infrared bands of the electromagnetic spectrum to identify live green vegetation.</figcaption>
+</figure>
+</div>
+<p>Texture Analysis: This step examines the surface roughness or textural patterns of the landscape, which can be critical for classifying different land cover types like soil and water.</p>
 <p><img src="asset/image/week03/clip_texture.png" class="img-fluid"></p>
-<p>PCA analysis</p>
+<p>Principal Component Analysis (PCA): PCA is a statistical technique used to emphasize variation and bring out strong patterns in a dataset. It transforms the original data into a set of linearly uncorrelated variables known as principal components, with the first principal components accounting for as much of the variability in the data as possible.</p>
 <p><img src="asset/image/week03/clip_PCA.png" class="img-fluid"></p>
-<section id="challenges-and-future-trends" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="challenges-and-future-trends"><span class="header-section-number">6.1</span> Challenges and Future Trends</h2>
-<p>Key challenges in data fusion technology include developing unified mathematical models and enhancing preprocessing accuracy. The future of data fusion lies in its integration with GIS for real-time monitoring and intelligent processing capabilities.</p>
+<section id="challenges-and-future-trends" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="challenges-and-future-trends"><span class="header-section-number">4.2.1</span> Challenges and Future Trends</h3>
+<p>In the context of data fusion technology, key challenges such as developing unified mathematical models and enhancing preprocessing accuracy are identified. The future trends may involve integrating Geographic Information System (GIS) for real-time monitoring and applying intelligent processing capabilities to better understand and utilize the data.</p>
 <hr>
 </section>
 </section>
-<section id="reflection" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Reflection</h1>
+<section id="reflection" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
+<p>First off, it’s incredible how we can take images from satellites, correct them for distortions caused by the camera’s angle and the atmosphere, and then turn them into precise maps of the Earth’s surface.</p>
+<p>I delved into data fusion, where the goal is to mix data from different sources to create a clearer, more detailed picture. There are different ways to do this, from mixing pixel by pixel, to looking at features like edges and textures, to making big-picture decisions. It’s like putting together a complex puzzle, with each piece providing more insights into the larger image.</p>
+<p>One practical application was analyzing parts of South Asia (India). It’s fascinating to see how areas that mostly looked like yellow sand from afar actually held a lot of details when you zoomed in. Using the Normalized Difference Vegetation Index, or NDVI for short, I could tell where the healthy greenery was and where it wasn’t, which is super useful for understanding the landscape.</p>
+<p>Texture analysis not just about colors but also how rough or smooth areas are, which can tell you a lot about the terrain. And when I ran a Principal Component Analysis, it was like finding the hidden patterns in the data. It’s a powerful way to reduce complexity and highlight what’s really important.</p>
+<p>Looking forward, though, it’s clear there are challenges ahead. The math behind fusing data from different sources can get tricky and complex. But it’s also an exciting time, with Geographic Information Systems and smarter processing tools making it possible to monitor our planet in real-time.</p>
+</section>
+<section id="references" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="references"><span class="header-section-number">4.4</span> <strong>References</strong></h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-ndvi_wiki" class="csl-entry" role="listitem">
+Wikipedia contributors. Year. <span>“Normalized Difference Vegetation Index.”</span> Year. <a href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

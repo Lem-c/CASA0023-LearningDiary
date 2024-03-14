@@ -1,6 +1,6 @@
 # 01 The origin of all things {#sec-week01}
 
-# Summary:
+## Summary:
 
 ### Remote Sensing
 
@@ -32,7 +32,7 @@ Energy heading towards the sensor is either absorbed or atmospherically scattere
 
 4)  Temporal: Different sensors vary in energy sensitivity, with higher resolutions providing greater detail (e.g., 8 bit = 256 values, 4 bit = 16 values).
 
-# Application
+## Application
 
 -   Two paper comparison
 
@@ -42,10 +42,12 @@ Just follow the steps in practical one by one, let's do it.
 
 Load the London ward shapefile for masking
 
-# Reflection
+## Reflection
 
 Week one is quite interesting for me, learning sensor and wave phythsics related knowledge. This chapter is going to list some learning outcomes by using SNAP and process sensor related data using R. All shows below.
 
 When I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this [@fig-snap1].
 
 ![snap_rgb_loadded](./asset/screenshot/week001/snap_1.png){#fig-snap1}
+
+## **References**

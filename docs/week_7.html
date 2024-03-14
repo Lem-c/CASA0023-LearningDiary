@@ -167,12 +167,6 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08 Classification The Big Questions (Lecture 6 continued) and Accuracy</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -186,6 +180,7 @@ div.csl-indent {
   <li><a href="#algorithms" id="toc-algorithms" class="nav-link active" data-scroll-target="#algorithms"><span class="header-section-number">7.1</span> Algorithms</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.4</span> <strong>References</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -209,23 +204,23 @@ div.csl-indent {
 
 </header>
 
-<p>Machine learning, a subset of computer science, involves creating algorithms that allow computers to learn and make decisions or predictions autonomously, related to human learning and generalization through experience, embodying inductive learning principles <span class="citation" data-cites="jordan2015machine">(<a href="references.html#ref-jordan2015machine" role="doc-biblioref">Jordan and Mitchell 2015</a>)</span>. When the topic comes the spatial analysis, good attempts like Support Vector Machine and random forest has been applied in this filed.</p>
+<p>Machine learning, a subset of computer science, involves creating algorithms that allow computers to learn and make decisions or predictions autonomously, related to human learning and generalization through experience, embodying inductive learning principles <span class="citation" data-cites="jordan2015machine">(<a href="#ref-jordan2015machine" role="doc-biblioref">Jordan and Mitchell 2015</a>)</span>. When the topic comes the spatial analysis, good attempts like Support Vector Machine and random forest has been applied in this filed.</p>
 <section id="algorithms" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="algorithms"><span class="header-section-number">7.1</span> Algorithms</h2>
-<p>Amongst many classification algorithms, decision trees have proven to be efficient algorithms for classification of large datasets. A <strong>d</strong>ecision tree is a classification algorithm that automatically derives a hierarchy of partition rules with respect to a target attribute of a large dataset <span class="citation" data-cites="li2006spatial">(<a href="references.html#ref-li2006spatial" role="doc-biblioref">Li and Claramunt 2006</a>)</span>. Forest is build from single tree. Classification aims to Classify data into discrete categories based on certain features.</p>
+<p>Amongst many classification algorithms, decision trees have proven to be efficient algorithms for classification of large datasets. A <strong>d</strong>ecision tree is a classification algorithm that automatically derives a hierarchy of partition rules with respect to a target attribute of a large dataset <span class="citation" data-cites="li2006spatial">(<a href="#ref-li2006spatial" role="doc-biblioref">Li and Claramunt 2006</a>)</span>. Forest is build from single tree. Classification aims to Classify data into discrete categories based on certain features.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="asset/image/week07/tree.jpg" class="img-fluid figure-img" width="339"></p>
-<figcaption class="figure-caption">A basic decision tree model with a binary target variable Y (0 or 1) and two continuous variables, x1 and x2 (0 to 1) <span class="citation" data-cites="song2015decision">(<a href="references.html#ref-song2015decision" role="doc-biblioref">Song and Ying 2015</a>)</span>.</figcaption>
+<figcaption class="figure-caption">A basic decision tree model with a binary target variable Y (0 or 1) and two continuous variables, x1 and x2 (0 to 1) <span class="citation" data-cites="song2015decision">(<a href="#ref-song2015decision" role="doc-biblioref">Song and Ying 2015</a>)</span>.</figcaption>
 </figure>
 </div>
-<p>Three types of nodes exist: The root node, or decision node, which divides records into exclusive subsets, another internal nodes, or chance nodes, indicating available choices and linking parent and child nodes, and the leaf nodes, or end nodes, signifying the outcome of decisions. To avoid overfit, decision trees require stopping rules <span class="citation" data-cites="song2015decision">Li and Claramunt (<a href="references.html#ref-li2006spatial" role="doc-biblioref">2006</a>)</span>, such as minimum records in a leaf or node before splitting, and maximum leaf depth from the root.</p>
+<p>Three types of nodes exist: The root node, or decision node, which divides records into exclusive subsets, another internal nodes, or chance nodes, indicating available choices and linking parent and child nodes, and the leaf nodes, or end nodes, signifying the outcome of decisions. To avoid overfit, decision trees require stopping rules <span class="citation" data-cites="song2015decision">Li and Claramunt (<a href="#ref-li2006spatial" role="doc-biblioref">2006</a>)</span>, such as minimum records in a leaf or node before splitting, and maximum leaf depth from the root.</p>
 <p><strong>R</strong>andom Forests improve decision tree accuracy by generating multiple trees through random samples and feature subsets, thus enhancing diversity and reducing overfitting. This method involves creating a forest where each tree contributes to the final prediction through majority voting, while unselected data offers an unbiased error estimate. The ensemble approach allows trees to fully grow without pruning, and the number of features evaluated at each split is often the square root of the total features, further ensuring robust predictions.</p>
 <p><strong>S</strong>upport Vector Machine (SVM) is a machine learning tool for categorizing data by drawing an optimal separating line (or higher-dimensional plane) to distinguish different data points. It aims for the widest margin between the nearest points of any category, known as support vectors. SVM’s effectiveness is fine-tuned using two parameters: C, which controls the margin’s strictness and focus on difficult points, and Gamma, which dictates the influence of each data point, with higher values emphasizing closer points. For data not linearly separable, SVM employs the kernel trick to manipulate the data into a separable form.</p>
 </section>
 <section id="application" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
-<p>The method provided by Yan-yan SONG and Ying LU<span class="citation" data-cites="song2015decision">(<a href="references.html#ref-song2015decision" role="doc-biblioref">Song and Ying 2015</a>)</span> segments a population into branches forming an inverted tree, comprising a root, internal, and leaf nodes. It’s a non-parametric algorithm, effectively handling large, complex datasets without requiring a complex parametric framework. When combine the population into the spatial analysis, here is an example. LandScan USA<span class="citation" data-cites="bhaduri2007landscan">(<a href="references.html#ref-bhaduri2007landscan" role="doc-biblioref">Bhaduri et al. 2007</a>)</span> offers high-resolution population distribution data essential for socio-environmental research, public health, homeland security, and policy-making. This data supports operational activities, scientific analyses, and studies on population dynamics over time and space. It’s data is pivotal for identifying vulnerable groups like the elderly or low-income communities, guiding targeted policy development. Additionally, it serves emergency management and homeland security by offering detailed population distribution insights, enhancing disaster response and resource planning. Applying classification in these areas accelerates target group identification and reduces budget requirements.</p>
+<p>The method provided by Yan-yan SONG and Ying LU<span class="citation" data-cites="song2015decision">(<a href="#ref-song2015decision" role="doc-biblioref">Song and Ying 2015</a>)</span> segments a population into branches forming an inverted tree, comprising a root, internal, and leaf nodes. It’s a non-parametric algorithm, effectively handling large, complex datasets without requiring a complex parametric framework. When combine the population into the spatial analysis, here is an example. LandScan USA<span class="citation" data-cites="bhaduri2007landscan">(<a href="#ref-bhaduri2007landscan" role="doc-biblioref">Bhaduri et al. 2007</a>)</span> offers high-resolution population distribution data essential for socio-environmental research, public health, homeland security, and policy-making. This data supports operational activities, scientific analyses, and studies on population dynamics over time and space. It’s data is pivotal for identifying vulnerable groups like the elderly or low-income communities, guiding targeted policy development. Additionally, it serves emergency management and homeland security by offering detailed population distribution insights, enhancing disaster response and resource planning. Applying classification in these areas accelerates target group identification and reduces budget requirements.</p>
 <p>This practice employs GEE for land classification by first filtering, clipping, and reducing the image, then adding point-based feature collections representing different land types to the satellite map.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -254,9 +249,12 @@ var result = classifier_soil.subtract(classifier_buildings)</code></pre>
 <p>However, the analysis reveals that unused land in London is scarce, underscoring the city’s extensive development. This observation could have significant implications for urban policy and development strategies, as it highlights the limited scope for expansion and the potential need for creative land use planning. It suggests that future urban development may need to focus on vertical expansion or redevelopment of existing areas rather than horizontal sprawl, which is often less sustainable.</p>
 <p>Moreover, the use of GEE for such analyses provides an educational insight into the potential of machine learning and big data in enhancing my understanding of urban landscapes. By using zonal statistics, regional and neighborhood reduction techniques, and regression models, GEE allows for a comprehensive evaluation of land utilization, which is critical for sustainable urban planning.</p>
 <p>The practical provides a learning opportunity to delve deeper into the spatial and spectral intricacies of our world, enabling the development of more informed, data-driven decisions in urban and environmental planning.</p>
+</section>
+<section id="references" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="references"><span class="header-section-number">7.4</span> <strong>References</strong></h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-bhaduri2007landscan" class="csl-entry" role="listitem">
 Bhaduri, Budhendra, Edward Bright, Phillip Coleman, and Marie L Urban. 2007. <span>“LandScan USA: A High-Resolution Geospatial and Temporal Modeling Approach for Population Distribution and Dynamics.”</span> <em>GeoJournal</em> 69: 103–17.
 </div>

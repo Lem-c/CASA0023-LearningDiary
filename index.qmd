@@ -5,6 +5,8 @@ format:
   html:
     include-before-body: './asset/tags/index_div.txt'
     include-after-body: './asset/tags/index_div2.txt'
+
+date: "3/1/2024"
 ---
 
 # Preface {.unnumbered}

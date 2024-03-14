@@ -167,12 +167,6 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08 Classification The Big Questions (Lecture 6 continued) and Accuracy</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -183,18 +177,24 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#data-from-sensors" id="toc-data-from-sensors" class="nav-link active" data-scroll-target="#data-from-sensors"><span class="header-section-number">5.1</span> Data from sensors</a></li>
-  <li><a href="#land-use-and-land-cover-lulc" id="toc-land-use-and-land-cover-lulc" class="nav-link" data-scroll-target="#land-use-and-land-cover-lulc"><span class="header-section-number">5.2</span> Land use and Land cover (LULC)</a></li>
-  <li><a href="#synthetic-aperture-radar-sar" id="toc-synthetic-aperture-radar-sar" class="nav-link" data-scroll-target="#synthetic-aperture-radar-sar"><span class="header-section-number">5.3</span> Synthetic Aperture Radar (SAR)</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5.4</span> Application</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#london-plan" id="toc-london-plan" class="nav-link" data-scroll-target="#london-plan"><span class="header-section-number">5.4.1</span> London Plan</a></li>
-  <li><a href="#case-study" id="toc-case-study" class="nav-link" data-scroll-target="#case-study"><span class="header-section-number">5.4.2</span> Case study</a></li>
+  <li><a href="#data-from-sensors" id="toc-data-from-sensors" class="nav-link" data-scroll-target="#data-from-sensors"><span class="header-section-number">5.1.1</span> Data from sensors</a></li>
+  <li><a href="#land-use-and-land-cover-lulc" id="toc-land-use-and-land-cover-lulc" class="nav-link" data-scroll-target="#land-use-and-land-cover-lulc"><span class="header-section-number">5.1.2</span> Land use and Land cover (LULC)</a></li>
+  <li><a href="#synthetic-aperture-radar-sar" id="toc-synthetic-aperture-radar-sar" class="nav-link" data-scroll-target="#synthetic-aperture-radar-sar"><span class="header-section-number">5.1.3</span> Synthetic Aperture Radar (SAR)</a></li>
   </ul></li>
-  <li><a href="#reading-week-temperature" id="toc-reading-week-temperature" class="nav-link" data-scroll-target="#reading-week-temperature"><span class="header-section-number">6</span> Reading Week: Temperature</a>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5.2</span> Application</a>
   <ul class="collapse">
-  <li><a href="#urban-heat-island" id="toc-urban-heat-island" class="nav-link" data-scroll-target="#urban-heat-island"><span class="header-section-number">6.1</span> Urban heat island</a></li>
-  <li><a href="#presentation-paths" id="toc-presentation-paths" class="nav-link" data-scroll-target="#presentation-paths"><span class="header-section-number">6.2</span> Presentation paths</a></li>
+  <li><a href="#more-sar" id="toc-more-sar" class="nav-link" data-scroll-target="#more-sar"><span class="header-section-number">5.2.1</span> More SAR</a></li>
+  <li><a href="#london-plan" id="toc-london-plan" class="nav-link" data-scroll-target="#london-plan"><span class="header-section-number">5.2.2</span> London Plan</a></li>
+  <li><a href="#landsat-pre-processing-steps" id="toc-landsat-pre-processing-steps" class="nav-link" data-scroll-target="#landsat-pre-processing-steps"><span class="header-section-number">5.2.3</span> Landsat pre-processing steps</a></li>
+  <li><a href="#case-study" id="toc-case-study" class="nav-link" data-scroll-target="#case-study"><span class="header-section-number">5.2.4</span> Case study</a></li>
+  </ul></li>
+  <li><a href="#reading-week-temperature" id="toc-reading-week-temperature" class="nav-link" data-scroll-target="#reading-week-temperature"><span class="header-section-number">6</span> 05 Reading Week: Temperature</a>
+  <ul class="collapse">
+  <li><a href="#presentation-paths" id="toc-presentation-paths" class="nav-link" data-scroll-target="#presentation-paths"><span class="header-section-number">6.1</span> Presentation paths</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.2</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.3</span> <strong>References</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -219,51 +219,35 @@ div.csl-indent {
 
 </header>
 
-<section id="data-from-sensors" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="data-from-sensors"><span class="header-section-number">5.1</span> Data from sensors</h2>
-<ul>
-<li>Identify what kind of data to get full use of it</li>
-</ul>
+<section id="summary" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
+<section id="data-from-sensors" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="data-from-sensors"><span class="header-section-number">5.1.1</span> Data from sensors</h3>
+<p>Satellites collect a wide array of data using different parts of the electromagnetic spectrum, each revealing unique details about the Earth’s surface and atmosphere. They capture everything from visible light and near-infrared, which show us images like what our eyes see and help monitor vegetation health and urban growth, to thermal infrared that detects the Earth’s heat emission for studying temperature changes and identifying wildfires. Microwave sensors, divided into several bands including C, X and L bands <span class="citation" data-cites="ICEYE_web">(<a href="#ref-ICEYE_web" role="doc-biblioref"><span>“ICEYE: Satellite Data,”</span> n.d.</a>)</span>, cut through clouds and vegetation to gather data in any weather, useful for tracking soil moisture and sea temperatures. Radar and Lidar technologies provide detailed images and 3D maps for studying terrain, forest structures, and urban development. There’s even data from ultraviolet to X-ray bands, though less used for Earth observation, they’re crucial for studying atmospheric conditions and cosmic phenomena. Together, these diverse data streams allow scientists to explore everything from climate patterns to natural disasters, offering insights essential for understanding and protecting our planet.</p>
 </section>
-<section id="land-use-and-land-cover-lulc" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="land-use-and-land-cover-lulc"><span class="header-section-number">5.2</span> Land use and Land cover (LULC)</h2>
-<ul>
-<li><p>Access to green space</p>
-<ul>
-<li>shortest distance/…</li>
-</ul></li>
-</ul>
+<section id="land-use-and-land-cover-lulc" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="land-use-and-land-cover-lulc"><span class="header-section-number">5.1.2</span> Land use and Land cover (LULC)</h3>
+<p>Urban green spaces <span class="citation" data-cites="shahtahmassebi2021remote">(<a href="#ref-shahtahmassebi2021remote" role="doc-biblioref">Shahtahmassebi et al. 2021</a>)</span> are analyzed using data from Landsat and Sentinel satellites, alongside LiDAR with high spatial resolution, to study vegetation health and accessibility to green areas, as well as to evaluate urban planning efforts through tools like Google Street View and Google Earth Engine. For disaster response and preparedness, Sentinel-2 spectral imagery is used to compare pre-event and post-event conditions, conduct view-shed analysis, and utilize clustering techniques to assist in building 3D models for events like the Beirut explosion, aiding in efficient and informed disaster management strategies.</p>
 </section>
-<section id="synthetic-aperture-radar-sar" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="synthetic-aperture-radar-sar"><span class="header-section-number">5.3</span> Synthetic Aperture Radar (SAR)</h2>
-<ul>
-<li><p>Active sensors</p></li>
-<li><p>Reflection with surface texture data</p></li>
-<li><p>See through weather and clouds</p></li>
-</ul>
-<section id="sar-polarization-and-background" class="level4" data-number="5.3.0.1">
-<h4 data-number="5.3.0.1" class="anchored" data-anchor-id="sar-polarization-and-background"><span class="header-section-number">5.3.0.1</span> SAR polarization and background</h4>
-<p>Electromagnetic spectrum (EMR)</p>
-<p>A SAR signal has both amplitude (backscatter) and phase data.</p>
-<ul>
-<li>Windy and CALM: water move</li>
-</ul>
+<section id="synthetic-aperture-radar-sar" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="synthetic-aperture-radar-sar"><span class="header-section-number">5.1.3</span> Synthetic Aperture Radar (SAR)</h3>
+<p>Its capabilities as an active sensing system that captures surface texture data and can see through weather and clouds due to different wavelengths and polarizations. SAR operates in multiple bands like X, C, S, L, and P <span class="citation" data-cites="nasa_sar">(<a href="#ref-nasa_sar" role="doc-biblioref"><span>“What Is SAR?”</span> n.d.</a>)</span>, each with varying applications from high-resolution urban monitoring to biomass and vegetation mapping. The polarization of SAR, whether horizontal, vertical, or dual, affects how it interacts with materials and can aid in differentiating features such as rough surfaces and double-bounce reflections in urban areas. SAR imagery can also undergo various corrections for improved clarity and accuracy. With different wavelengths, SAR can penetrate surfaces to varying degrees, affecting volume scattering and thus enabling diverse applications like terrain mapping and change detection. The slides touch on the use of SAR in urban monitoring, explaining how the unique properties of SAR, such as backscatter and polarization, can be utilized to analyze and understand urban structures and natural environments.</p>
 </section>
-<section id="more-sar" class="level4" data-number="5.3.0.2">
-<h4 data-number="5.3.0.2" class="anchored" data-anchor-id="more-sar"><span class="header-section-number">5.3.0.2</span> More SAR</h4>
+</section>
+<section id="application" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
+<section id="more-sar" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="more-sar"><span class="header-section-number">5.2.1</span> More SAR</h3>
 <ul>
 <li><p>SAR Floods</p></li>
 <li><p>Drawback? (Me on SAR)</p></li>
 <li><p>Interferometry Synthetic Aperture Radar (InSAR)</p></li>
 </ul>
 </section>
-</section>
-<section id="application" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="application"><span class="header-section-number">5.4</span> Application</h2>
-<section id="london-plan" class="level3" data-number="5.4.1">
-<h3 data-number="5.4.1" class="anchored" data-anchor-id="london-plan"><span class="header-section-number">5.4.1</span> London Plan</h3>
+<section id="london-plan" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="london-plan"><span class="header-section-number">5.2.2</span> London Plan</h3>
 <ul>
-<li><p>Policy SI 4 Managing heat risk <span class="citation" data-cites="abercrombie1944greater">(<a href="references.html#ref-abercrombie1944greater" role="doc-biblioref">Abercrombie 1944</a>)</span> p354</p></li>
+<li><p>Policy SI 4 Managing heat risk <span class="citation" data-cites="abercrombie1944greater">(<a href="#ref-abercrombie1944greater" role="doc-biblioref">Abercrombie 1944</a>)</span> p354</p></li>
 <li><p>Urban development proposals must mitigate the urban heat island effect through thoughtful <strong>design, materials, and green infrastructure</strong>. Major developments need an <strong>energy strategy</strong> to reduce internal overheating and air conditioning reliance, following a cooling hierarchy that prioritizes:</p></li>
 </ul>
 <ol type="1">
@@ -274,50 +258,54 @@ div.csl-indent {
 <li><strong>Considering active cooling systems</strong> only as a last resort.</li>
 </ol>
 <p>Climate change has heightened London’s temperature, exacerbating the urban heat island effect and health risks during extreme heat. New developments must address citywide and building-specific overheating. Strategies include avoiding excessive glazing and promoting passive ventilation. Air conditioning, which contributes to urban heat, should be minimized. The <strong>Chartered Institution of Building Services Engineers (CIBSE)</strong> provides guidelines for addressing overheating in new and refurbished buildings, ensuring designs are future-proof against climate change.</p>
-<section id="landsat-pre-processing-steps" class="level4" data-number="5.4.1.1">
-<h4 data-number="5.4.1.1" class="anchored" data-anchor-id="landsat-pre-processing-steps"><span class="header-section-number">5.4.1.1</span> Landsat pre-processing steps</h4>
+</section>
+<section id="landsat-pre-processing-steps" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="landsat-pre-processing-steps"><span class="header-section-number">5.2.3</span> Landsat pre-processing steps</h3>
 <p>Included: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization”</p>
 </section>
-<section id="decision-trees" class="level4" data-number="5.4.1.2">
-<h4 data-number="5.4.1.2" class="anchored" data-anchor-id="decision-trees"><span class="header-section-number">5.4.1.2</span> Decision trees</h4>
-</section>
-</section>
-<section id="case-study" class="level3" data-number="5.4.2">
-<h3 data-number="5.4.2" class="anchored" data-anchor-id="case-study"><span class="header-section-number">5.4.2</span> Case study</h3>
+<section id="case-study" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="case-study"><span class="header-section-number">5.2.4</span> Case study</h3>
 <ul>
 <li>Forest fires</li>
 </ul>
 </section>
 </section>
 <section id="reading-week-temperature" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Reading Week: Temperature</h1>
-<p><a href="https://lem-c.github.io/temp_map/">History temperature in UK</a></p>
-<section id="urban-heat-island" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="urban-heat-island"><span class="header-section-number">6.1</span> Urban heat island</h2>
-<ul>
-<li><p>social and environmental cost</p></li>
-<li><p>GDP lost</p>
-<ul>
-<li>Why</li>
-</ul></li>
-</ul>
-<p>“satellite-derived surface temperature shows very weak relationships with air temperature” [Chakraborty et al., 2022]</p>
-</section>
-<section id="presentation-paths" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="presentation-paths"><span class="header-section-number">6.2</span> Presentation paths</h2>
+<h1 data-number="6"><span class="header-section-number">6</span> 05 Reading Week: Temperature</h1>
+<p><a href="https://lem-c.github.io/temp_map/">History temperature and CO2 emissions in UK</a></p>
+<section id="presentation-paths" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="presentation-paths"><span class="header-section-number">6.1</span> Presentation paths</h2>
 <ul>
 <li><p>Low Traffic Neighbourhoods: what, why and where?</p></li>
-<li><p>UHI in phoenix <span class="citation" data-cites="chow2012urban">(<a href="references.html#ref-chow2012urban" role="doc-biblioref">Chow, Brennan, and Brazel 2012</a>)</span></p></li>
+<li><p>UHI in phoenix <span class="citation" data-cites="chow2012urban">(<a href="#ref-chow2012urban" role="doc-biblioref">Chow, Brennan, and Brazel 2012</a>)</span></p></li>
 <li><p>https://zhuanlan.zhihu.com/p/419122903</p></li>
 </ul>
+</section>
+<section id="reflection" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.2</span> Reflection</h2>
+<p>Reflecting on my journey to understand the hot spots in cities has been like unfolding a map that leads from a single point of curiosity to a vast landscape of global environmental challenges. It all started with noticing how some parts of the city felt warmer, which sparked a deep dive into learning from various fields. By combining insights from satellite images, exploring city planning policies, and diving into environmental science, I’ve pieced together a clearer picture of why cities get so warm and what it means for us.</p>
+<p>This adventure has taught me the value of looking at problems from different angles. It’s not just about the heat; it’s about how we design our cities, the rules that guide our urban development, and the new technologies that let us see our environment in different ways. This mix of personal experience, academic study, and the latest tech has shown me that tackling big challenges requires a mix of knowledge, curiosity, and a willingness to explore.</p>
+<p>In short, this journey has opened my eyes. It’s shown me that getting to grips with the issue of cities heating up is crucial for building sustainable places for us to live. And through this process, I’ve learned that when we combine our personal observations with approach to learning and technology can make a real impact.</p>
+</section>
+<section id="references" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="references"><span class="header-section-number">6.3</span> <strong>References</strong></h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-abercrombie1944greater" class="csl-entry" role="listitem">
 Abercrombie, Patrick. 1944. <em>Greater London Plan</em>. HM Stationery Office.
 </div>
 <div id="ref-chow2012urban" class="csl-entry" role="listitem">
 Chow, Winston TL, Dean Brennan, and Anthony J Brazel. 2012. <span>“Urban Heat Island Research in Phoenix, Arizona: Theoretical Contributions and Policy Applications.”</span> <em>Bulletin of the American Meteorological Society</em> 93 (4): 517–30.
+</div>
+<div id="ref-ICEYE_web" class="csl-entry" role="listitem">
+<span>“ICEYE: Satellite Data.”</span> n.d. <a href="https://www.iceye.com/satellite-data" class="uri">https://www.iceye.com/satellite-data</a>.
+</div>
+<div id="ref-shahtahmassebi2021remote" class="csl-entry" role="listitem">
+Shahtahmassebi, Amir Reza, Chenlu Li, Yifan Fan, Yani Wu, Muye Gan, Ke Wang, Arunima Malik, George Alan Blackburn, et al. 2021. <span>“Remote Sensing of Urban Green Spaces: A Review.”</span> <em>Urban Forestry &amp; Urban Greening</em> 57: 126946.
+</div>
+<div id="ref-nasa_sar" class="csl-entry" role="listitem">
+<span>“What Is SAR?”</span> n.d. <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar" class="uri">https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar</a>.
 </div>
 </div>
 </section>

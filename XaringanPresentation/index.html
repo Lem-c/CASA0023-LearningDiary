@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Ninja Master SNAP in Remotely Sensing</title>
+    <title>Introduction to Point Cloud Sensors</title>
     <meta charset="utf-8" />
     <meta name="author" content="Yuhao Chen" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <script src="libs/freezeframe/freezeframe.min.js"></script>
+    <script src="libs/xaringanExtra-freezeframe/freezeframe-init.js"></script>
+    <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="libs/mark.js/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":false}) })</script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"efc584c9f4eb476f9ae3b37d33a93202","expires":1}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/xaringanExtra_fit-screen/fit-screen.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
 .title[
-# Ninja Master SNAP in Remotely Sensing
+# Introduction to Point Cloud Sensors
 ]
 .author[
 ### Yuhao Chen
@@ -22,72 +52,130 @@ class: center, middle, inverse, title-slide
 ### UCL CASA
 ]
 .date[
-### 21/01/2024 (updated: 2024-02-01)
+### 21/01/2024 (updated: 2024-03-19)
 ]
 
 ---
 
+background-image: url("./assets/img/bg_01.jpg")
+background-size: cover
 
-background-image: url(./assets/img/bg_01.png)
 
 
-# Introduction to SNAP and Sensor Waves
 
-- Welcome to our presentation on SNAP and Sensor Waves.
 
----
 
-# Light and Different Kinds of Waves
 
-- Let's start by understanding light and the various types of waves in the world.
+# Introduction to Point Cloud Sensors (PCS)
 
-- Light is an electromagnetic wave and is just one type among many others.
+
+.panelset[
+.panel[.panel-name[**Overview**]
+  - PCS excels in creating detailed point cloud data quickly and efficiently, offering customizable settings tailored for speed.
   
-### Types of Waves
-- Electromagnetic Waves:
-  - Visible light
-  - Infrared
-  - Ultraviolet
-  - Radio waves
-  - Microwaves
-  - X-rays
-- Mechanical Waves:
-  - Sound waves
+  - PCS captures the environment from its viewpoint ( [gloria_iris, 2020](https://blog.csdn.net/gloria_iris/article/details/105720798) ) through a method known as angular sampling, producing point cloud data for each direction sampled.
+]
+.panel[.panel-name[**LiDAR**]
+
+.pull-left[
+  - Lidar ( [Wandinger, 2005](http://superlidar.colorado.edu/Classes/Lidar2008/ReadingMaterials/IntroLidar.pdf) ) is a kind of PCS technology that measures distances by shining a laser on a target and timing how long it takes for the light to bounce back. It can be set to point in one direction or move around to scan an area, which is called lidar scanning or 3D laser scanning. This versatile method is used on the ground, in the air, and on moving platforms. 
+]
+  
+.pull-right[
+  &lt;img src="./assets/img/LiDAR.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+]
+]
+
+.panel[.panel-name[**Importance in modern technology**]
+- **How It Works**: LiDAR emits laser beams towards the target. Some of these beams bounce back and are detected by the sensor, measuring the time taken to return.
+
+- **Data Collection**: This time-of-flight information is converted into distance measurements, creating three-dimensional information about the shape and surface characteristics of the target.
+
+- **Advantages**: Offers precise data with high accuracy, works in various conditions including night and through some obstructions like vegetation.
+
+- **Types of LiDAR**: Includes airborne (helicopters, drones) and terrestrial (ground-based) systems, each suited for different applications.
+
+Source: [Wandinger, 2005](http://superlidar.colorado.edu/Classes/Lidar2008/ReadingMaterials/IntroLidar.pdf)
+]
+]
 
 ---
 
-# SNAP in Processing Sentinel Data
+# Applications in Research and Industry
 
-- SNAP (Sentinel Application Platform) is a powerful tool for processing Sentinel satellite data.
+### Autonomous Vehicles
 
-- It provides a range of functions for data pre-processing, analysis, and visualization.
+- LiDAR sensors are crucial for automated cars, providing range and intensity information to detect and recognize objects like pedestrians and other vehicles.
 
+- Enhancements in LiDAR resolution have significantly improved, yet challenges remain under adverse weather conditions.
 
-##  SNAP Features
+### Weather Condition Analysis
 
-- SNAP Features:
-  - Data pre-processing
-  - Atmospheric correction
-  - Image filtering
-  - Image fusion
-  - Data visualization
+- Studies have investigated LiDAR's performance in various weather conditions, including fog, rain, and snow, indicating performance degradation under such conditions.
 
+- Validation methods include mathematical models, simulations, and indoor fog chamber tests, emphasizing the need for robust sensor performance in all driving scenarios.
+
+Source: [Wandinger, 2005](http://superlidar.colorado.edu/Classes/Lidar2008/ReadingMaterials/IntroLidar.pdf)
 ---
 
-# Benefits of SNAP
+# PCS in Adverse Weather Conditions
 
-- SNAP is an open-source platform.
+##  Performance Testing
 
-- It is user-friendly and provides a graphical interface.
+- The study specifically focuses on testing and validating the performance of automotive point-cloud sensors (e.g., LiDAR) in adverse weather conditions like fog and snow.
 
-- Offers support for a variety of remote sensing data formats.
+- Indoor and outdoor tests reveal that all tested sensors' performance degrades under such conditions, yet this is essential for advancing automated driving technologies.
 
+## Automated Driving Challenges
+
+- The research aims to overcome obstacles for automated driving in adverse conditions, such as detecting objects on the road and maintaining environmental awareness, by understanding sensor limits and improving their reliability.
+
+Source: [Jokela et al., 2019](https://www.mdpi.com/2076-3417/9/11/2341/pdf)
 ---
 
-# Conclusion
+# Reflection I
 
-- In this presentation, we explored the world of sensor waves, including light and various wave types.
-- We also introduced SNAP and its significance in processing Sentinel data.
+- Understanding of Point Cloud Sensors/LiDAR:
+    
+  - The first time getting close to lidar is my final year of undergraduate studies which needed to improve the pathfinding algorithm of a car with remote control. Throughout this period, I've become quite familiar with how PCS and LiDAR operate, especially their capability to generate high-resolution 3D maps of the environment (If I can have one equipment of myself).
+
+- Challenges 
+
+  - The studies highlighted the challenges faced by these sensors under adverse weather conditions, such as fog, rain, and snow. Imagining the sensor is covered but dirt or snow, it really hard to leave the sensor alone working in some bad weather (expansive prices, battery and so on, oh my gosh).
+---
+
+# Reflection II
+
+- Future potential
+
+  - Based on current limitation and application, it may not be the best choice for auto-driving system comparing to directly visual direction making algorithm. However, it has vast potential in areas like disaster management, where accurate 3D mapping can aid in quicker response and recovery efforts like helping quick recover the road/buildings and locate Vulnerable parts of a building that are about collapse.
+  
+  - The integration of LiDAR data with other technologies, such as radar and cameras, for enhanced object detection and environmental awareness, has the value of an interdisciplinary approach to solving complex problems in sensor technology and data analysis.
+
+  - I've realized the importance of multidisciplinary collaboration in advancing sensor technology. It is great to bring different fields together and achieve a hard task.
+---
+# References
+
+
+
+- 
+&lt;p&gt;&lt;cite&gt;Jokela, M., M. Kutila, and P. Pyykönen
+(2019).
+&amp;ldquo;Testing and validation of automotive point-cloud sensors in adverse weather conditions&amp;rdquo;.
+In: &lt;em&gt;Applied Sciences&lt;/em&gt; 9.11, p. 2341.&lt;/cite&gt;&lt;/p&gt;
+- 
+&lt;p&gt;&lt;cite&gt;gloria_iris
+(2020).
+&lt;em&gt;Point Cloud Sensor&lt;/em&gt;.
+&lt;a href="https://blog.csdn.net/gloria_iris/article/details/105720798"&gt;https://blog.csdn.net/gloria_iris/article/details/105720798&lt;/a&gt;.
+Accessed: 2024-03-19.&lt;/cite&gt;&lt;/p&gt;
+- 
+&lt;p&gt;&lt;cite&gt;Wandinger, U.
+(2005).
+&amp;ldquo;Introduction to lidar&amp;rdquo;.
+In: 
+&lt;em&gt;Lidar: range-resolved optical remote sensing of the atmosphere&lt;/em&gt;.
+Springer, pp. 1&amp;ndash;18.&lt;/cite&gt;&lt;/p&gt;
 
 ---
 

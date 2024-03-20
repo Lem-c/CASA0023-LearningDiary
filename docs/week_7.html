@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Remotely sensing learning diary - 7&nbsp; 07 Classification I</title>
+<title>Remotely sensing learning diary - Classification I</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,7 +94,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">07 Classification I</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_7.html">Classification I</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -128,43 +128,49 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">01 The origin of all things</span></span></a>
+ <span class="menu-text">The origin of all things: week1</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02 Try the presentation</span></span></a>
+ <span class="menu-text">Try the presentation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03 Data Fusion: Principles and Methods</span></span></a>
+ <span class="menu-text">Data Fusion: Principles and Methods</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">04 Policy Applications</span></span></a>
+ <span class="menu-text">04 Policy Applications</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">06 Google Earth Engine</span></span></a>
+ <span class="menu-text">Google Earth Engine</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_7.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">07 Classification I</span></span></a>
+ <span class="menu-text">Classification I</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08 Classification The Big Questions (Lecture 6 continued) and Accuracy</span></span></a>
+ <span class="menu-text">Classification The Big Questions (Lecture 6 continued) and Accuracy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SAR in GEE</span></a>
   </div>
 </li>
     </ul>
@@ -177,10 +183,11 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#algorithms" id="toc-algorithms" class="nav-link active" data-scroll-target="#algorithms"><span class="header-section-number">7.1</span> Algorithms</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.4</span> <strong>References</strong></a></li>
+  <li><a href="#algorithms" id="toc-algorithms" class="nav-link active" data-scroll-target="#algorithms">Algorithms</a></li>
+  <li><a href="#coding-with-gee" id="toc-coding-with-gee" class="nav-link" data-scroll-target="#coding-with-gee">Coding with GEE</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><strong>References</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -189,7 +196,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">07 Classification I</span></h1>
+<h1 class="title">Classification I</h1>
 </div>
 
 
@@ -205,8 +212,8 @@ div.csl-indent {
 </header>
 
 <p>Machine learning, a subset of computer science, involves creating algorithms that allow computers to learn and make decisions or predictions autonomously, related to human learning and generalization through experience, embodying inductive learning principles <span class="citation" data-cites="jordan2015machine">(<a href="#ref-jordan2015machine" role="doc-biblioref">Jordan and Mitchell 2015</a>)</span>. When the topic comes the spatial analysis, good attempts like Support Vector Machine and random forest has been applied in this filed.</p>
-<section id="algorithms" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="algorithms"><span class="header-section-number">7.1</span> Algorithms</h2>
+<section id="algorithms" class="level2">
+<h2 class="anchored" data-anchor-id="algorithms">Algorithms</h2>
 <p>Amongst many classification algorithms, decision trees have proven to be efficient algorithms for classification of large datasets. A <strong>d</strong>ecision tree is a classification algorithm that automatically derives a hierarchy of partition rules with respect to a target attribute of a large dataset <span class="citation" data-cites="li2006spatial">(<a href="#ref-li2006spatial" role="doc-biblioref">Li and Claramunt 2006</a>)</span>. Forest is build from single tree. Classification aims to Classify data into discrete categories based on certain features.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -218,40 +225,40 @@ div.csl-indent {
 <p><strong>R</strong>andom Forests improve decision tree accuracy by generating multiple trees through random samples and feature subsets, thus enhancing diversity and reducing overfitting. This method involves creating a forest where each tree contributes to the final prediction through majority voting, while unselected data offers an unbiased error estimate. The ensemble approach allows trees to fully grow without pruning, and the number of features evaluated at each split is often the square root of the total features, further ensuring robust predictions.</p>
 <p><strong>S</strong>upport Vector Machine (SVM) is a machine learning tool for categorizing data by drawing an optimal separating line (or higher-dimensional plane) to distinguish different data points. It aims for the widest margin between the nearest points of any category, known as support vectors. SVM’s effectiveness is fine-tuned using two parameters: C, which controls the margin’s strictness and focus on difficult points, and Gamma, which dictates the influence of each data point, with higher values emphasizing closer points. For data not linearly separable, SVM employs the kernel trick to manipulate the data into a separable form.</p>
 </section>
-<section id="application" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
-<p>The method provided by Yan-yan SONG and Ying LU<span class="citation" data-cites="song2015decision">(<a href="#ref-song2015decision" role="doc-biblioref">Song and Ying 2015</a>)</span> segments a population into branches forming an inverted tree, comprising a root, internal, and leaf nodes. It’s a non-parametric algorithm, effectively handling large, complex datasets without requiring a complex parametric framework. When combine the population into the spatial analysis, here is an example. LandScan USA<span class="citation" data-cites="bhaduri2007landscan">(<a href="#ref-bhaduri2007landscan" role="doc-biblioref">Bhaduri et al. 2007</a>)</span> offers high-resolution population distribution data essential for socio-environmental research, public health, homeland security, and policy-making. This data supports operational activities, scientific analyses, and studies on population dynamics over time and space. It’s data is pivotal for identifying vulnerable groups like the elderly or low-income communities, guiding targeted policy development. Additionally, it serves emergency management and homeland security by offering detailed population distribution insights, enhancing disaster response and resource planning. Applying classification in these areas accelerates target group identification and reduces budget requirements.</p>
+<section id="coding-with-gee" class="level2">
+<h2 class="anchored" data-anchor-id="coding-with-gee">Coding with GEE</h2>
 <p>This practice employs GEE for land classification by first filtering, clipping, and reducing the image, then adding point-based feature collections representing different land types to the satellite map.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="asset/screenshot/week07/points.png" class="img-fluid figure-img"></p>
+<p><img src="asset/screenshot/week007/points.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Points represent: River (blue), Park (green), Soil (brown), Buildings (grey).</figcaption>
 </figure>
 </div>
 <p>The second step involves using CART for training and classification. After separately classifying soil and buildings, subtract the two images to identify potential unused land areas.</p>
-<pre><code>var classifier_soil = ee.Classifier.smileCart().train(...)
-var classifier_buildings  = ...
-
-var result = classifier_soil.subtract(classifier_buildings)</code></pre>
-<p><img src="asset/screenshot/week07/much_better.png" width="300" height="150" alt="Greenery classification"> <img src="asset/screenshot/week07/Builds_Parks.png" data-fig-align="right" width="300" height="150" alt="Buildings classification"></p>
+<p><img src="asset/screenshot/week007/much_better.png" width="300" height="150" alt="Greenery classification"> <img src="asset/screenshot/week007/Builds_Parks.png" data-fig-align="right" width="300" height="150" alt="Buildings classification"></p>
 <p>The unused land in London appears minimal, indicating a well-developed area.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="asset/screenshot/week07/result.png" class="img-fluid figure-img" width="561"></p>
+<p><img src="asset/screenshot/week007/result.png" class="img-fluid figure-img" width="561"></p>
 <figcaption class="figure-caption">Brown indicates the possible un-used land</figcaption>
 </figure>
 </div>
+<p>The final image encapsulates the outcome of the analysis, presenting a comprehensive map that starkly contrasts the unused land in London. The brown patches represent potential undeveloped land amidst a sea of green, which indicates well-utilized space. Overall, the process through GEE is really helpful for handling remote sensing data in geo field.</p>
 </section>
-<section id="reflection" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<section id="application" class="level2">
+<h2 class="anchored" data-anchor-id="application">Application</h2>
+<p>The method provided by Yan-yan SONG and Ying LU<span class="citation" data-cites="song2015decision">(<a href="#ref-song2015decision" role="doc-biblioref">Song and Ying 2015</a>)</span> segments a population into branches forming an inverted tree, comprising a root, internal, and leaf nodes. It’s a non-parametric algorithm, effectively handling large, complex datasets without requiring a complex parametric framework. When combine the population into the spatial analysis, here is an example. LandScan USA<span class="citation" data-cites="bhaduri2007landscan">(<a href="#ref-bhaduri2007landscan" role="doc-biblioref">Bhaduri et al. 2007</a>)</span> offers high-resolution population distribution data essential for socio-environmental research, public health, homeland security, and policy-making. This data supports operational activities, scientific analyses, and studies on population dynamics over time and space. It’s data is pivotal for identifying vulnerable groups like the elderly or low-income communities, guiding targeted policy development. Additionally, it serves emergency management and homeland security by offering detailed population distribution insights, enhancing disaster response and resource planning. Applying classification in these areas accelerates target group identification and reduces budget requirements.</p>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
 <p>It is evident that Google Earth Engine (GEE) offers a robust platform for geographical data analysis and land classification. The integration of GEE for categorizing land into specific features such as rivers, parks, soil, and buildings, and its subsequent application for identifying potential unused land in urban areas, as demonstrated in London, showcases the dynamic capabilities of GEE.</p>
 <p>The methodology employed leverages the Classification and Regression Trees (CART) for training and classification purposes, ensuring a detailed, systematic approach to land assessment. The practice of subtracting the classified images of soil and buildings to extract information about unused land areas reflects an innovative approach to urban planning and land management.</p>
 <p>However, the analysis reveals that unused land in London is scarce, underscoring the city’s extensive development. This observation could have significant implications for urban policy and development strategies, as it highlights the limited scope for expansion and the potential need for creative land use planning. It suggests that future urban development may need to focus on vertical expansion or redevelopment of existing areas rather than horizontal sprawl, which is often less sustainable.</p>
 <p>Moreover, the use of GEE for such analyses provides an educational insight into the potential of machine learning and big data in enhancing my understanding of urban landscapes. By using zonal statistics, regional and neighborhood reduction techniques, and regression models, GEE allows for a comprehensive evaluation of land utilization, which is critical for sustainable urban planning.</p>
 <p>The practical provides a learning opportunity to delve deeper into the spatial and spectral intricacies of our world, enabling the development of more informed, data-driven decisions in urban and environmental planning.</p>
 </section>
-<section id="references" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="references"><span class="header-section-number">7.4</span> <strong>References</strong></h2>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references"><strong>References</strong></h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -507,12 +514,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week_6.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">06 Google Earth Engine</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Google Earth Engine</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week_8.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">08 Classification The Big Questions (Lecture 6 continued) and Accuracy</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Classification The Big Questions (Lecture 6 continued) and Accuracy</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

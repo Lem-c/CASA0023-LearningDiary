@@ -1,4 +1,4 @@
-# 08 Classification The Big Questions (Lecture 6 continued) and Accuracy
+# Classification The Big Questions (Lecture 6 continued) and Accuracy {.unnumbered}
 
 ## Summary
 
@@ -20,7 +20,7 @@
 
 In machine learning, accuracy assessment measures the congruence between a model's predictions and actual outcomes, encompassing True Positive (TP) where the model accurately predicts the positive class, False Positive (FP) where it mistakenly predicts the positive class, True Negative (TN) where it accurately predicts the negative class, and False Negative (FN) where it incorrectly predicts the negative class.
 
-The assessment includes producer's accuracy $$\frac{TP}{TP+FN}$$ user's accuracy $$\frac{TP}{TP+FP}$$ overall accuracy $$\frac{TP+TN}{TP+TN+FP+FN}$$ to gauge model performance comprehensively.
+The assessment includes producer's accuracy $$\frac{TP}{TP+FN}$$ user's accuracy $$\frac{TP}{TP+FP}$$ overall accuracy $$\frac{TP+TN}{TP+TN+FP+FN}$$ to measure model performance comprehensively.
 
 ### Cross validation.
 
@@ -28,6 +28,18 @@ In geographic data analysis, data is typically divided into training and testing
 
 ## Application
 
-Following is the steps to classify the possible un-used land in London using Google earth engine.
+Aplin & Atkinson [@aplin2001sub] present a methodology that significantly enhances the accuracy of land cover mapping through the integration of soft classification techniques at a sub-pixel level with traditional hard classification outcomes. This innovative approach effectively mitigates the challenge of mixed pixels—a prevalent issue in high-resolution imagery where single pixels may encapsulate multiple land cover types. By employing vector field boundaries for pixel segmentation and assigning accurate land cover classes to these segments, the method transitions soft classification results into precise, per-field hard classifications. This strategy not only surpasses traditional classification methods in accuracy but also offers a refined depiction of land cover by recognizing the partial membership of pixels to various classes.
+
+Object-based models, as opposed to traditional per-pixel or sub-pixel classification techniques, offer a novel approach for remote sensing imagery classification by utilizing geographical objects rather than individual pixels as the primary unit of analysis [@li2014review]. Conversely, Chen et al. [@chen2020multi] introduce a multi-objective optimization model designed to streamline satellite resource planning for extensive regional mapping. Their model, which aims to optimize the balance between maximizing coverage and minimizing resource expenditure, represents a strategic approach to managing the complexities associated with multi-satellite imaging tasks. Through incorporating considerations for imaging strip selection and angular adjustments, this methodology enhances both the decomposition of regions and the efficient allocation of satellite resources. Employing the non-dominated sorting genetic algorithm (NSGA-II) and the Vatti clipping algorithm, the study showcases significant methodological progress in orchestrating large-scale mapping efforts with multiple satellites.
+
+They all highlight the dynamic applications and advancements in remote sensing technology, from detailed agricultural mapping to efficient large-scale regional mapping (hard to bring rea-life issue into application for me currently). The focus may be on state-of-the-art algorithms, but history is everlasting.
+
+## Reflection
+This week's lecture on advanced remote sensing techniques was a new field for me moving to how to extract more nuanced information from satellite images. The use of OBIA and superpixels through the SLIC algorithm has shifted my perspective on image classification. The pyramid of remote sensing has been built, hope to access to the complete project.
+
+Sub-pixel analysis and understanding the specific spectral signatures of ground materials, or end members, have illustrated the incredible precision can be achieved. It's like zooming in to the exact brushstrokes of different colors on a canvas to understand what’s really there. This can be a game-changer in areas like precision agriculture.
+The accuracy assessments and cross-validation methods reinforced the idea that models are tools that we must continually test and refine. They’re not infallible, but if used with diligence, they become powerful allies in understanding our environment.🌳
+
+These techniques could revolutionize environmental monitoring and resource management. While I might not use all these methods directly, the strategic thinking they require will undoubtedly shape how I approach complex problems and data analysis in the future.
 
 ## **References**

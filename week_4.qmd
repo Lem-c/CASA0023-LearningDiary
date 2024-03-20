@@ -1,4 +1,4 @@
-# 04 Policy Applications
+# 04 Policy Applications {.unnumbered}
 
 ## Summary
 
@@ -16,17 +16,11 @@ Its capabilities as an active sensing system that captures surface texture data 
 
 ## Application
 
-### More SAR
+### Case study: London Plan
 
--   SAR Floods
+London, as one of the world's major cities [@GLA2021], faces a unique set of challenges posed by the urban heat island (UHI) effect—a phenomenon where urban regions experience higher temperatures than their rural surroundings. Policy SI4 of the London Plan 2021 seeks to mitigate this by guiding new developments to minimize internal overheating and reduce reliance on air conditioning systems.
 
--   Drawback? (Me on SAR)
-
--   Interferometry Synthetic Aperture Radar (InSAR)
-
-### London Plan
-
--   Policy SI 4 Managing heat risk [@abercrombie1944greater] p354
+-   Policy SI 4 Managing heat risk [@abercrombie1944greater] p354 introduces that Policy SI 4 Managing Heat Risk addresses the adverse impacts of the UHI effect by setting out a cooling hierarchy that includes reducing heat entry, minimizing internal heat generation, and enhancing building heat management through design. This policy is essential in the context of London's changing climate, where the city is experiencing higher average temperatures and more severe hot weather events.
 
 -   Urban development proposals must mitigate the urban heat island effect through thoughtful **design, materials, and green infrastructure**. Major developments need an **energy strategy** to reduce internal overheating and air conditioning reliance, following a cooling hierarchy that prioritizes:
 
@@ -38,32 +32,24 @@ Its capabilities as an active sensing system that captures surface texture data 
 
 Climate change has heightened London's temperature, exacerbating the urban heat island effect and health risks during extreme heat. New developments must address citywide and building-specific overheating. Strategies include avoiding excessive glazing and promoting passive ventilation. Air conditioning, which contributes to urban heat, should be minimized. The **Chartered Institution of Building Services Engineers (CIBSE)** provides guidelines for addressing overheating in new and refurbished buildings, ensuring designs are future-proof against climate change.
 
+-   Application Criterion: Remotely sensed data, particularly from satellite imagery and thermal mapping, can be instrumental in assessing UHI impacts and guiding urban planning. Such data could inform strategies for building orientation, the placement of green spaces, and the materials used in construction to manage heat risk effectively.
+
 ### Landsat pre-processing steps
 
-Included: (i) image resampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization"
+Included: (i) image re-sampling, (ii) conversion of raw digital values (DN) to top of atmosphere (TOA) reflectance, (iii) cloud/shadow/water screening and quality assessment (QA), and (iv) image normalization"
 
-### Case study
-
--   Forest fires
+Policy SI4 offers a progressive framework for sustainable urban development, using remotely sensed data to address London's UHI challenge.
 
 # 05 Reading Week: Temperature
 
 [History temperature and CO2 emissions in UK](https://lem-c.github.io/temp_map/)
 
-## Presentation paths
-
--   Low Traffic Neighbourhoods: what, why and where?
-
--   UHI in phoenix [@chow2012urban]
-
--   https://zhuanlan.zhihu.com/p/419122903
-
 ## Reflection
 
-Reflecting on my journey to understand the hot spots in cities has been like unfolding a map that leads from a single point of curiosity to a vast landscape of global environmental challenges. It all started with noticing how some parts of the city felt warmer, which sparked a deep dive into learning from various fields. By combining insights from satellite images, exploring city planning policies, and diving into environmental science, I've pieced together a clearer picture of why cities get so warm and what it means for us.
+Reflecting on my journey to understand the hot spots in cities has been like unfolding a map that leads from a single point of curiosity to a vast landscape of global environmental challenges. It all started with noticing how some parts of the city felt warmer, which drew a deep dive into learning from various fields. By combining insights from satellite images, exploring city planning policies, and diving into environmental science, I've combined together a clearer picture of why cities get so warm and what it means for us.
 
 This adventure has taught me the value of looking at problems from different angles. It's not just about the heat; it's about how we design our cities, the rules that guide our urban development, and the new technologies that let us see our environment in different ways. This mix of personal experience, academic study, and the latest tech has shown me that tackling big challenges requires a mix of knowledge, curiosity, and a willingness to explore.
 
-In short, this journey has opened my eyes. It's shown me that getting to grips with the issue of cities heating up is crucial for building sustainable places for us to live. And through this process, I've learned that when we combine our personal observations with approach to learning and technology can make a real impact.
+In short, this week has opened my eyes. It's shown me that getting to grips with the issue of cities heating up is crucial for building sustainable places for us to live. And through this process, I've learned that when we combine our personal observations with approach to learning and technology can make a real impact.
 
 ## **References**

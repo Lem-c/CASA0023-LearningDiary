@@ -1,4 +1,4 @@
-# 06 Google Earth Engine
+# Google Earth Engine {.unnumbered}
 
 Google Earth is a software that shows a 3D model of the Earth by using pictures from satellites, planes, and GIS (Geographic Information Systems) data on a 3D globe [@tamiminia2020google]. We can use devices to look around this digital world, including cities and landscapes, and they can even add their own information to it. It has images covering many areas of the Earth's surface, including Street View pictures.
 
@@ -24,17 +24,7 @@ for statistical analysis (mean, median) within areas defined by geometries like 
 
 In regression analysis using Google Earth Engine (GEE), the linearFit() function facilitates linear regression on a per-pixel basis across images from multiple sensors, analyzing temporal changes. This least squares method requires a dependent and an independent variable band, typically time, allowing for temporal studies over years or spatial analysis within a specific polygon on a given date.
 
-## Application
-
-### Google Earth Engine for geo-big data applications and ethics concern
-
-The study of Haifa et. al [@tamiminia2020google] uses Google Earth Engine to track and study changes in land use within the Brazilian Amazon rainforest. This project relies on satellite images from Landsat and Sentinel-2 to observe deforestation and the deterioration of the forest. To categorize different types of land and notice changes over periods, advanced machine learning techniques, including Random Forest and Support Vector Machines can be used. The goal is to provide precise, current data on how the land is beingndefined used, which is crucial for keeping an eye on the environment and helping conservation efforts.
-
-Stephen R.J. Sheppard\* and Petr Cizek [@sheppard2009ethics] explores the ethical implications of using Google Earth's visualization capabilities. It delves into the risks and benefits associated with the participatory use of virtual globes by experts and laypeople. This paper [@sheppard2009ethics] emphasizes the need for ethical frameworks and principles to guide the use of environmental visualisation techniques in the context of public policy and decision-making.
-
-This contrast [@tamiminia2020google; @sheppard2009ethics]suggests a complementary relationship where ethical guidelines could enhance the responsible use of technologies like GEE in scientific and policy-making contexts.
-
-### Coding with GEE
+### Week practical
 
 -   Using GEE to see the NDVI performance in London Camden Town.
 
@@ -45,20 +35,22 @@ This contrast [@tamiminia2020google; @sheppard2009ethics]suggests a complementar
           .filter('GSS_CODE == "E05000130"');
         ```
 
-    -   Then load image collection and apply simple image processing
-
-        ``` javascript
-
-        ... = ee.ImageCollection(*)
-          .filterDate('2023-04-03', '2023-10-03')
-          .filterBounds(London); 
-        ...
-        *.reduce(ee.Reducer.median());
-        ```
+    -   Then load image collection and apply simple image processing using '*.reduce(ee.Reducer.median())' function
 
     -   Finally calculate the value and add the layer to the map
 
         ![NDVI view in camden](asset/screenshot/week006/camden_NDVI.png){width="1270"}
+
+
+## Application
+
+### Google Earth Engine for geo-big data applications and ethics concern
+
+The study of Haifa et. al [@tamiminia2020google] uses Google Earth Engine to track and study changes in land use within the Brazilian Amazon rainforest. This project relies on satellite images from Landsat and Sentinel-2 to observe deforestation and the deterioration of the forest. To categorize different types of land and notice changes over periods, advanced machine learning techniques, including Random Forest and Support Vector Machines can be used. The goal is to provide precise, current data on how the land is beingndefined used, which is crucial for keeping an eye on the environment and helping conservation efforts.
+
+Stephen R.J. Sheppard\* and Petr Cizek [@sheppard2009ethics] explores the ethical implications of using Google Earth's visualization capabilities. It delves into the risks and benefits associated with the participatory use of virtual globes by experts and laypeople. This paper [@sheppard2009ethics] emphasizes the need for ethical frameworks and principles to guide the use of environmental visualisation techniques in the context of public policy and decision-making.
+
+This contrast [@tamiminia2020google; @sheppard2009ethics]suggests a complementary relationship where ethical guidelines could enhance the responsible use of technologies like GEE in scientific and policy-making contexts.
 
 ## Refelction
 

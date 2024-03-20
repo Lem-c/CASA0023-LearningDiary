@@ -1,4 +1,4 @@
-# 07 Classification I
+# Classification I {.unnumbered}
 
 Machine learning, a subset of computer science, involves creating algorithms that allow computers to learn and make decisions or predictions autonomously, related to human learning and generalization through experience, embodying inductive learning principles [@jordan2015machine]. When the topic comes the spatial analysis, good attempts like Support Vector Machine and random forest has been applied in this filed.
 
@@ -14,28 +14,24 @@ Three types of nodes exist: The root node, or decision node, which divides recor
 
 **S**upport Vector Machine (SVM) is a machine learning tool for categorizing data by drawing an optimal separating line (or higher-dimensional plane) to distinguish different data points. It aims for the widest margin between the nearest points of any category, known as support vectors. SVM's effectiveness is fine-tuned using two parameters: C, which controls the margin's strictness and focus on difficult points, and Gamma, which dictates the influence of each data point, with higher values emphasizing closer points. For data not linearly separable, SVM employs the kernel trick to manipulate the data into a separable form.
 
-## Application
-
-The method provided by Yan-yan SONG and Ying LU[@song2015decision] segments a population into branches forming an inverted tree, comprising a root, internal, and leaf nodes. It's a non-parametric algorithm, effectively handling large, complex datasets without requiring a complex parametric framework. When combine the population into the spatial analysis, here is an example. LandScan USA[@bhaduri2007landscan] offers high-resolution population distribution data essential for socio-environmental research, public health, homeland security, and policy-making. This data supports operational activities, scientific analyses, and studies on population dynamics over time and space. It's data is pivotal for identifying vulnerable groups like the elderly or low-income communities, guiding targeted policy development. Additionally, it serves emergency management and homeland security by offering detailed population distribution insights, enhancing disaster response and resource planning. Applying classification in these areas accelerates target group identification and reduces budget requirements.
-
+## Coding with GEE
 This practice employs GEE for land classification by first filtering, clipping, and reducing the image, then adding point-based feature collections representing different land types to the satellite map.
 
-![Points represent: River (blue), Park (green), Soil (brown), Buildings (grey).](asset/screenshot/week07/points.png){fig-align="center"}
+![Points represent: River (blue), Park (green), Soil (brown), Buildings (grey).](asset/screenshot/week007/points.png){fig-align="center"}
 
 The second step involves using CART for training and classification. After separately classifying soil and buildings, subtract the two images to identify potential unused land areas.
 
-```         
-var classifier_soil = ee.Classifier.smileCart().train(...)
-var classifier_buildings  = ...
-
-var result = classifier_soil.subtract(classifier_buildings)
-```
-
-![Greenery classification](asset/screenshot/week07/much_better.png){width="300" height="150"} ![Buildings classification](asset/screenshot/week07/Builds_Parks.png){fig-align="right" width="300" height="150"}
+![Greenery classification](asset/screenshot/week007/much_better.png){width="300" height="150"} ![Buildings classification](asset/screenshot/week007/Builds_Parks.png){fig-align="right" width="300" height="150"}
 
 The unused land in London appears minimal, indicating a well-developed area.
 
-![Brown indicates the possible un-used land](asset/screenshot/week07/result.png){width="561"}
+![Brown indicates the possible un-used land](asset/screenshot/week007/result.png){width="561"}
+
+The final image encapsulates the outcome of the analysis, presenting a comprehensive map that starkly contrasts the unused land in London. The brown patches represent potential undeveloped land amidst a sea of green, which indicates well-utilized space. Overall, the process through GEE is really helpful for handling remote sensing data in geo field. 
+
+## Application
+
+The method provided by Yan-yan SONG and Ying LU[@song2015decision] segments a population into branches forming an inverted tree, comprising a root, internal, and leaf nodes. It's a non-parametric algorithm, effectively handling large, complex datasets without requiring a complex parametric framework. When combine the population into the spatial analysis, here is an example. LandScan USA[@bhaduri2007landscan] offers high-resolution population distribution data essential for socio-environmental research, public health, homeland security, and policy-making. This data supports operational activities, scientific analyses, and studies on population dynamics over time and space. It's data is pivotal for identifying vulnerable groups like the elderly or low-income communities, guiding targeted policy development. Additionally, it serves emergency management and homeland security by offering detailed population distribution insights, enhancing disaster response and resource planning. Applying classification in these areas accelerates target group identification and reduces budget requirements.
 
 ## Reflection
 

@@ -1,4 +1,4 @@
-# 03 Data Fusion: Principles and Methods
+# Data Fusion: Principles and Methods {.unnumbered}
 
 ## Summary
 
@@ -30,8 +30,8 @@ Various data fusion methods include algebraic methods, image regression, princip
 
 ### OSM
 
-## Application
-
+## Week practical
+Finally some R related things, so, I'll do it step by step.
 Firstly, the two areas chose as follow (It's just two randomly areas chose around South Asia, looks like most of area are yellow sand):
 
 The process begins with choosing specific areas for analysis, which shows contrasts in the landscape, such as water bodies.
@@ -53,16 +53,17 @@ Texture Analysis: This step examines the surface roughness or textural patterns 
 Principal Component Analysis (PCA): PCA is a statistical technique used to emphasize variation and bring out strong patterns in a dataset. It transforms the original data into a set of linearly uncorrelated variables known as principal components, with the first principal components accounting for as much of the variability in the data as possible.
 
 ![](asset/image/week03/clip_PCA.png)
-
-### Challenges and Future Trends
-
-In the context of data fusion technology, key challenges such as developing unified mathematical models and enhancing preprocessing accuracy are identified. The future trends may involve integrating Geographic Information System (GIS) for real-time monitoring and applying intelligent processing capabilities to better understand and utilize the data.
-
 ------------------------------------------------------------------------
+
+## Application
+
+Considering data fusion in remote sensing field, a paper I found used Pixel-Level, Decision-Level and Feature-Level fusion techniques [@zhang2010multi] to realize it. Pixel-level fusion integrates high-resolution panchromatic data with lower-resolution multispectral data to produce images that combine the best features of both: high spatial resolution and rich spectral information. Feature-level fusion combines features extracted from different sources, such as edges, textures, and other morphological parameters, to enhance classification, object detection, and change detection processes. And decision-level fusion combines the outcomes of multiple classification or detection algorithms to arrive at a final decision, enhancing reliability and accuracy. These techniques enable the extraction of more accurate and detailed information from the Earth's surface, facilitating better environmental monitoring and algorithm correctness.
+
+As for Atmospheric Corrections, Chavez et al.[@chavez1996image] highlighting its impact for various applications, including vegetation monitoring, urban planning, and climate change studies. It can improve spatial resolution for detecting atmospheric particulates by integrating LiDAR data with optical imagery to enhance the detection of atmospheric particulates and their spatial distribution. This fusion is particularly useful in studying the vertical distribution of aerosols and clouds, providing valuable information for atmospheric correction and climate research. For temporal Data, the fusion of real-time data from multiple sensors, including weather satellites and ground-based observations, supports the development of dynamic atmospheric correction models. These models can adjust for sudden changes in atmospheric conditions, ensuring the accuracy of surface reflectance data for time-sensitive applications. The application of advanced data fusion techniques in atmospheric corrections has led to significant improvements in the quality and reliability of corrected remote sensing imagery. 
 
 ## Reflection
 
-First off, it's incredible how we can take images from satellites, correct them for distortions caused by the camera's angle and the atmosphere, and then turn them into precise maps of the Earth's surface.
+First, it's incredible how I can take images from satellites, correct them for distortions caused by the camera's angle and the atmosphere, and then turn them into precise maps of the Earth's surface.
 
 I delved into data fusion, where the goal is to mix data from different sources to create a clearer, more detailed picture. There are different ways to do this, from mixing pixel by pixel, to looking at features like edges and textures, to making big-picture decisions. It's like putting together a complex puzzle, with each piece providing more insights into the larger image.
 

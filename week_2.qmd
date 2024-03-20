@@ -1,8 +1,10 @@
-# 02 Try the presentation {#sec-week02}
+
+# Try the presentation {.unnumbered}
+
 
 -   Xaringan Pre
 
-```{r echo = FALSE, out.width='40%'}
+```{r echo = FALSE, out.width='100%'}
 xaringanExtra::embed_xaringan(
   url = "XaringanPresentation/index.html",
   ratio = "16:9")

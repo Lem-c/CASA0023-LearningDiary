@@ -1,18 +1,14 @@
 ---
 title: "Preface"
-
-format:
-  html:
-    include-before-body: './asset/tags/index_div.txt'
-    include-after-body: './asset/tags/index_div2.txt'
-
-date: "3/1/2024"
+date: "1/16/2024"
 ---
 
-# Preface {.unnumbered}
+Hi, it's Yohao (Yuhao Chen in chinese PinYin) here, you can also call me Lem. Feel free to call me Lem, a nickname I picked up while playing a video game I love, Counter Strike. Born in a small town surrounded by mountains on three sides in northwest China, I'm quite interested in hiking and finding beautify things in life, which inspired me to take photographs.
 
-This is a Quarto book.
+![Trek approximately five kilometers into the Badanji Lin desert and eventually find a spot to capture a photo. I'm fourth from the left. (｡◕‿◕｡)](./asset/image/co_star.jpg){width="1200"}
 
-Click [here](@sec-week01) to enter 404 not found.
+![](./asset/image/river1.jpg){width="261"} ![](./asset/image/river2.jpg){width="200"}
+
+## CASA0023 Remotely Sensing Cities and Environments {.unnumbered}
 
 To learn more about Quarto books visit <https://quarto.org/docs/books>.

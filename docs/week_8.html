@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Remotely sensing learning diary - Classification The Big Questions (Lecture 6 continued) and Accuracy</title>
+<title>Remotely sensing learning diary - Week8 - Classification The Big Questions (Lecture 6 continued) and Accuracy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,7 +96,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_8.html">Classification The Big Questions (Lecture 6 continued) and Accuracy</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_8.html">Week8 - Classification The Big Questions (Lecture 6 continued) and Accuracy</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -130,49 +130,49 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The origin of all things: week1</span></a>
+ <span class="menu-text">Week1 - Intro to Remote Sensing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Try the presentation</span></a>
+ <span class="menu-text">Week2 - Try the presentation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Fusion: Principles and Methods</span></a>
+ <span class="menu-text">Week3 - Corrections (Data Fusion: Principles and Methods)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">04 Policy Applications</span></a>
+ <span class="menu-text">Week4 - Policy Applications</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Google Earth Engine</span></a>
+ <span class="menu-text">Week6 - Google Earth Engine</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Classification I</span></a>
+ <span class="menu-text">Week7 - Classification I</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_8.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Classification The Big Questions (Lecture 6 continued) and Accuracy</span></a>
+ <span class="menu-text">Week8 - Classification The Big Questions (Lecture 6 continued) and Accuracy</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SAR in GEE</span></a>
+ <span class="menu-text">Week9 - Synthetic Aperture Radar (SAR)</span></a>
   </div>
 </li>
     </ul>
@@ -189,6 +189,7 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#sub-pixel-analysis" id="toc-sub-pixel-analysis" class="nav-link" data-scroll-target="#sub-pixel-analysis">Sub pixel analysis</a></li>
   <li><a href="#assess-accuracy" id="toc-assess-accuracy" class="nav-link" data-scroll-target="#assess-accuracy">Assess accuracy</a></li>
+  <li><a href="#object-based-modeling" id="toc-object-based-modeling" class="nav-link" data-scroll-target="#object-based-modeling">Object-based modeling</a></li>
   <li><a href="#cross-validation." id="toc-cross-validation." class="nav-link" data-scroll-target="#cross-validation.">Cross validation.</a></li>
   </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
@@ -202,7 +203,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Classification The Big Questions (Lecture 6 continued) and Accuracy</h1>
+<h1 class="title">Week8 - Classification The Big Questions (Lecture 6 continued) and Accuracy</h1>
 </div>
 
 
@@ -231,11 +232,27 @@ div.csl-indent {
 <li><p>Pixel Modeling: This aims to ascertain the composition of these end members within a single pixel’s image.</p></li>
 <li><p>Calculation Method: The equation’s left side depicts the pixel’s spectral signature across bands 3 and 4, under the constraint that end member fractions sum to one. The matrix in the center contains the end members’ spectral signatures for bands 3 and 4, plus a row of ones for the sum-to-one rule. The right side aims to determine each end member’s fraction within the pixel. Fractions are computed by creating a new matrix where the left side is the fraction matrix, revealing the proportions of various end members.</p></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./asset/screenshot/week008/sub-pixel.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">After using error matrix to filter all results and add together to visualize the sub pixel classification, it breaks down images to understand the mix of elements (like green area, urban blocks and water) within each pixel. I guess it will be useful for spotting changes at the greenery edge or urban deve</figcaption>
+</figure>
+</div>
 </section>
 <section id="assess-accuracy" class="level3">
 <h3 class="anchored" data-anchor-id="assess-accuracy">Assess accuracy</h3>
 <p>In machine learning, accuracy assessment measures the congruence between a model’s predictions and actual outcomes, encompassing True Positive (TP) where the model accurately predicts the positive class, False Positive (FP) where it mistakenly predicts the positive class, True Negative (TN) where it accurately predicts the negative class, and False Negative (FN) where it incorrectly predicts the negative class.</p>
 <p>The assessment includes producer’s accuracy <span class="math display">\[\frac{TP}{TP+FN}\]</span> user’s accuracy <span class="math display">\[\frac{TP}{TP+FP}\]</span> overall accuracy <span class="math display">\[\frac{TP+TN}{TP+TN+FP+FN}\]</span> to measure model performance comprehensively.</p>
+</section>
+<section id="object-based-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="object-based-modeling">Object-based modeling</h3>
+<p>Object-Based Image Analysis (OBIA) processes and analyzes imagery by segmenting it into meaningful, discrete objects or segments rather than analyzing pixel by pixel. This approach is grounded in the concept that contiguous pixels with similar characteristics (such as color, texture, or tone) can be grouped to form a larger, coherent object that represents a real-world feature, such as a field, forest patch, body of water, or urban area.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./asset/screenshot/week008/ob_2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">The OBIA (Object-Based Image Analysis) classification highlighted areas of water, urban development, and green spaces. However, the results appear somewhat abstract, with classifications emerging from clusters or groups of pixels.</figcaption>
+</figure>
+</div>
 </section>
 <section id="cross-validation." class="level3">
 <h3 class="anchored" data-anchor-id="cross-validation.">Cross validation.</h3>
@@ -511,12 +528,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week_7.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Classification I</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week7 - Classification I</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week_9.html" class="pagination-link">
-        <span class="nav-page-text">SAR in GEE</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Week9 - Synthetic Aperture Radar (SAR)</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

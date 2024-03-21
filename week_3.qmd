@@ -1,4 +1,4 @@
-# Data Fusion: Principles and Methods {.unnumbered}
+# Week3 - Corrections (Data Fusion: Principles and Methods) {.unnumbered}
 
 ## Summary
 
@@ -28,8 +28,6 @@ Data fusion methods for remote sensing images are categorized into:
 
 Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.
 
-### OSM
-
 ## Week practical
 Finally some R related things, so, I'll do it step by step.
 Firstly, the two areas chose as follow (It's just two randomly areas chose around South Asia, looks like most of area are yellow sand):
@@ -42,7 +40,9 @@ Then merge the Satellite data to combine different spectral bands or time points
 
 ![](asset/image/week03/merged_plot.png)
 
-Calculation Normalized Difference Vegetation Index (NDVI). The NDVI values range from -0.40 to 0.40, with green areas indicating healthier vegetation and brown areas indicating less healthy or sparse vegetation. This image suggests that there are a lot of area might be indicative of barren land, rock, or bare soil with little to no vegetation present.
+Calculation Normalized Difference Vegetation Index (NDVI). The NDVI values range from -0.40 to 0.40, with green areas indicating healthier vegetation and brown areas indicating less healthy or sparse vegetation. This image suggests that there are a lot of area might be indicative of barren land, rock, or bare soil with little to no vegetation present. The equation to get NDVI is:
+
+$$ NDVI = \frac{NIR- Red}{NIR + Red}  $$
 
 ![NDVI [@ndvi_wiki] is a computed index that indicates vegetation health. It uses the visible and near-infrared bands of the electromagnetic spectrum to identify live green vegetation.](asset/image/week03/merged_NDVI.png)
 

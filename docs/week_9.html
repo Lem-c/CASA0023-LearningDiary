@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Remotely sensing learning diary - SAR in GEE</title>
+<title>Remotely sensing learning diary - Week9 - Synthetic Aperture Radar (SAR)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +93,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_9.html">SAR in GEE</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_9.html">Week9 - Synthetic Aperture Radar (SAR)</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -127,49 +127,49 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The origin of all things: week1</span></a>
+ <span class="menu-text">Week1 - Intro to Remote Sensing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Try the presentation</span></a>
+ <span class="menu-text">Week2 - Try the presentation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Fusion: Principles and Methods</span></a>
+ <span class="menu-text">Week3 - Corrections (Data Fusion: Principles and Methods)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">04 Policy Applications</span></a>
+ <span class="menu-text">Week4 - Policy Applications</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Google Earth Engine</span></a>
+ <span class="menu-text">Week6 - Google Earth Engine</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Classification I</span></a>
+ <span class="menu-text">Week7 - Classification I</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Classification The Big Questions (Lecture 6 continued) and Accuracy</span></a>
+ <span class="menu-text">Week8 - Classification The Big Questions (Lecture 6 continued) and Accuracy</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_9.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">SAR in GEE</span></a>
+ <span class="menu-text">Week9 - Synthetic Aperture Radar (SAR)</span></a>
   </div>
 </li>
     </ul>
@@ -183,6 +183,7 @@ div.csl-indent {
    
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#east-london-change" id="toc-east-london-change" class="nav-link" data-scroll-target="#east-london-change">East London change</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a>
   <ul class="collapse">
   <li><a href="#more-sar-continues-from-week-4" id="toc-more-sar-continues-from-week-4" class="nav-link" data-scroll-target="#more-sar-continues-from-week-4">More SAR continues from week 4</a></li>
@@ -197,7 +198,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SAR in GEE</h1>
+<h1 class="title">Week9 - Synthetic Aperture Radar (SAR)</h1>
 </div>
 
 
@@ -223,6 +224,11 @@ div.csl-indent {
 <p>Radar systems create polarized waves using antennas designed to transmit and receive electromagnetic (EM) waves of specific polarization. Different antenna types (horns, waveguides, dipoles, patches) ensure waves are polarized as intended. There are two types of polarization. Linear Polarization: Horizontal (H) and Vertical (V). Circular Polarization: Right Hand Circular (R) and Left Hand Circular (L), useful in weather radars. These are very abstract contents, it is important to try it in practical by myself.</p>
 <p>Change detection in SAR compares images from different times to spot changes, using statistical methods rather than direct subtraction to account for SAR’s unique characteristics. For instance, analyzing pre- and post-disaster SAR images helps assess damage from floods or conflicts. Statistical techniques, like t-tests, evaluate differences between two data-sets, revealing changes such as disaster impacts. Standard deviation measures data variability in SAR images over time, pinpointing areas with significant changes or unusual activity.</p>
 </section>
+<section id="east-london-change" class="level2">
+<h2 class="anchored" data-anchor-id="east-london-change">East London change</h2>
+<iframe width="100%" height="600" frameborder="0" scrolling="no" src="https://cccccyh6048.users.earthengine.app/view/sar"></iframe>
+<p>Apply Change Detection to monitor differences in structures over time revealed that the coastline, potentially affected by a tsunami, saw minimal impact on buildings. Surprisingly, the significant changes were observed mostly in agricultural areas, rather than in built-up structures.</p>
+</section>
 <section id="application" class="level2">
 <h2 class="anchored" data-anchor-id="application">Application</h2>
 <ul>
@@ -235,7 +241,6 @@ div.csl-indent {
 <section id="more-sar-continues-from-week-4" class="level3">
 <h3 class="anchored" data-anchor-id="more-sar-continues-from-week-4">More SAR continues from week 4</h3>
 <ul>
-<li><p>SAR Floods</p></li>
 <li><p>Drawback?</p></li>
 <li><p>Interferometry Synthetic Aperture Radar (InSAR)</p></li>
 </ul>
@@ -504,7 +509,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week_8.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Classification The Big Questions (Lecture 6 continued) and Accuracy</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week8 - Classification The Big Questions (Lecture 6 continued) and Accuracy</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

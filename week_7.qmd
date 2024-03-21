@@ -1,4 +1,4 @@
-# Classification I {.unnumbered}
+# Week7 - Classification I {.unnumbered}
 
 Machine learning, a subset of computer science, involves creating algorithms that allow computers to learn and make decisions or predictions autonomously, related to human learning and generalization through experience, embodying inductive learning principles [@jordan2015machine]. When the topic comes the spatial analysis, good attempts like Support Vector Machine and random forest has been applied in this filed.
 

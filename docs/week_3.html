@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Remotely sensing learning diary - Data Fusion: Principles and Methods</title>
+<title>Remotely sensing learning diary - Week3 - Corrections (Data Fusion: Principles and Methods)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,6 +81,8 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="index.css">
 </head>
@@ -94,7 +96,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_3.html">Data Fusion: Principles and Methods</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_3.html">Week3 - Corrections (Data Fusion: Principles and Methods)</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -128,49 +130,49 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The origin of all things: week1</span></a>
+ <span class="menu-text">Week1 - Intro to Remote Sensing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Try the presentation</span></a>
+ <span class="menu-text">Week2 - Try the presentation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Data Fusion: Principles and Methods</span></a>
+ <span class="menu-text">Week3 - Corrections (Data Fusion: Principles and Methods)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">04 Policy Applications</span></a>
+ <span class="menu-text">Week4 - Policy Applications</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Google Earth Engine</span></a>
+ <span class="menu-text">Week6 - Google Earth Engine</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Classification I</span></a>
+ <span class="menu-text">Week7 - Classification I</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Classification The Big Questions (Lecture 6 continued) and Accuracy</span></a>
+ <span class="menu-text">Week8 - Classification The Big Questions (Lecture 6 continued) and Accuracy</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week_9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SAR in GEE</span></a>
+ <span class="menu-text">Week9 - Synthetic Aperture Radar (SAR)</span></a>
   </div>
 </li>
     </ul>
@@ -187,7 +189,6 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#principles-and-process-of-data-fusion" id="toc-principles-and-process-of-data-fusion" class="nav-link" data-scroll-target="#principles-and-process-of-data-fusion">Principles and Process of Data Fusion</a></li>
   <li><a href="#classification-and-methods-of-data-fusion" id="toc-classification-and-methods-of-data-fusion" class="nav-link" data-scroll-target="#classification-and-methods-of-data-fusion">Classification and Methods of Data Fusion</a></li>
-  <li><a href="#osm" id="toc-osm" class="nav-link" data-scroll-target="#osm">OSM</a></li>
   </ul></li>
   <li><a href="#week-practical" id="toc-week-practical" class="nav-link" data-scroll-target="#week-practical">Week practical</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><img src="asset/image/week03/clip_PCA.png" class="img-fluid"></a></li>
@@ -202,7 +203,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Fusion: Principles and Methods</h1>
+<h1 class="title">Week3 - Corrections (Data Fusion: Principles and Methods)</h1>
 </div>
 
 
@@ -242,9 +243,6 @@ div.csl-indent {
 </ul>
 <p>Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.</p>
 </section>
-<section id="osm" class="level3">
-<h3 class="anchored" data-anchor-id="osm">OSM</h3>
-</section>
 </section>
 <section id="week-practical" class="level2">
 <h2 class="anchored" data-anchor-id="week-practical">Week practical</h2>
@@ -253,11 +251,12 @@ div.csl-indent {
 <p><img src="asset/screenshot/week003/selected_texture_org.png" width="500" height="400"></p>
 <p>Then merge the Satellite data to combine different spectral bands or time points to create a comprehensive view of the chosen areas. They are quilt confusing, and I’ll figure all bands out in later chapters.</p>
 <p><img src="asset/image/week03/merged_plot.png" class="img-fluid"></p>
-<p>Calculation Normalized Difference Vegetation Index (NDVI). The NDVI values range from -0.40 to 0.40, with green areas indicating healthier vegetation and brown areas indicating less healthy or sparse vegetation. This image suggests that there are a lot of area might be indicative of barren land, rock, or bare soil with little to no vegetation present.</p>
+<p>Calculation Normalized Difference Vegetation Index (NDVI). The NDVI values range from -0.40 to 0.40, with green areas indicating healthier vegetation and brown areas indicating less healthy or sparse vegetation. This image suggests that there are a lot of area might be indicative of barren land, rock, or bare soil with little to no vegetation present. The equation to get NDVI is:</p>
+<p><span class="math display">\[ NDVI = \frac{NIR- Red}{NIR + Red}  \]</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="asset/image/week03/merged_NDVI.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">NDVI <span class="citation" data-cites="ndvi_wiki">(<a href="#ref-ndvi_wiki" role="doc-biblioref">Wikipedia contributors Year</a>)</span> is a computed index that indicates vegetation health. It uses the visible and near-infrared bands of the electromagnetic spectrum to identify live green vegetation.</figcaption>
+<figcaption class="figure-caption">NDVI <span class="citation" data-cites="ndvi_wiki">(<a href="#ref-ndvi_wiki" role="doc-biblioref">Wikipedia contributors 2024</a>)</span> is a computed index that indicates vegetation health. It uses the visible and near-infrared bands of the electromagnetic spectrum to identify live green vegetation.</figcaption>
 </figure>
 </div>
 <p>Texture Analysis: This step examines the surface roughness or textural patterns of the landscape, which can be critical for classifying different land cover types like soil and water.</p>
@@ -289,7 +288,7 @@ div.csl-indent {
 Chavez, Pat S et al. 1996. <span>“Image-Based Atmospheric Corrections-Revisited and Improved.”</span> <em>Photogrammetric Engineering and Remote Sensing</em> 62 (9): 1025–35.
 </div>
 <div id="ref-ndvi_wiki" class="csl-entry" role="listitem">
-Wikipedia contributors. Year. <span>“Normalized Difference Vegetation Index.”</span> Year. <a href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index</a>.
+Wikipedia contributors. 2024. <span>“Normalized Difference Vegetation Index.”</span> 2024. <a href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index</a>.
 </div>
 <div id="ref-zhang2010multi" class="csl-entry" role="listitem">
 Zhang, Jixian. 2010. <span>“Multi-Source Remote Sensing Data Fusion: Status and Trends.”</span> <em>International Journal of Image and Data Fusion</em> 1 (1): 5–24.
@@ -534,12 +533,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week_2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Try the presentation</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week2 - Try the presentation</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./week_4.html" class="pagination-link">
-        <span class="nav-page-text">04 Policy Applications</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Week4 - Policy Applications</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

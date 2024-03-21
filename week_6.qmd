@@ -1,4 +1,4 @@
-# Google Earth Engine {.unnumbered}
+# Week6 - Google Earth Engine {.unnumbered}
 
 Google Earth is a software that shows a 3D model of the Earth by using pictures from satellites, planes, and GIS (Geographic Information Systems) data on a 3D globe [@tamiminia2020google]. We can use devices to look around this digital world, including cities and landscapes, and they can even add their own information to it. It has images covering many areas of the Earth's surface, including Street View pictures.
 

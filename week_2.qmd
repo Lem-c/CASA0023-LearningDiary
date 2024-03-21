@@ -1,8 +1,8 @@
 
-# Try the presentation {.unnumbered}
+# Week2 - Try the presentation {.unnumbered}
 
 
--   Xaringan Pre
+-   Xaringan Presentation
 
 ```{r echo = FALSE, out.width='100%'}
 xaringanExtra::embed_xaringan(

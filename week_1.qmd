@@ -1,4 +1,4 @@
-# The origin of all things: week1 {.unnumbered}
+# Week1 - Intro to Remote Sensing {.unnumbered}
 
 ## Summary:
 
@@ -56,7 +56,7 @@ Load the London ward shapefile for masking. When I first came to SNAP, it is tot
 
 ![snap_rgb_loadded](./asset/screenshot/week001/snap_1.png){#fig-snap1 width="1200"} ![Select another band](./asset/screenshot/week001/snap_4.png){width="1200"}
 
-\`Ahhh, a huge area of white. Actually,it confused me a lot and I can not get any useful information from it, and I spend an hour to download all the files (sad face). Till I figure out these are clouds and I choose a band that shows the satellite view, I finally tells the differences between soil and green covered area and water (sea). Even though I can't use these data, I believe they will be useful in the future.
+Ahhh, a huge area of white. Actually,it confused me a lot and I can not get any useful information from it, and I spend an hour to download all the files (sad face). Till I figure out these are clouds and I choose a band that shows the satellite view, I finally tells the differences between soil and green covered area and water (sea). Even though I can't use these data, I believe they will be useful in the future.
 
 ## Reflection
 

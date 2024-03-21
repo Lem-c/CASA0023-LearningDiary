@@ -14,12 +14,12 @@ Radar systems create polarized waves using antennas designed to transmit and rec
 
 Change detection in SAR compares images from different times to spot changes, using statistical methods rather than direct subtraction to account for SAR's unique characteristics. For instance, analyzing pre- and post-disaster SAR images helps assess damage from floods or conflicts. Statistical techniques, like t-tests, evaluate differences between two data-sets, revealing changes such as disaster impacts. Standard deviation measures data variability in SAR images over time, pinpointing areas with significant changes or unusual activity.
 
-## East London change
+## Week practical
 
 ```{=html}
 <iframe width="100%" height="600" frameborder="0" scrolling="no" src="https://cccccyh6048.users.earthengine.app/view/sar"></iframe>
 ```
-Apply Change Detection to monitor differences in structures over time revealed that the coastline, potentially affected by a tsunami, saw minimal impact on buildings. Surprisingly, the significant changes were observed mostly in agricultural areas, rather than in built-up structures.
+Apply Change Detection (east London estuary) to monitor differences in structures over time revealed that the coastline, potentially affected by a tsunami, saw minimal impact on buildings. Surprisingly, the significant changes were observed mostly in agricultural areas, rather than in built-up structures.
 
 ## Application
 

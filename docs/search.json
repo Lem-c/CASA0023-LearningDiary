@@ -203,11 +203,11 @@
     "text": "Summary\nSAR, a radar device, measures the intensity and phase of backscattered signals across azimuth and range directions, correlating time bins with Earth’s locations. The ‘Synthetic Aperture’ uses sensor motion to simulate a large antenna, ensuring adequate azimuth resolution (Google 2024). However, it is not perfect.\nSAR imaging has its drawbacks, including speckle noise, which gives a ‘salt-and-pepper’ look to uniform areas due to the coherent microwave radiation, challenging to fully eliminate. Additionally, SAR backs-cattering varies with the incidence angle, making targets appear differently across the swath’s near and far ranges. Terrain relief also significantly impacts backscattering, with slope orientation causing foreshortening or shadowing, depending on its angle relative to the SAR (Google 2024).\n\nPolarization in Radar Systems(Natural Resources Canada 2024)\n\nRadar systems create polarized waves using antennas designed to transmit and receive electromagnetic (EM) waves of specific polarization. Different antenna types (horns, waveguides, dipoles, patches) ensure waves are polarized as intended. There are two types of polarization. Linear Polarization: Horizontal (H) and Vertical (V). Circular Polarization: Right Hand Circular (R) and Left Hand Circular (L), useful in weather radars. These are very abstract contents, it is important to try it in practical by myself.\nChange detection in SAR compares images from different times to spot changes, using statistical methods rather than direct subtraction to account for SAR’s unique characteristics. For instance, analyzing pre- and post-disaster SAR images helps assess damage from floods or conflicts. Statistical techniques, like t-tests, evaluate differences between two data-sets, revealing changes such as disaster impacts. Standard deviation measures data variability in SAR images over time, pinpointing areas with significant changes or unusual activity."
   },
   {
-    "objectID": "week_9.html#east-london-change",
-    "href": "week_9.html#east-london-change",
+    "objectID": "week_9.html#week-practical",
+    "href": "week_9.html#week-practical",
     "title": "Week9 - Synthetic Aperture Radar (SAR)",
-    "section": "East London change",
-    "text": "East London change\n\nApply Change Detection to monitor differences in structures over time revealed that the coastline, potentially affected by a tsunami, saw minimal impact on buildings. Surprisingly, the significant changes were observed mostly in agricultural areas, rather than in built-up structures."
+    "section": "Week practical",
+    "text": "Week practical\n\nApply Change Detection (east London estuary) to monitor differences in structures over time revealed that the coastline, potentially affected by a tsunami, saw minimal impact on buildings. Surprisingly, the significant changes were observed mostly in agricultural areas, rather than in built-up structures."
   },
   {
     "objectID": "week_9.html#application",

@@ -6,13 +6,10 @@ First week, OK, let's go.
 
 ### Remote Sensing
 
-This term is closely associated with GIS, recognized as a tool across various fields.
-High-resolution remote sensing images, paired with advanced analysis techniques, enable precise and timely monitoring of urban environments.
-There are two types of sensors. Passive sensors detect natural energy, typically sunlight, while active sensors emit their own signals, such as electromagnetic waves, and measure their return. Examples include photographic and infrared sensors as passive; radar and sonar as active.
+This term is closely associated with GIS, recognized as a tool across various fields. High-resolution remote sensing images, paired with advanced analysis techniques, enable precise and timely monitoring of urban environments. There are two types of sensors. Passive sensors detect natural energy, typically sunlight, while active sensors emit their own signals, such as electromagnetic waves, and measure their return. Examples include photographic and infrared sensors as passive; radar and sonar as active.
 
-The nature wavelength can be calculated through:
-$$
-\gamma(\text{wavelength}) = \frac{c (\text{velocity of light})}{v (\text{frequency})}
+The nature wavelength can be calculated through: $$
+\lambda(\text{wavelength}) = \frac{c (\text{velocity of light})}{v (\text{frequency})}
 $$
 
 ### Scatter

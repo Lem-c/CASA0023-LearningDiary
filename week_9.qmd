@@ -19,7 +19,7 @@ Change detection in SAR compares images from different times to spot changes, us
 ```{=html}
 <iframe width="100%" height="600" frameborder="0" scrolling="no" src="https://cccccyh6048.users.earthengine.app/view/sar"></iframe>
 ```
-Apply Change Detection (east London estuary) to monitor differences in structures over time revealed that the coastline, potentially affected by a tsunami, saw minimal impact on buildings. Surprisingly, the significant changes were observed mostly in agricultural areas, rather than in built-up structures.
+Apply Change Detection (east London estuary) to monitor differences in structures over time revealed that the coastline, potentially affected by a tsunami, saw minimal impact on buildings. The significant changes were observed mostly in agricultural areas, rather than in built-up structures, most likely due to natural crop growth.
 
 ## Application
 

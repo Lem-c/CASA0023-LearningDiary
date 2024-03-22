@@ -54,6 +54,7 @@ Principal Component Analysis (PCA): PCA is a statistical technique used to empha
 
 ![](asset/image/week03/clip_PCA.png)
 Though I followed the steps in the practical, the image outputs look like been shrouded in mist (better than cold words).
+
 ------------------------------------------------------------------------
 
 ## Application

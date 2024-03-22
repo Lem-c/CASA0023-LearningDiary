@@ -12,7 +12,7 @@ For another, GEE scales data to a 256x256 pixel grid, selecting the nearest pyra
 
 ### Landset image processing
 
-Zonal Statistics involves summarizing image data within specific zones or regions, with users applying
+Zonal Statistics involves summarizing image data within specific zones or regions, with applying
 
 ``` javascript
   .reduceRegion() 
@@ -39,7 +39,7 @@ In regression analysis using Google Earth Engine (GEE), the linearFit() function
 
     -   Finally calculate the value and add the layer to the map
 
-        ![NDVI view in camden](asset/screenshot/week006/camden_NDVI.png){width="1270"}
+        ![NDVI view in camden. Looks good, though there is a green area at left corner.](asset/screenshot/week006/camden_NDVI.png){width="1270"}
 
 
 ## Application

@@ -45,6 +45,6 @@ I found the SAR technology mixed with deep learning like DBNs pretty amazing. It
 
 The bit about polarization in radars was a bit tricky, but think of it as different ways to send out radio waves to catch different types of information. Some waves are good for one thing, like weather forecasting, while others are better for something else. Using stats to spot changes in SAR images is like using a magnifying glass to find clues in a detective story. It's all about paying attention to the details and figuring out what's changed, which can help in seeing if a flood has happened or if a building has been built. And Deep learning, which is like teaching computers to learn and think a bit like us, is shaking things up in how we predict road safety. Instead of just guessing, we're teaching computers to make smarter predictions, which is like upgrading from a flip phone to a smartphone.
 
-Even if I don't use this exact SAR or deep learning stuff in my job someday, understanding how to collect data carefully and analyze it is going to be really useful, no matter what I end up doing. It's like learning the rules of the game before you start playing.
+Even if I don't use this exact SAR or deep learning stuff in my work someday, understanding how to collect data carefully and analyze it is going to be really useful, no matter what I end up doing. As the term ends, these staffs will be so useful in the future.
 
 ## **References**

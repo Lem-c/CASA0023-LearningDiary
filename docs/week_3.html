@@ -241,7 +241,7 @@ div.csl-indent {
 <li><p>Feature-level Fusion: A medium-level fusion focusing on extracting and integrating features from different sources.</p></li>
 <li><p>Decision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.</p></li>
 </ul>
-<p>Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.</p>
+<p>Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation. Thinking the robust of the result.</p>
 </section>
 </section>
 <section id="week-practical" class="level2">
@@ -252,7 +252,7 @@ div.csl-indent {
 <p>Then merge the Satellite data to combine different spectral bands or time points to create a comprehensive view of the chosen areas. They are quilt confusing, and I’ll figure all bands out in later chapters.</p>
 <p><img src="asset/image/week03/merged_plot.png" class="img-fluid"></p>
 <p>Calculation Normalized Difference Vegetation Index (NDVI). The NDVI values range from -0.40 to 0.40, with green areas indicating healthier vegetation and brown areas indicating less healthy or sparse vegetation. This image suggests that there are a lot of area might be indicative of barren land, rock, or bare soil with little to no vegetation present. The equation to get NDVI is:</p>
-<p><span class="math display">\[ NDVI = \frac{NIR- Red}{NIR + Red}  \]</span></p>
+<p><span class="math display">\[ NDVI = \frac{NIR- Red}{NIR + Red} = \frac{Band5 - Band4}{Band5 + Band4} \]</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="asset/image/week03/merged_NDVI.png" class="img-fluid figure-img"></p>
@@ -274,8 +274,7 @@ div.csl-indent {
 <section id="reflection" class="level2">
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
 <p>First, it’s incredible how I can take images from satellites, correct them for distortions caused by the camera’s angle and the atmosphere, and then turn them into precise maps of the Earth’s surface.</p>
-<p>I delved into data fusion, where the goal is to mix data from different sources to create a clearer, more detailed picture. There are different ways to do this, from mixing pixel by pixel, to looking at features like edges and textures, to making big-picture decisions. It’s like putting together a complex puzzle, with each piece providing more insights into the larger image.</p>
-<p>One practical application was analyzing parts of South Asia (India). It’s fascinating to see how areas that mostly looked like yellow sand from afar actually held a lot of details when you zoomed in. Using the Normalized Difference Vegetation Index, or NDVI for short, I could tell where the healthy greenery was and where it wasn’t, which is super useful for understanding the landscape.</p>
+<p>I delved into data fusion to mix data from different bands to create a clearer, more information caontained picture. There are different ways to do this, from mixing pixel by pixel, to looking at features like edges and textures. It’s like putting together a complex puzzle, with each piece providing more insights into the larger image. One practical application was analyzing parts of South Asia (aroud India actually, draw polygon is a rough way to select). It’s fascinating to see how areas that mostly looked like yellow sand from afar actually held a lot of details when you zoomed in. Using the NDVI, I could tell where the healthy greenery was and where it wasn’t, which is super useful for understanding the landscape.</p>
 <p>Texture analysis not just about colors but also how rough or smooth areas are, which can tell you a lot about the terrain. And when I ran a Principal Component Analysis, it was like finding the hidden patterns in the data. It’s a powerful way to reduce complexity and highlight what’s really important.</p>
 <p>Looking forward, though, it’s clear there are challenges ahead. The math behind fusing data from different sources can get tricky and complex. But it’s also an exciting time, with Geographic Information Systems and smarter processing tools making it possible to monitor our planet in real-time.</p>
 </section>

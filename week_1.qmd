@@ -6,12 +6,11 @@ First week, OK, let's go.
 
 ### Remote Sensing
 
+This term is closely associated with GIS, recognized as a versatile tool across various fields.
 High-resolution remote sensing images, paired with advanced analysis techniques, enable precise and timely monitoring of urban environments.
-
-Passive sensors detect natural energy, typically sunlight, while active sensors emit their own signals, such as electromagnetic waves, and measure their return. Examples include photographic and infrared sensors as passive; radar and sonar as active.
+There are two types of sensors. Passive sensors detect natural energy, typically sunlight, while active sensors emit their own signals, such as electromagnetic waves, and measure their return. Examples include photographic and infrared sensors as passive; radar and sonar as active.
 
 The nature wavelegth can be calculated through:
-
 $$
 \Lambda(\text{wavelength}) = \frac{c (\text{velocity of light})}{v (\text{frequency})}
 $$
@@ -38,21 +37,19 @@ Energy heading towards the sensor is either absorbed or atmospherically scattere
 
 Wójtowicz et al.[@wojtowicz2016application] apply remote sensing technologies within agriculture, and Szpakowski and Jensen [@szpakowski2019review] investigate its implications for fire ecology. The former paper discusses remote sensing's critical role in agricultural applications such as crop yield prediction, nutrient level assessment, and weed management. It highlights the utility of vegetation indices, with a focus on NDVI, for evaluating crop health and progress. Furthermore, the paper reviews remote sensing's diverse platforms, including terrestrial, aerial, and satellite, each offering unique benefits in terms of spatial and spectral resolution.
 
-Remote sensing in agriculture is not without its challenges:
-
-Environmental Variability: The efficacy of remote sensing data can be undermined by environmental changes, including lighting and weather, posing difficulties for consistent data measurement. Signal versus Noise Distinction: The task of differentiating crop stress signals from the "noise" created by other elements, such as soil and non-photosynthetic plant material, is notably challenging. Technological Demands: The requirement for high-resolution data to monitor small-scale or early agricultural developments necessitates the use of sophisticated technology, which can be prohibitively expensive.
+Remote sensing in agriculture is not without its challenges. The efficacy of remote sensing data can be undermined by environmental changes, including lighting and weather, posing difficulties for consistent data measurement. Signal versus Noise Distinction: The task of differentiating crop stress signals from the "noise" created by other elements, such as soil and non-photosynthetic plant material, is notably challenging. Technological Demands: The requirement for high-resolution data to monitor small-scale or early agricultural developments necessitates the use of sophisticated technology, which can be prohibitively expensive.
 
 ![[@szpakowski2019review]](./asset/screenshot/week001/fireRisk.png)
 
 The review by Szpakowski and Jensen [@szpakowski2019review] offers an extensive evaluation of remote sensing applications in fire ecology, discussing aspects such as fire risk assessment, fuel mapping, active fire detection, estimation of burned areas, assessment of burn severity, and the characterization and monitoring of post-fire vegetation recovery. It focuses on the use of spectral sensors, lidar, and the innovative application of UAS technologies, providing a discussion of current methodologies and showcasing relevant research examples.
 
-Addressing the challenges of environmental variability, signal interpretation, and technological advancement is crucial for unlocking its full potential. Further research and development in this field are essential for enhancing its application in precision agriculture and beyond.
+So it is important to address the challenges of environmental variability, signal interpretation, and technological advancement for unlocking its full potential. Further research and development in this field are essential for enhancing its application in precision agriculture and beyond.
 
 ### Try SNAP
 
 Just follow the steps in practical one by one, let's do it.
 
-Load the London ward shapefile for masking. When I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this [@fig-snap1].
+Load the London ward shapefile for masking. When I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this.
 
 ![snap_rgb_loadded](./asset/screenshot/week001/snap_1.png){#fig-snap1 width="1200"} ![Select another band](./asset/screenshot/week001/snap_4.png){width="1200"}
 
@@ -62,7 +59,7 @@ Ahhh, a huge area of white. Actually,it confused me a lot and I can not get any 
 
 Week one is quite interesting for me, learning sensor and wave phythsics related knowledge. Reflecting on this week's content, I'm struck by the elegance of remote sensing and its practical applications. It's fascinating how we can use wavelengths and frequencies to unveil details of the Earth's surface, like a cosmic detective uncovering secrets from space. The challenges, like differentiating vital data from atmospheric noise and the cost of technology, remind me that this field is as grounded in real-world issues as it is in theoretical physics.
 
-What's most compelling is how this knowledge isn't just for academic musings. It's key to tangible solutions, like improving agricultural yields or assessing wildfire risks. While my first foray with tools like SNAP was baffling, it was a necessary step towards proficiency. This skill set, although occasionally esoteric, has clear potential for future applications, possibly revolutionizing fields like precision farming and disaster management.
+This knowledge transcends academic theory, playing a crucial role in practical solutions such as enhancing agricultural productivity and evaluating wildfire hazards. While my first practical with tools like SNAP was baffling, it was a necessary step towards proficiency. These skills, while complex, could change farming and emergency management.
 
 I'm realizing that even when specific technologies may not be immediately useful, the underlying principles are universally valuable. This week's lessons have reinforced my belief that remote sensing is an essential, transformative element of modern science. 🔥
 

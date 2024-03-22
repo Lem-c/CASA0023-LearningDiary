@@ -26,7 +26,7 @@ Data fusion methods for remote sensing images are categorized into:
 
 -   Decision-level Fusion: The highest level of fusion providing strong fault tolerance and requiring high processing capabilities.
 
-Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation.
+Various data fusion methods include algebraic methods, image regression, principal component transformation (PCT), K-T transformation, wavelet transformation, and IHS transformation. Thinking the robust of the result.
 
 ## Week practical
 Finally some R related things, so, I'll do it step by step.
@@ -42,7 +42,7 @@ Then merge the Satellite data to combine different spectral bands or time points
 
 Calculation Normalized Difference Vegetation Index (NDVI). The NDVI values range from -0.40 to 0.40, with green areas indicating healthier vegetation and brown areas indicating less healthy or sparse vegetation. This image suggests that there are a lot of area might be indicative of barren land, rock, or bare soil with little to no vegetation present. The equation to get NDVI is:
 
-$$ NDVI = \frac{NIR- Red}{NIR + Red}  $$
+$$ NDVI = \frac{NIR- Red}{NIR + Red} = \frac{Band5 - Band4}{Band5 + Band4} $$
 
 ![NDVI [@ndvi_wiki] is a computed index that indicates vegetation health. It uses the visible and near-infrared bands of the electromagnetic spectrum to identify live green vegetation.](asset/image/week03/merged_NDVI.png)
 
@@ -65,9 +65,8 @@ As for Atmospheric Corrections, Chavez et al.[@chavez1996image] highlighting its
 
 First, it's incredible how I can take images from satellites, correct them for distortions caused by the camera's angle and the atmosphere, and then turn them into precise maps of the Earth's surface.
 
-I delved into data fusion, where the goal is to mix data from different sources to create a clearer, more detailed picture. There are different ways to do this, from mixing pixel by pixel, to looking at features like edges and textures, to making big-picture decisions. It's like putting together a complex puzzle, with each piece providing more insights into the larger image.
-
-One practical application was analyzing parts of South Asia (India). It's fascinating to see how areas that mostly looked like yellow sand from afar actually held a lot of details when you zoomed in. Using the Normalized Difference Vegetation Index, or NDVI for short, I could tell where the healthy greenery was and where it wasn't, which is super useful for understanding the landscape.
+I delved into data fusion to mix data from different bands to create a clearer, more information caontained picture. There are different ways to do this, from mixing pixel by pixel, to looking at features like edges and textures. It's like putting together a complex puzzle, with each piece providing more insights into the larger image.
+One practical application was analyzing parts of South Asia (aroud India actually, draw polygon is a rough way to select). It's fascinating to see how areas that mostly looked like yellow sand from afar actually held a lot of details when you zoomed in. Using the NDVI, I could tell where the healthy greenery was and where it wasn't, which is super useful for understanding the landscape.
 
 Texture analysis not just about colors but also how rough or smooth areas are, which can tell you a lot about the terrain. And when I ran a Principal Component Analysis, it was like finding the hidden patterns in the data. It's a powerful way to reduce complexity and highlight what's really important.
 

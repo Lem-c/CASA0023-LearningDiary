@@ -229,20 +229,19 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="sub-pixel-analysis">Sub pixel analysis</h3>
 <ul>
 <li><p>End Members: These are pure spectral signatures in remote sensing that represent specific ground materials or objects, like water, vegetation, and soil.</p></li>
-<li><p>Pixel Modeling: This aims to ascertain the composition of these end members within a single pixel’s image.</p></li>
-<li><p>Calculation Method: The equation’s left side depicts the pixel’s spectral signature across bands 3 and 4, under the constraint that end member fractions sum to one. The matrix in the center contains the end members’ spectral signatures for bands 3 and 4, plus a row of ones for the sum-to-one rule. The right side aims to determine each end member’s fraction within the pixel. Fractions are computed by creating a new matrix where the left side is the fraction matrix, revealing the proportions of various end members.</p></li>
+<li><p>By analyzing endmembers’s spectral signatures. It aims to identify the proportion of each component within a pixel. For the complexity of urban areas, the nonlinear spectral mixture model is preferred over linear models, which inaccurately assume materials mix in a straightforward additive manner.</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./asset/screenshot/week008/sub-pixel.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">After using error matrix to filter all results and add together to visualize the sub pixel classification, it breaks down images to understand the mix of elements (like green area, urban blocks and water) within each pixel. I guess it will be useful for spotting changes at the greenery edge or urban deve</figcaption>
+<figcaption class="figure-caption">After using error matrix to filter all results and add together to visualize the sub pixel classification, it breaks down images to understand the mix of elements (like green area, urban blocks and water) within each pixel. I guess it will be useful for spotting changes at the greenery edge or urban development, the results show that the categorization of land types is basically correct</figcaption>
 </figure>
 </div>
 </section>
 <section id="assess-accuracy" class="level3">
 <h3 class="anchored" data-anchor-id="assess-accuracy">Assess accuracy</h3>
 <p>In machine learning, accuracy assessment measures the congruence between a model’s predictions and actual outcomes, encompassing True Positive (TP) where the model accurately predicts the positive class, False Positive (FP) where it mistakenly predicts the positive class, True Negative (TN) where it accurately predicts the negative class, and False Negative (FN) where it incorrectly predicts the negative class.</p>
-<p>The assessment includes producer’s accuracy <span class="math display">\[\frac{TP}{TP+FN}\]</span> user’s accuracy <span class="math display">\[\frac{TP}{TP+FP}\]</span> overall accuracy <span class="math display">\[\frac{TP+TN}{TP+TN+FP+FN}\]</span> to measure model performance comprehensively.</p>
+<p>The assessment includes producer’s accuracy <span class="math display">\[\frac{TP}{TP+FN}\]</span> user’s accuracy <span class="math display">\[\frac{TP}{TP+FP}\]</span> overall accuracy <span class="math display">\[\frac{TP+TN}{TP+TN+FP+FN}\]</span> to measure model performance comprehensively. From my point of view, I prefer to choose overall accuracy in most of cases.</p>
 </section>
 <section id="object-based-modeling" class="level3">
 <h3 class="anchored" data-anchor-id="object-based-modeling">Object-based modeling</h3>
@@ -267,9 +266,9 @@ div.csl-indent {
 </section>
 <section id="reflection" class="level2">
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
-<p>This week’s lecture on advanced remote sensing techniques was a new field for me moving to how to extract more nuanced information from satellite images. The use of OBIA and superpixels through the SLIC algorithm has shifted my perspective on image classification. The pyramid of remote sensing has been built, hope to access to the complete project.</p>
+<p>This week’s lecture on advanced remote sensing techniques was a new field for me moving to how to extract more nuanced information from satellite images. The use of OBIA and sub-pixels through the algorithm has shifted my perspective on image classification. The pyramid of remote sensing has been built, hope to access to the complete project.</p>
 <p>Sub-pixel analysis and understanding the specific spectral signatures of ground materials, or end members, have illustrated the incredible precision can be achieved. It’s like zooming in to the exact brushstrokes of different colors on a canvas to understand what’s really there. This can be a game-changer in areas like precision agriculture. The accuracy assessments and cross-validation methods reinforced the idea that models are tools that we must continually test and refine. They’re not infallible, but if used with diligence, they become powerful allies in understanding our environment.🌳</p>
-<p>These techniques could revolutionize environmental monitoring and resource management. While I might not use all these methods directly, the strategic thinking they require will undoubtedly shape how I approach complex problems and data analysis in the future.</p>
+<p>These techniques could revolutionize environmental monitoring and resource management. While I might not use all these methods directly, the strategic thinking they require will shape how I approach complex problems and data analysis in the future.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references"><strong>References</strong></h2>

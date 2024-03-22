@@ -3,7 +3,7 @@ title: "Preface"
 date: "1/16/2024"
 ---
 
-Hi, it's Yohao (Yuhao Chen in chinese PinYin) here, you can also call me Lem. Feel free to call me Lem, a nickname I picked up while playing a video game I love, Counter Strike. Born in a small town surrounded by mountains on three sides in northwest China, I'm quite interested in hiking and finding beautify things in life, which inspired me to take photographs.
+Hi, it's Yohao (Yuhao Chen in chinese PinYin) here. Feel free to call me Lem, a nickname I picked up while playing a video game I love, Counter Strike. Born in a small town surrounded by mountains on three sides in northwest China, I'm quite interested in hiking and finding beautify things in life, which inspired me to take photographs.
 
 ![Trek approximately five kilometers into the Badanji Lin desert and eventually find a spot to capture a photo. I'm fourth from the left. (｡◕‿◕｡)](./asset/image/co_star.jpg){width="1200"}
 

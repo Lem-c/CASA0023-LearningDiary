@@ -103,7 +103,7 @@ Source: [Wandinger, 2005](http://superlidar.colorado.edu/Classes/Lidar2008/Readi
 Source: [Wandinger, 2005](http://superlidar.colorado.edu/Classes/Lidar2008/ReadingMaterials/IntroLidar.pdf)
 ---
 
-# PCS in Adverse Weather Conditions
+# Applications II
 
 ##  Performance Testing
 

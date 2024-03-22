@@ -55,8 +55,6 @@ Principal Component Analysis (PCA): PCA is a statistical technique used to empha
 ![](asset/image/week03/clip_PCA.png)
 Though I followed the steps in the practical, the image outputs look like been shrouded in mist (better than cold words).
 
-------------------------------------------------------------------------
-
 ## Application
 
 Considering data fusion in remote sensing field, a paper I found used Pixel-Level, Decision-Level and Feature-Level fusion techniques [@zhang2010multi] to realize it. Pixel-level fusion integrates high-resolution panchromatic data with lower-resolution multispectral data to produce images that combine the best features of both: high spatial resolution and rich spectral information. Feature-level fusion combines features extracted from different sources, such as edges, textures, and other morphological parameters, to enhance classification, object detection, and change detection processes. And decision-level fusion combines the outcomes of multiple classification or detection algorithms to arrive at a final decision, enhancing reliability and accuracy. These techniques enable the extraction of more accurate and detailed information from the Earth's surface, facilitating better environmental monitoring and algorithm correctness.

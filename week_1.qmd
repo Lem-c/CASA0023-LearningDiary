@@ -6,13 +6,13 @@ First week, OK, let's go.
 
 ### Remote Sensing
 
-This term is closely associated with GIS, recognized as a versatile tool across various fields.
+This term is closely associated with GIS, recognized as a tool across various fields.
 High-resolution remote sensing images, paired with advanced analysis techniques, enable precise and timely monitoring of urban environments.
 There are two types of sensors. Passive sensors detect natural energy, typically sunlight, while active sensors emit their own signals, such as electromagnetic waves, and measure their return. Examples include photographic and infrared sensors as passive; radar and sonar as active.
 
-The nature wavelegth can be calculated through:
+The nature wavelength can be calculated through:
 $$
-\Lambda(\text{wavelength}) = \frac{c (\text{velocity of light})}{v (\text{frequency})}
+\gamma(\text{wavelength}) = \frac{c (\text{velocity of light})}{v (\text{frequency})}
 $$
 
 ### Scatter
@@ -27,7 +27,7 @@ Energy heading towards the sensor is either absorbed or atmospherically scattere
 
 1)  Spatial: Raster cell size ranges from 10cm to several kilometers.
 
-2)  Spectral: This aspect involves detecting various wavelengths across the electromagnetic spectrum, extending beyond visible light. The color of objects is determined by the wavelengths they reflect, with the rest being absorbed or scattered. Observation limitations arise from wavelengths absorbed by water vapor, ozone, and other gases. Spectral resolution is categorized by the number of detectable bands. Spectral reflectance measurement is not exclusive to remote sensing but can also be performed with spectroradiometers in laboratories or on the field, necessitating calibration against a pure white reference panel.
+2)  Spectral: This aspect involves detecting various wavelengths across the electromagnetic spectrum, extending beyond visible light. The color of objects is determined by the wavelengths they reflect, with the rest being absorbed or scattered. Observation limitations arise from wavelengths absorbed by water vapor, ozone, and other gases. Spectral resolution is categorized by the number of detectable bands. Spectral signature measurement is not exclusive to remote sensing but can also be performed with spectroradiometers in laboratories or on the field, necessitating calibration against a pure white reference panel.
 
 3)  Radiometric: Revisit times of sensors vary, with lower resolutions indicating larger pixel sizes. Remote sensing utilizes fluorescence to identify materials and evaluate conditions by analyzing wavelength emissions after radiation exposure.
 
@@ -37,7 +37,7 @@ Energy heading towards the sensor is either absorbed or atmospherically scattere
 
 Wójtowicz et al.[@wojtowicz2016application] apply remote sensing technologies within agriculture, and Szpakowski and Jensen [@szpakowski2019review] investigate its implications for fire ecology. The former paper discusses remote sensing's critical role in agricultural applications such as crop yield prediction, nutrient level assessment, and weed management. It highlights the utility of vegetation indices, with a focus on NDVI, for evaluating crop health and progress. Furthermore, the paper reviews remote sensing's diverse platforms, including terrestrial, aerial, and satellite, each offering unique benefits in terms of spatial and spectral resolution.
 
-Remote sensing in agriculture is not without its challenges. The efficacy of remote sensing data can be undermined by environmental changes, including lighting and weather, posing difficulties for consistent data measurement. Signal versus Noise Distinction: The task of differentiating crop stress signals from the "noise" created by other elements, such as soil and non-photosynthetic plant material, is notably challenging. Technological Demands: The requirement for high-resolution data to monitor small-scale or early agricultural developments necessitates the use of sophisticated technology, which can be prohibitively expensive.
+However, Remote sensing in agriculture is not without its challenges. The efficacy of remote sensing data can be undermined by environmental changes, including lighting and weather, posing difficulties for consistent data measurement. Signal versus Noise Distinction: The task of differentiating crop stress signals from the "noise" created by other elements, such as soil and non-photosynthetic plant material, is notably challenging. Technological Demands: The requirement for high-resolution data to monitor small-scale or early agricultural developments necessitates the use of sophisticated technology, which can be prohibitively expensive.
 
 ![[@szpakowski2019review]](./asset/screenshot/week001/fireRisk.png)
 
@@ -53,7 +53,7 @@ Load the London ward shapefile for masking. When I first came to SNAP, it is tot
 
 ![snap_rgb_loadded](./asset/screenshot/week001/snap_1.png){#fig-snap1 width="1200"} ![Select another band](./asset/screenshot/week001/snap_4.png){width="1200"}
 
-Ahhh, a huge area of white. Actually,it confused me a lot and I can not get any useful information from it, and I spend an hour to download all the files (sad face). Till I figure out these are clouds and I choose a band that shows the satellite view, I finally tells the differences between soil and green covered area and water (sea). Even though I can't use these data, I believe they will be useful in the future.
+Ahhh, a huge area of white or chaos. Actually,it confused me a lot and I can not get any useful information from them, and I spend an hour to download all the files (sad face). Till I figure out these are clouds and I choose a band that shows the satellite view, I finally tells the differences between soil and green covered area and water (sea). Even though I can't use these data, I believe they will be useful in the future.
 
 ## Reflection
 

@@ -12,7 +12,7 @@ Urban green spaces [@shahtahmassebi2021remote] are analyzed using data from Land
 
 ### Synthetic Aperture Radar (SAR)
 
-Its capabilities as an active sensing system that captures surface texture data and can see through weather and clouds due to different wavelengths and polarizations. SAR operates in multiple bands like X, C, S, L, and P [@nasa_sar], each with varying applications from high-resolution urban monitoring to biomass and vegetation mapping. The polarization of SAR, whether horizontal, vertical, or dual, affects how it interacts with materials and can aid in differentiating features such as rough surfaces and double-bounce reflections in urban areas. SAR imagery can also undergo various corrections for improved clarity and accuracy. With different wavelengths, SAR can penetrate surfaces to varying degrees, affecting volume scattering and thus enabling diverse applications like terrain mapping and change detection. The slides touch on the use of SAR in urban monitoring, explaining how the unique properties of SAR, such as backscatter and polarization, can be utilized to analyze and understand urban structures and natural environments.
+Its capabilities as an active sensing system that captures surface texture data and can see through weather and clouds due to different wavelengths and polarization. SAR operates in multiple bands like X, C, S, L, and P [@nasa_sar], each with varying applications from high-resolution urban monitoring to biomass and vegetation mapping. The polarization of SAR, whether horizontal, vertical, or dual, affects how it interacts with materials and can aid in differentiating features such as rough surfaces and double-bounce reflections in urban areas. SAR imagery can also undergo various corrections for improved clarity and accuracy. With different wavelengths, SAR can penetrate surfaces to varying degrees, affecting volume scattering and thus enabling diverse applications like terrain mapping and change detection. The slides touch on the use of SAR in urban monitoring, explaining how the unique properties of SAR, such as back scatter and polarization, can be utilized to analyze and understand urban structures and natural environments.
 
 ## Application
 
@@ -42,11 +42,13 @@ Policy SI4 offers a progressive framework for sustainable urban development, usi
 
 # 05 Reading Week: Temperature
 
+What if the visual panel sometimes can help?
+
 [History temperature and CO2 emissions in UK](https://lem-c.github.io/temp_map/)
 
 ## Reflection
 
-Reflecting on my journey to understand the hot spots in cities has been like unfolding a map that leads from a single point of curiosity to a vast landscape of global environmental challenges. It all started with noticing how some parts of the city felt warmer, which drew a deep dive into learning from various fields. By combining insights from satellite images, exploring city planning policies, and diving into environmental science, I've combined together a clearer picture of why cities get so warm and what it means for us.
+Reflecting on my journey to understand the hot spots in cities has been like unfolding a map that leads from a single point of curiosity to a vast landscape of global environmental challenges. It all started with noticing how some parts of the city felt warmer, which provides an in-depth look into learning from various fields. By combining insights from satellite images, exploring city planning policies, and diving into environmental science, I've combined together a clearer picture of why cities get so warm and what it means for us.
 
 This adventure has taught me the value of looking at problems from different angles. It's not just about the heat; it's about how we design our cities, the rules that guide our urban development, and the new technologies that let us see our environment in different ways. This mix of personal experience, academic study, and the latest tech has shown me that tackling big challenges requires a mix of knowledge, curiosity, and a willingness to explore.
 

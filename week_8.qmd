@@ -1,5 +1,7 @@
 # Week8 - Classification The Big Questions (Lecture 6 continued) and Accuracy {.unnumbered}
 
+This week looked through a lot of interesting staffs, I'll begin with a discussion on some algorithms.
+
 ## Summary
 
 -   Object-Based Image Analysis (OBIA) simplifies imagery into significant objects by merging adjacent pixels with similar texture and color, focusing on object shapes to form "superpixels" through either similarity or difference.
@@ -24,7 +26,7 @@ The assessment includes producer's accuracy $$\frac{TP}{TP+FN}$$ user's accuracy
 
 ### Object-based modeling
 
-Object-Based Image Analysis (OBIA) processes and analyzes imagery by segmenting it into meaningful, discrete objects or segments rather than analyzing pixel by pixel. This approach is grounded in the concept that contiguous pixels with similar characteristics (such as color, texture, or tone) can be grouped to form a larger, coherent object that represents a real-world feature, such as a field, forest patch, body of water, or urban area.
+OBIA processes and analyzes imagery by segmenting it into meaningful, discrete objects or segments rather than analyzing pixel by pixel. This approach is grounded in the concept that contiguous pixels with similar characteristics (such as color, texture, or tone) can be grouped to form a larger, coherent object that represents a real-world feature, such as a field, forest patch, body of water, or urban area.
 
 ![The OBIA (Object-Based Image Analysis) classification highlighted areas of water, urban development, and green spaces. However, the results appear somewhat abstract, with classifications emerging from clusters or groups of pixels.](./asset/screenshot/week008/ob_2.png)
 

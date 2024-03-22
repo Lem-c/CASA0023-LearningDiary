@@ -36,7 +36,7 @@ The process begins with choosing specific areas for analysis, which shows contra
 
 ![](asset/screenshot/week003/selected_texture_org.png){width="500" height="400"}
 
-Then merge the Satellite data to combine different spectral bands or time points to create a comprehensive view of the chosen areas. They are quilt confusing, and I'll figure all bands out in later chapters.
+Then merge the Satellite data to combine different spectral bands to create a comprehensive view of the chosen areas. They are quilt confusing, and by analyzing the manifest file (e.g., txt/xml), it's clear that bands 4 and 5 are more important for following calculations. Band 4 captures visible light in the red spectrum. It is crucial for distinguishing between different types of vegetation, A    nd Band 5 measures near-infrared light, which is reflected strongly by healthy vegetation. 
 
 ![](asset/image/week03/merged_plot.png)
 
@@ -53,6 +53,7 @@ Texture Analysis: This step examines the surface roughness or textural patterns 
 Principal Component Analysis (PCA): PCA is a statistical technique used to emphasize variation and bring out strong patterns in a dataset. It transforms the original data into a set of linearly uncorrelated variables known as principal components, with the first principal components accounting for as much of the variability in the data as possible.
 
 ![](asset/image/week03/clip_PCA.png)
+Though I followed the steps in the practical, the image outputs look like been shrouded in mist (better than cold words).
 ------------------------------------------------------------------------
 
 ## Application

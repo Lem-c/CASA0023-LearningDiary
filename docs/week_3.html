@@ -191,7 +191,6 @@ div.csl-indent {
   <li><a href="#classification-and-methods-of-data-fusion" id="toc-classification-and-methods-of-data-fusion" class="nav-link" data-scroll-target="#classification-and-methods-of-data-fusion">Classification and Methods of Data Fusion</a></li>
   </ul></li>
   <li><a href="#week-practical" id="toc-week-practical" class="nav-link" data-scroll-target="#week-practical">Week practical</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><img src="asset/image/week03/clip_PCA.png" class="img-fluid"></a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><strong>References</strong></a></li>
@@ -249,7 +248,7 @@ div.csl-indent {
 <p>Finally some R related things, so, I’ll do it step by step. Firstly, the two areas chose as follow (It’s just two randomly areas chose around South Asia, looks like most of area are yellow sand):</p>
 <p>The process begins with choosing specific areas for analysis, which shows contrasts in the landscape, such as water bodies.</p>
 <p><img src="asset/screenshot/week003/selected_texture_org.png" width="500" height="400"></p>
-<p>Then merge the Satellite data to combine different spectral bands or time points to create a comprehensive view of the chosen areas. They are quilt confusing, and I’ll figure all bands out in later chapters.</p>
+<p>Then merge the Satellite data to combine different spectral bands to create a comprehensive view of the chosen areas. They are quilt confusing, and by analyzing the manifest file (e.g., txt/xml), it’s clear that bands 4 and 5 are more important for following calculations. Band 4 captures visible light in the red spectrum. It is crucial for distinguishing between different types of vegetation, A nd Band 5 measures near-infrared light, which is reflected strongly by healthy vegetation.</p>
 <p><img src="asset/image/week03/merged_plot.png" class="img-fluid"></p>
 <p>Calculation Normalized Difference Vegetation Index (NDVI). The NDVI values range from -0.40 to 0.40, with green areas indicating healthier vegetation and brown areas indicating less healthy or sparse vegetation. This image suggests that there are a lot of area might be indicative of barren land, rock, or bare soil with little to no vegetation present. The equation to get NDVI is:</p>
 <p><span class="math display">\[ NDVI = \frac{NIR- Red}{NIR + Red} = \frac{Band5 - Band4}{Band5 + Band4} \]</span></p>
@@ -262,9 +261,7 @@ div.csl-indent {
 <p>Texture Analysis: This step examines the surface roughness or textural patterns of the landscape, which can be critical for classifying different land cover types like soil and water.</p>
 <p><img src="asset/image/week03/clip_texture.png" class="img-fluid"></p>
 <p>Principal Component Analysis (PCA): PCA is a statistical technique used to emphasize variation and bring out strong patterns in a dataset. It transforms the original data into a set of linearly uncorrelated variables known as principal components, with the first principal components accounting for as much of the variability in the data as possible.</p>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"><img src="asset/image/week03/clip_PCA.png" class="img-fluid"></h2>
+<p><img src="asset/image/week03/clip_PCA.png" class="img-fluid"> Though I followed the steps in the practical, the image outputs look like been shrouded in mist (better than cold words). ————————————————————————</p>
 </section>
 <section id="application" class="level2">
 <h2 class="anchored" data-anchor-id="application">Application</h2>

@@ -225,9 +225,9 @@ div.csl-indent {
 <p>First week, OK, let’s go.</p>
 <section id="remote-sensing" class="level3">
 <h3 class="anchored" data-anchor-id="remote-sensing">Remote Sensing</h3>
-<p>This term is closely associated with GIS, recognized as a versatile tool across various fields. High-resolution remote sensing images, paired with advanced analysis techniques, enable precise and timely monitoring of urban environments. There are two types of sensors. Passive sensors detect natural energy, typically sunlight, while active sensors emit their own signals, such as electromagnetic waves, and measure their return. Examples include photographic and infrared sensors as passive; radar and sonar as active.</p>
-<p>The nature wavelegth can be calculated through: <span class="math display">\[
-\Lambda(\text{wavelength}) = \frac{c (\text{velocity of light})}{v (\text{frequency})}
+<p>This term is closely associated with GIS, recognized as a tool across various fields. High-resolution remote sensing images, paired with advanced analysis techniques, enable precise and timely monitoring of urban environments. There are two types of sensors. Passive sensors detect natural energy, typically sunlight, while active sensors emit their own signals, such as electromagnetic waves, and measure their return. Examples include photographic and infrared sensors as passive; radar and sonar as active.</p>
+<p>The nature wavelength can be calculated through: <span class="math display">\[
+\gamma(\text{wavelength}) = \frac{c (\text{velocity of light})}{v (\text{frequency})}
 \]</span></p>
 </section>
 <section id="scatter" class="level3">
@@ -240,7 +240,7 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="resolutions">Resolutions</h3>
 <ol type="1">
 <li><p>Spatial: Raster cell size ranges from 10cm to several kilometers.</p></li>
-<li><p>Spectral: This aspect involves detecting various wavelengths across the electromagnetic spectrum, extending beyond visible light. The color of objects is determined by the wavelengths they reflect, with the rest being absorbed or scattered. Observation limitations arise from wavelengths absorbed by water vapor, ozone, and other gases. Spectral resolution is categorized by the number of detectable bands. Spectral reflectance measurement is not exclusive to remote sensing but can also be performed with spectroradiometers in laboratories or on the field, necessitating calibration against a pure white reference panel.</p></li>
+<li><p>Spectral: This aspect involves detecting various wavelengths across the electromagnetic spectrum, extending beyond visible light. The color of objects is determined by the wavelengths they reflect, with the rest being absorbed or scattered. Observation limitations arise from wavelengths absorbed by water vapor, ozone, and other gases. Spectral resolution is categorized by the number of detectable bands. Spectral signature measurement is not exclusive to remote sensing but can also be performed with spectroradiometers in laboratories or on the field, necessitating calibration against a pure white reference panel.</p></li>
 <li><p>Radiometric: Revisit times of sensors vary, with lower resolutions indicating larger pixel sizes. Remote sensing utilizes fluorescence to identify materials and evaluate conditions by analyzing wavelength emissions after radiation exposure.</p></li>
 <li><p>Temporal: Different sensors vary in energy sensitivity, with higher resolutions providing greater detail (e.g., 8 bit = 256 values, 4 bit = 16 values).</p></li>
 </ol>
@@ -249,7 +249,7 @@ div.csl-indent {
 <section id="application" class="level2">
 <h2 class="anchored" data-anchor-id="application">Application</h2>
 <p>Wójtowicz et al.<span class="citation" data-cites="wojtowicz2016application">(<a href="#ref-wojtowicz2016application" role="doc-biblioref">Wójtowicz et al. 2016</a>)</span> apply remote sensing technologies within agriculture, and Szpakowski and Jensen <span class="citation" data-cites="szpakowski2019review">(<a href="#ref-szpakowski2019review" role="doc-biblioref">Szpakowski and Jensen 2019</a>)</span> investigate its implications for fire ecology. The former paper discusses remote sensing’s critical role in agricultural applications such as crop yield prediction, nutrient level assessment, and weed management. It highlights the utility of vegetation indices, with a focus on NDVI, for evaluating crop health and progress. Furthermore, the paper reviews remote sensing’s diverse platforms, including terrestrial, aerial, and satellite, each offering unique benefits in terms of spatial and spectral resolution.</p>
-<p>Remote sensing in agriculture is not without its challenges. The efficacy of remote sensing data can be undermined by environmental changes, including lighting and weather, posing difficulties for consistent data measurement. Signal versus Noise Distinction: The task of differentiating crop stress signals from the “noise” created by other elements, such as soil and non-photosynthetic plant material, is notably challenging. Technological Demands: The requirement for high-resolution data to monitor small-scale or early agricultural developments necessitates the use of sophisticated technology, which can be prohibitively expensive.</p>
+<p>However, Remote sensing in agriculture is not without its challenges. The efficacy of remote sensing data can be undermined by environmental changes, including lighting and weather, posing difficulties for consistent data measurement. Signal versus Noise Distinction: The task of differentiating crop stress signals from the “noise” created by other elements, such as soil and non-photosynthetic plant material, is notably challenging. Technological Demands: The requirement for high-resolution data to monitor small-scale or early agricultural developments necessitates the use of sophisticated technology, which can be prohibitively expensive.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./asset/screenshot/week001/fireRisk.png" class="img-fluid figure-img"></p>
@@ -263,7 +263,7 @@ div.csl-indent {
 <p>Just follow the steps in practical one by one, let’s do it.</p>
 <p>Load the London ward shapefile for masking. When I first came to SNAP, it is totally a strange thing for me. After loading the zip file and converted to default RGB filed, the area I chose looks like this.</p>
 <p><img src="./asset/screenshot/week001/snap_1.png" id="fig-snap1" class="img-fluid" width="1200" alt="snap_rgb_loadded"> <img src="./asset/screenshot/week001/snap_4.png" class="img-fluid" width="1200" alt="Select another band"></p>
-<p>Ahhh, a huge area of white. Actually,it confused me a lot and I can not get any useful information from it, and I spend an hour to download all the files (sad face). Till I figure out these are clouds and I choose a band that shows the satellite view, I finally tells the differences between soil and green covered area and water (sea). Even though I can’t use these data, I believe they will be useful in the future.</p>
+<p>Ahhh, a huge area of white or chaos. Actually,it confused me a lot and I can not get any useful information from them, and I spend an hour to download all the files (sad face). Till I figure out these are clouds and I choose a band that shows the satellite view, I finally tells the differences between soil and green covered area and water (sea). Even though I can’t use these data, I believe they will be useful in the future.</p>
 </section>
 </section>
 <section id="reflection" class="level2">

@@ -4,7 +4,7 @@ Machine learning, a subset of computer science, involves creating algorithms tha
 
 ## Algorithms
 
-Amongst many classification algorithms, decision trees have proven to be efficient algorithms for classification of large datasets. A **d**ecision tree is a classification algorithm that automatically derives a hierarchy of partition rules with respect to a target attribute of a large dataset [@li2006spatial]. Forest is build from single tree. Classification aims to Classify data into discrete categories based on certain features.
+In the middle of many classification algorithms, decision trees have proven to be efficient algorithms for classification of large datasets. A **d**ecision tree is a classification algorithm that automatically derives a hierarchy of partition rules with respect to a target attribute of a large dataset [@li2006spatial]. Forest is build from single tree. Classification aims to Classify data into discrete categories based on certain features.
 
 ![A basic decision tree model with a binary target variable Y (0 or 1) and two continuous variables, x1 and x2 (0 to 1) [@song2015decision].](asset/image/week07/tree.jpg){fig-align="center" width="339"}
 
@@ -27,7 +27,7 @@ The unused land in London appears minimal, indicating a well-developed area.
 
 ![Brown indicates the possible un-used land](asset/screenshot/week007/result.png){width="561"}
 
-The final image encapsulates the outcome of the analysis, presenting a comprehensive map that starkly contrasts the unused land in London. The brown patches represent potential undeveloped land amidst a sea of green, which indicates well-utilized space. Overall, the process through GEE is really helpful for handling remote sensing data in geo field. 
+The final image encapsulates the outcome of the analysis, presenting a comprehensive map that clearly contrasts the unused land in London. The brown patches represent potential undeveloped land surrounded by a sea of green, which indicates well-utilized space. Overall, the process through GEE is really helpful for handling remote sensing data in geo field. 
 
 ## Application
 
